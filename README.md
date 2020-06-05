@@ -1,5 +1,6 @@
 # iCOV-redesign
-Dit is een test, groetjes Rick
+Dit is een redisign van iCOV, een overheidswebsite.    
+Dit is de link naar hun huidige site: www.iCOV.nl    
 
-
-Dit is een test, Groetjes Max
+## Kleine planning
+Vanaf maandag gaan we een slag maken met CSS en proberen we de hele homepagina te fixen, als we tegen dingen aan lopen hoor je dit via slack :thumbsup:
