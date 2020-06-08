@@ -1,49 +1,49 @@
 // =================================================================================================
 
 // All buttons in een keer:
-const buttons = document.querySelectorAll('button');
-buttons.forEach((button) => button.addEventListener('click', onClick));
+// const buttons = document.querySelectorAll('button');
+// buttons.forEach((button) => button.addEventListener('click', onClick));
 
-function onClick(event) {
-  // Welke button?
+// function onClick(event) {
+//   // Welke button?
 
-  const button = event.target;
+//   const button = event.target;
 
-  // <button data-direction="left"></button>
-  // <button data-direction="right"></button>
+//   // <button data-direction="left"></button>
+//   // <button data-direction="right"></button>
 
-  const direction = button.dataset.direction;
+//   const direction = button.dataset.direction;
 
-  let translation = '33%';
+//   let translation = '33%';
 
-  if (direction === 'left') {
-    translation = '-33%';
-  }
-}
+//   if (direction === 'left') {
+//     translation = '-33%';
+//   }
+// }
 
 // =================================================================================================
 
 // Per button:
-const buttonLeft = document.querySelector('[data-direction="left"]');
-const buttonRight = document.querySelector('[data-direction="right"]');
+// const buttonLeft = document.querySelector('[data-direction="left"]');
+// const buttonRight = document.querySelector('[data-direction="right"]');
 
-buttonLeft.addEventListener('click', () => scrollWithinSection('left'));
-buttonRight.addEventListener('click', () => scrollWithinSection('right'));
+// buttonLeft.addEventListener('click', () => scrollWithinSection('left'));
+// buttonRight.addEventListener('click', () => scrollWithinSection('right'));
 
-function scrollWithinSection(direction) {
-  let translation = '33%';
+// function scrollWithinSection(direction) {
+//   let translation = '33%';
 
-  if (direction === 'left') {
-    translation = '-33%';
-  }
-}
+//   if (direction === 'left') {
+//     translation = '-33%';
+//   }
+// }
 
 // =================================================================================================
 
 
 
 
-const menuBtn = document.querySelector('.hamburgerButton');
+const menuBtn = document.querySelector('.nav_toggle');
 const menu = document.querySelector('.menu');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
