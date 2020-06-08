@@ -1,5 +1,6 @@
 
 // Code to toggle the hamburger menu ------------------------
+
 const menuBtn = document.querySelector('.nav_toggle');
 const menu = document.querySelector('.menu');
 let menuOpen = false;
