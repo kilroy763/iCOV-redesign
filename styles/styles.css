@@ -12,8 +12,8 @@
  */
 
 
-/* GENERAL RESET
- * =============================================================================================== */
+/* General reset */
+/* =============================================================================================== */
 
 * {
     margin: 0;
@@ -35,8 +35,8 @@
 /* =============================================================================================== */
 
 
-/* Elements
- * =============================================================================================== */
+/* Elements */
+/* =============================================================================================== */
 
  body {
     overflow-x: hidden;
@@ -65,7 +65,7 @@ img {
 
 /* ------------------------------------------------------------------------------------------------ */
 
-.aboveNav img {
+.abovenav img {
     display: block;
     margin: 0 auto 5%;
     width: 5vh;
@@ -171,12 +171,12 @@ header a svg {
     transition: .5s ease-in;
 }
 
-/* Nav end*/
+/* Nav end */
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* Header*/
-.headertekst figure {
+/* Header */
+.headertext figure {
     position: relative;
 }
 
@@ -184,13 +184,13 @@ header a svg {
     margin: -1rem 0rem 0rem 0rem;
 }
 
-.headertekst figure figcaption {
+.headertext figure figcaption {
     position: absolute;
     top: 10%;
     margin: 0 1.5rem;
 }
 
-.headertekst figure img {
+.headertext figure img {
     width: 100vw;
     z-index: -1;
 }
@@ -203,7 +203,7 @@ video {
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* Actueel*/
+/* Topics */
 
 .slider {
     height: auto;
@@ -217,8 +217,8 @@ video {
 
 .slider>div {
     margin-right: 10%;
-    height: 60vw;
     width: 60vw;
+    height: 60vw;
 
 } 
 
@@ -231,7 +231,7 @@ video {
     color: white;
 }  
 
-.binnensteDiv {
+.innerdiv {
     position: relative;
     display: inline-block;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
@@ -240,21 +240,21 @@ video {
     width: 60vw;
 }
 
-#actueel1 {
+#topic1 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/mondkapje.jpg);
     background-size: cover;
 }
 
-#actueel3 {
+#topic3 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/rechtzaal.jpg);
     background-size: cover;
 }
 
-/* Actueel end*/
+/* Topics end*/
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* Thema's */
+/* Themes */
 
 .theme {
     margin-bottom: 1rem;
@@ -264,13 +264,14 @@ video {
     border-radius: 0 50px 0 0;
 }
 
-.themeFold{
+.themefold{
     display: none;
 }
 
 .theme img {
     /* height: 5%; */
     width: 50%;
+    max-width: 15rem;
     display: block;
     margin: 0 auto;
 }
@@ -316,7 +317,7 @@ video {
 
 }
 
-/* Thema's end */
+/* Themes end */
 
 /* ------------------------------------------------------------------------------------------------ */
 
@@ -332,7 +333,7 @@ video {
 
 }
 
-.podcastfoto {
+.podcastpicture {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -348,15 +349,20 @@ video {
 }
 
 .podcastwrapper div {
-    width: 10rem;
+    width: 40vw;
+    height: 40vw;
     margin-right: 1rem;
 }
 
 .podcastwrapper div img {
     object-fit: cover;
     filter: brightness(50%);
-    width: calc(40vw + (25 - 40) * ((100vw - 321px) / (767 - 321)));
-    height: calc(40vw + (25 - 40) * ((100vw - 321px) / (767 - 321)));
+    max-width: 100%;
+    max-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    /* width: calc(40vw + (25 - 40) * ((100vw - 321px) / (767 - 321))); */
+    /* height: calc(40vw + (25 - 40) * ((100vw - 321px) / (767 - 321))); */
 }
 
 .podcastwrapper div h3 {
@@ -392,11 +398,14 @@ video {
     display: none;
 }
 
-.wegaudioplayer {
+/* Podcast audioplayer */
+
+
+.removeaudioplayer {
     display: none;
 }
 
-.latenzien {
+.show {
     display: block;
 }
 
@@ -416,14 +425,6 @@ video {
     z-index: 60;
 }
 
-.audiotekst {
-    margin-left: 15%;
-}
-
-.audiotekst {
-    display: flex;
-    flex-direction: column;
-}
 
 .audioplayer audio {
     margin-left: 5%;
@@ -440,16 +441,16 @@ video {
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* In de praktijk */
-.indepraktijk {
+/* Cases */
+.cases {
     display: flex;
     flex-direction: row;
     justify-content: center;
     /* height: 50vh; */
 }
 
-.tijdlijn,
-.artikelen {
+.timeline,
+.articles {
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -457,42 +458,51 @@ video {
     align-items: center;
 }
 
-.tijdlijn {
+.timeline {
     justify-content: space-around;
 }
 
-.lijn {
+.line {
     content: '';
     position: absolute;
     width: 0.5rem;
     height: 60vh;
     background-color: var(--lightgrey);
     z-index: -1;
-    margin-left: 15vw;
+    margin: 0 auto;
 }
 
-.datum {
+.date {
     padding: 0.5rem 0rem;
     background-color: var(--blue);
-    color: white;
     border-radius: 0px 15px 0px 15px;
     text-align: center;
     width: calc(6rem + (50 - 6) * ((100vw - 321px) / (767 - 321)));
 }
 
-.artikelen article {
-    position: relative;
-    width: auto;
-    height: auto;
+.date p {
+    color: white;
 }
 
-.artikelen article img{
-    width: 80%;
-    height: 70%;
+.articles article {
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 10%;
+    max-height: 31%;
+    margin-bottom: 1rem;
+}
+
+.articles article img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
 }
 
-.caseTitel {
+.casetitle {
     position: absolute;
     z-index: 1;
     color: white;
@@ -513,11 +523,11 @@ video {
 
 }
 
-/* In de praktijk end */
+/* Cases end */
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* Veelgestelde vragen */
+/* FAQ */
 
 .faq {
     background-color: var(--lightgrey);
@@ -567,41 +577,62 @@ video {
 footer {
     background-color: #E7E7E7;
     padding-top: 2rem;
-    display: grid;
 }
 
-.fjaarverslag p {
+.freport p {
     width: 300px;
     margin-bottom: 1rem;
+    margin: 0 auto;
 }
 
 .flogo {
+    display: block;
+    padding-bottom: 5%;
     width: 25vw;
     max-width: 250px;
     margin: 0 auto;
-
 }
 
-.ftaal {
+.flanguage {
     text-align: right;
+    display: flex;
+    flex-direction: column;
     align-items: right;
     margin: 0 auto;
 }
 
-.ftaal form {
-    display: flex;
-    flex-direction: row;
-}
-
-.ftaal p {
+.flanguage p {
     text-align: center;
     margin-top: 1rem;
 }
 
-.ftaal a {
+.flanguage a {
     text-align: center;
     color: #660099;
     text-decoration: none;
+}
+
+.language_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+  
+.language_toggle p{
+    padding: 0.2rem;
+}
+  
+.language_toggle p:nth-child(odd){
+    transition: all .1s ease-in;
+}
+  
+.language_toggle p:nth-child(odd):hover{
+    cursor: pointer;
+}
+  
+.toggled{
+    transition: all .1s ease-in;
+    border-bottom: 2px solid black;
 }
 
 .fbottom {
@@ -614,22 +645,21 @@ footer {
     text-align: center;
 }
 
-.fjaarverslag button {
+.freport button {
     border: none;
     margin: 0.5rem 0rem;
-
     border-radius: 0px 25px 0px 25px;
     background-color: var(--orange);
     color: white;
     padding: 1rem 1rem;
 }
 
-.fjaarverslag {
+.freport {
     text-align: center;
     margin: 0 auto;
 }
 
-.fjaarverslag button:hover {
+.freport button:hover {
     padding: 1rem 1rem;
     border: none;
     border-color: none;
@@ -656,11 +686,7 @@ footer {
 
 /* ------------------- Hidden Desktop elements styles -----------*/
 
-.inDePraktijkDesktop {
-    display: none
-}
-
-.themeFold{
+.themefold{
     display: none;
 }
 
@@ -676,32 +702,19 @@ footer {
     display: none;
 }
 
-.datumd3 {
-    display: none;
-}
-
-.artikeld3 {
-    display: none;
-}
 
 .slider div div p {
     display: none;
 }
 
-.sliderButtonRechts {
+.sliderbuttonright {
     display: none;
 }
 
 /* Media querey for bigger smartphone screen sizes */
 
 @media screen and (min-width: 321px) {
-    p {
-        font-size: calc(14px + (23 - 14) * ((100vw - 321px) / (767 - 321)));
-    }
 
-    h1 {
-        font-size: calc(24px + (36 - 24) * ((100vw - 321px) / (767 - 321)));
-    }
 
 }
 
@@ -719,16 +732,5 @@ footer {
 /* Media querey for standard desktop screen size and larger*/
 
 @media screen and (min-width: 1440px) {
-    .headertekst h1 {
-        font-size: 1.7rem !important;
-    }
 
-
-    .headertekst p {
-        font-size: 1.2rem !important;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
 }
