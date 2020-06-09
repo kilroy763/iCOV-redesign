@@ -1,105 +1,122 @@
 
 // Code to toggle the hamburger menu ------------------------
 
-const menuBtn = document.querySelector('.nav_toggle');
-const menu = document.querySelector('.menu');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
+ const menuBtn = document.querySelector('.nav_toggle');
+ const menu = document.querySelector('.menu');
+ let menuOpen = false;
+ menuBtn.addEventListener('click', () => {
+   if(!menuOpen) {
     menuBtn.classList.add('open');
-    menu.classList.add('active');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menu.classList.remove('active');
-    menuOpen = false;
-  }
-});
+     menu.classList.add('active');
+     menuOpen = true;
+   } else {
+     menuBtn.classList.remove('open');
+     menu.classList.remove('active');
+     menuOpen = false;
+   }
+ });
 
-//---------------------------------------------------------
+// //---------------------------------------------------------
 
 
-// code to toggle the line under NL and ENG ---------------
+$('.collapse').collapse()
 
-var el = {
-  one: document.querySelector('.nl'),
-  two: document.querySelector('.eng'), 
-  container: document.querySelector('.language_toggle')
-};
+// // code to toggle the line under NL and ENG ---------------
 
-var func = {
-  toggleActive: function(ele) {
-    ele = event.target;
-    var hold = el.container.children,
-        huh = el.container.children.length,
-        hasActive = ele.classList.contains('toggled');
-    for (i = 0; i < huh; i++) {
-      if (hold[i].classList.contains('toggled')) {
-        hold[i].classList.remove('toggled');
-      }
-    }
-    if (!hasActive) {
-      ele.classList.add('toggled');
-    }
-  }
-};
+// var el = {
+//   one: document.querySelector('.nl'),
+//   two: document.querySelector('.eng'), 
+//   container: document.querySelector('.language_toggle')
+// };
 
-el.one.addEventListener("click", func.toggleActive);
-el.two.addEventListener("click", func.toggleActive);
+// var func = {
+//   toggleActive: function(ele) {
+//     ele = event.target;
+//     var hold = el.container.children,
+//         huh = el.container.children.length,
+//         hasActive = ele.classList.contains('toggled');
+//     for (i = 0; i < huh; i++) {
+//       if (hold[i].classList.contains('toggled')) {
+//         hold[i].classList.remove('toggled');
+//       }
+//     }
+//     if (!hasActive) {
+//       ele.classList.add('toggled');
+//     }
+//   }
+// };
 
-//-------------------------------------------------------- 
+// el.one.addEventListener("click", func.toggleActive);
+// el.two.addEventListener("click", func.toggleActive);
+
+// //-------------------------------------------------------- 
 
  
-// Code to show the audio player within an overlay at the bottom of a viewport
-document.querySelector(".removeoverlay").addEventListener("click", stopaudio);
+// // Code to show the audio player within an overlay at the bottom of a viewport
+// document.querySelector(".removeoverlay").addEventListener("click", stopaudio);
 
-document.querySelector(".showaudio").addEventListener("click", myFunction);
+// document.querySelector(".showaudio").addEventListener("click", myFunction);
 
-function myFunction() {
-    var element = document.querySelector(".removeaudioplayer");
-    element.classList.add("show");
-    audio.play();
-    isPlaying = true;
-    playSound();
-    console.log("het werkt")
-}
-//------------------------------------------------------ 
-
-
-//code to stop the podcast with custom buttom
-function stopaudio() {
-    var element = document.querySelector(".removeaudioplayer");
-    element.classList.remove("show");
-    isPlaying = false;
-    playSound();
-    console.log("het werkt")
-}
-//------------------------------------------------------ 
-
-//code to play the podcast with custom button
-function playSound() {
-    var audioPlayer = document.getElementById(audio);
-    if (audioPlayer.pause()) {
-        audioPlayer.play();
-    } else {
-        audioPlayer.pause();
-    }
-}
-
-//------------------------------------------------------ 
+// function myFunction() {
+//     var element = document.querySelector(".removeaudioplayer");
+//     element.classList.add("show");
+//     audio.play();
+//     isPlaying = true;
+//     playSound();
+//     console.log("het werkt")
+// }
+// //------------------------------------------------------ 
 
 
-const acc = document.getElementsByClassName("accordion");
+// //code to stop the podcast with custom buttom
+// function stopaudio() {
+//     var element = document.querySelector(".removeaudioplayer");
+//     element.classList.remove("show");
+//     isPlaying = false;
+//     playSound();
+//     console.log("het werkt")
+// }
+// //------------------------------------------------------ 
 
- for (let i = 0; i < acc.length; i++) {
- acc[i].addEventListener("click", function(i) {
-  const panel = document.getElementsByClassName("panel");
-  console.log(panel)
-  panel[i].classList.add("panelOn")
- })
-}
+// //code to play the podcast with custom button
+// function playSound() {
+//     var audioPlayer = document.getElementById(audio);
+//     if (audioPlayer.pause()) {
+//         audioPlayer.play();
+//     } else {
+//         audioPlayer.pause();
+//     }
+// }
+
+// //------------------------------------------------------ 
+
+
+// const acc = document.getElementsByClassName("accordion");
+
+//  for (let i = 0; i < acc.length; i++) {
+//  acc[i].addEventListener("click", function(i) {
+//   const panel = document.getElementsByClassName("panel");
+//   console.log(panel)
+//   panel[i].classList.add("panelOn")
+//  })
+// }
 
 // Commented code, WIP -----------------------------------
+
+console.log('what')
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  grabCursor: true,
+//   centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+});
+
+
 
 //  function klap(a) {
 //   console.log("hallo")

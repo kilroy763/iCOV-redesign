@@ -461,6 +461,75 @@ video {
 
 /* Podcast end */
 
+/* Temp Slider Swiper styles */
+
+
+.image--wrapper {
+    width: 40vw;
+    height: 40vw;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+}
+
+.image--wrapper img{
+    filter: brightness(50%);
+}
+
+.image--wrapper p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin: 3vw;
+}
+
+.image--wrapper h3{
+    position: absolute;
+    top: 0;
+    color: white;
+    margin: 3vw;
+}
+
+
+/* .image--wrapper input {
+    position: absolute;
+    overflow: visible ;
+    bottom: -10px;
+    right: -10px;
+    z-index: 20;
+} */
+
+.swiper-slide div input {
+    position: relative;
+    bottom: 10vw;
+    left: 33vw;
+    z-index: 20;
+}
+
+.image--source {
+    max-width: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.podcast--image {
+    min-width: 100%;
+    min-height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+  }
+
+  .swiper-slide {
+    width: auto;
+  }
+
 /* ------------------------------------------------------------------------------------------------ */
 
 /* Cases */
@@ -563,37 +632,6 @@ video {
 
 /* FAQ */
 
-.faq {
-    background-color: var(--lightgrey);
-    margin-bottom: 5rem;
-}
-
-.faq div ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.faq div ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem 0rem;
-}
-
-.faq div ul li img {
-    margin-left: 1rem;
-}
-
-.faq div ul li:not(:last-child) {
-    border-bottom: 1px solid gray;
-}
-
-.faq div ul li p {
-    margin-left: 1rem;
-    max-width: 80vw;
-}
-
 .faq>img {
     width: 100%;
     height: 100px;
@@ -601,6 +639,17 @@ video {
     
 }
 
+.btn {
+    width: 90%;
+    text-align: left;
+    border-radius: 0;
+    color: black;
+}
+
+.btn:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
 
 /* FAQ end */
 

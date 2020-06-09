@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCOV Mobile </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/swiper.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,14 +35,14 @@
         </a>
         <div class="nav_toggle">
             <div class="nav_toggle_line"></div>
-        <div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Zo werkt iCOV</a></li>
-                <li><a href="index.html">Actueel</a></li>
-                <li><a href="index.html">In de praktijk</a></li>
-            </ul>
-        </nav>
+            <div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Zo werkt iCOV</a></li>
+                        <li><a href="index.html">Actueel</a></li>
+                        <li><a href="index.html">In de praktijk</a></li>
+                    </ul>
+                </nav>
     </header>
     <main>
         <video src="img/icov.mp4" controls poster="img/thumbnail.jpg"></video>
@@ -134,7 +138,8 @@
                 vastgoed. Vaak vindt eerst versluiering van de herkomst van het geld plaats.
             </p>
             <button class="orange_button">Lees meer</button>
-            <p class="themefold">Een van de meest voorkomende manieren om geld wit te wassen, is via de handel en het bezit
+            <p class="themefold">Een van de meest voorkomende manieren om geld wit te wassen, is via de handel en het
+                bezit
                 van vastgoed. Vaak vindt eerst versluiering van de herkomst van het geld plaats. Er wordt
                 bijvoorbeeld een bedrijf opgericht op de Britse Maagdeneilanden, waarna dit bedrijf geld
                 'leent' aan iemand in Nederland om de panden mee aan te kopen. Maar ook een zogenaamde
@@ -169,32 +174,49 @@
                 vernieuwende
                 wetgeving en afpakken van crimineel vermogen.
             </p>
-            <div class="podcastwrapper">
-                <div>
-                    <img src="img/bobhoogenboom.jpg" alt="Bob Hoogenboom"> 
-                    <input type="image" src="img/playbutton.svg" class="hoiaudio" />
-                    <h3>Ondermijning</h3>
-                    <p>Bob hoogenboom</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="image--wrapper">
+                                <img class="image--source" src="img/bobhoogenboom.jpg" alt="Bob Hoogenboom">
+                                <h3>Ondermijning</h3>
+                                <p>Bob hoogenboom</p>
+                                <input type="image" src="img/playbutton.svg" class="hoiaudio" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="image--wrapper">
+                                <img class="podcast--image" src="img/janneke.jpg" alt="Janneke de Smet-Dierckx">
+                                <h3>Ondermijning</h3>
+                                <p>Bob hoogenboom</p>
+                            </div>
+                            <input type="image" src="img/playbutton.svg" class="hoiaudio" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="image--wrapper">
+                                <img class="podcast--image" src="img/jorasverwerda.jpg" alt="Joras Ferwerda">
+                                <h3>Ondermijning</h3>
+                                <p>Bob hoogenboom</p>
+                            </div>
+                            <input type="image" src="img/playbutton.svg" class="hoiaudio" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="image--wrapper">
+                                <img class="podcast--image" src="img/kellyvink.jpg" alt="Kelly Vink">
+                                <h3>Ondermijning</h3>
+                                <p>Bob hoogenboom</p>
+                            </div>
+                            <input type="image" src="img/playbutton.svg" class="hoiaudio" />
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/janneke.jpg" alt="Janneke de Smet-Dierckx">
-                    <input type="image" src="img/playbutton.svg" />
-                    <h3>Crimineel geld</h3>
-                    <p>Janneke de Smet-Dierckx</p>
-                </div>
-                <div>
-                    <img src="img/jorasverwerda.jpg" alt="Joras Ferwerda"> 
-                    <input type="image" src="img/playbutton.svg" />
-                    <h3>Witwassen</h3>
-                    <p>Joras Ferwerda</p>
-                </div>
-                <div>
-                    <img src="img/kellyvink.jpg" alt="Kelly Vink">
-                    <input type="image" src="img/playbutton.svg" />
-                    <h3>Big Data</h3>
-                    <p>Kelly Vink</p>
-                </div>
-                <button><img src="img/pijlrechts.svg" alt="Pijl naar rechts"></button>
             </div>
         </section>
 
@@ -244,121 +266,177 @@
                     <p class="casetitle">Twaalf panden en een beslag van 1,5 miljoen</p>
                 </article>
             </div>
- 
+
         </section>
-            <div class="buttonWrapper">
-                <button class="praktijkbutton">Lees meer</button>
-            </div>
+        <div class="buttonWrapper">
+            <button class="praktijkbutton">Lees meer</button>
+        </div>
 
         <h1 class="faqh1">Veelgestelde vragen</h1>
 
+       
         <section class="faq">
             <img src="img/faqfoto.svg" alt="Afbeelding FAQ">
-            <div>
-                <ul>
-                    <li class="accordion">
-                        <img src="img/faqpijl.svg" alt="Paarse Pijl">
-                        <p>Wie behoren tot het samenwerkings- verband iCOV?</p>
-                        <div class="panel">
-                            <p>
-                                iCOV is een samenwerkingsverband tussen de Politie, de Belastingdienst, de
-                                Douane, de FIOD, FIU-Nederland, het Openbaar Ministerie (OM) en bijzondere
-                                opsporingsdiensten van ILT, ISZW en NVWA. Daarnaast nemen de toezichthouders De
-                                Nederlandsche Bank (DNB) en de Autoriteit Consument en Markt (ACM) deel.
-                            </p>
+
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <img src="img/faqpijl.svg" alt="Paarse Pijl">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Wie behoren tot het samenwerkingsverband iCOV?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            iCOV is een samenwerkingsverband tussen de Politie, de Belastingdienst, de
+                            Douane, de FIOD, FIU-Nederland, het Openbaar Ministerie (OM) en bijzondere
+                            opsporingsdiensten van ILT, ISZW en NVWA. Daarnaast nemen de toezichthouders De
+                            Nederlandsche Bank (DNB) en de Autoriteit Consument en Markt (ACM) deel.
                         </div>
-                    </li>
-                    <li class="accordion">
-                        <img src="img/faqpijl.svg" alt="Paarse Pijl">
-                        <p>Welke rapportages leverd iCOV?</p>
-                        <div class="panel">
-                            <p>
-                                iCOV heeft een drietal rapportages die ze onder strikte juridische voorwaarden
-                                kan verstrekken. Deze rapportages tonen informatie over de financiële positie van
-                                een
-                                persoon of bedrijf of leggen de relaties tussen verschillende personen of bedrijven
-                                bloot.
-                                Deze rapportages worden samengesteld met als doel crimineel vermogen te traceren of
-                                belastingontduiking tegen te gaan. Ook maakt een rapportage het mogelijk om te
-                                interveniëren, bijvoorbeeld door beleid te maken om belastingontduiking te
-                                dwarsbomen.
-                            </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0"><img src="img/faqpijl.svg" alt="Paarse Pijl">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Welke rapportages leverd iCOV?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            iCOV heeft een drietal rapportages die ze onder strikte juridische voorwaarden
+                            kan verstrekken. Deze rapportages tonen informatie over de financiële positie van
+                            een
+                            persoon of bedrijf of leggen de relaties tussen verschillende personen of bedrijven
+                            bloot.
+                            Deze rapportages worden samengesteld met als doel crimineel vermogen te traceren of
+                            belastingontduiking tegen te gaan. Ook maakt een rapportage het mogelijk om te
+                            interveniëren, bijvoorbeeld door beleid te maken om belastingontduiking te
+                            dwarsbomen.
                         </div>
-                    </li>
-                    <li class="accordion">
-                        <img src="img/faqpijl.svg" alt="Paarse Pijl">
-                        <p>Mag iedereen een rapportage aanvragen bij iCOV?</p>
-                        <div class="panel">
-                            <p>
-                                Nee dat mag niet. Allereerst kunnen alleen rapportages worden aangevraagd door
-                                medewerkers van de partijen die deelnemen aan iCOV. Ten tweede is er een speciale
-                                bevoegdheid nodig om een rapportage te mogen aanvragen. Deze bevoegdheid kan alleen
-                                worden
-                                verleend door een leidinggevende binnen de eigen organisatie. Daarnaast is het voor
-                                opsporingsinstanties noodzakelijk om een vordering van de officier van justitie bij
-                                te
-                                voegen bij het verzoek tot informatie.
-                            </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0"><img src="img/faqpijl.svg" alt="Paarse Pijl">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Mag iedereen een rapportage aanvragen bij iCOV?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Nee dat mag niet. Allereerst kunnen alleen rapportages worden aangevraagd door
+                            medewerkers van de partijen die deelnemen aan iCOV. Ten tweede is er een speciale
+                            bevoegdheid nodig om een rapportage te mogen aanvragen. Deze bevoegdheid kan alleen
+                            worden
+                            verleend door een leidinggevende binnen de eigen organisatie. Daarnaast is het voor
+                            opsporingsinstanties noodzakelijk om een vordering van de officier van justitie bij
+                            te
+                            voegen bij het verzoek tot informatie.
                         </div>
-                    </li>
-                    <li class="accordion">
-                        <img src="img/faqpijl.svg" alt="Paarse Pijl">
-                        <p>Welke informatie bevat de rapportage van iCOV?</p>
-                        <div class="panel">
-                            <p>
-                                De rapportages worden samengesteld op basis van informatie die de partners voor
-                                het samenwerkingsverband klaar hebben gezet. Denk hierbij aan gegevens over inkomen,
-                                vastgoedbezit, omzet- en winstgegevens of andere vermogenscomponenten. Maar ook
-                                bijvoorbeeld
-                                politie-informatie. Deze gegevens kunnen alleen worden verstrekt als de aanvraag op
-                                de
-                                juiste juridische gronden is gedaan. iCOV toetst dit doorlopend.
-                            </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0"><img src="img/faqpijl.svg" alt="Paarse Pijl">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Welke informatie bevat de rapportage van iCOV?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            De rapportages worden samengesteld op basis van informatie die de partners voor
+                            het samenwerkingsverband klaar hebben gezet. Denk hierbij aan gegevens over inkomen,
+                            vastgoedbezit, omzet- en winstgegevens of andere vermogenscomponenten. Maar ook
+                            bijvoorbeeld
+                            politie-informatie. Deze gegevens kunnen alleen worden verstrekt als de aanvraag op
+                            de
+                            juiste juridische gronden is gedaan. iCOV toetst dit doorlopend.
                         </div>
-                    </li>
-                    <li class="accordion"> <img src="img/faqpijl.svg" alt="Paarse Pijl">
-                        <p>Heeft iCOV de AVG geïmplementeerd?</p>
-                        <div class="panel">
-                            <p>
-                                Vanzelfsprekend. De AVG is immers van toepassing op alle Europese organisaties
-                                die data verwerken. Omdat iCOV een samenwerkingsverband is waarvan ook politie en
-                                justitie
-                                ook deel uitmaken, is de toepassing van de AVG wel complex. Voor deze organisaties
-                                geldt
-                                namelijk ook de Richtlijn Opsporing en Vervolging die betrekking heeft op de
-                                strafrechtelijke handhaving van de rechtsorde. Dit betekent dat onder strikte
-                                voorwaarden
-                                andere normen gelden voor de verwerking van persoonsgegevens, bijvoorbeeld omdat dit
-                                een
-                                opsporingsbelang dient. Dat laat onverlet dat iCOV voldoet aan de eisenvan de
-                                Algemene
-                                Verordening Gegevensbescherming die sinds 25 mei 2018 definitief in werking is
-                                getreden.
-                                Hiervoor zijn onder meer het convenant en de protocollen aangepast en is er een
-                                privacy
-                                coördinator aangesteld.
-                            </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0"><img src="img/faqpijl.svg" alt="Paarse Pijl">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Heeft iCOV de AVG geïmplementeerd?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Vanzelfsprekend. De AVG is immers van toepassing op alle Europese
+                            organisaties
+                            die data verwerken. Omdat iCOV een samenwerkingsverband is waarvan ook
+                            politie en
+                            justitie
+                            ook deel uitmaken, is de toepassing van de AVG wel complex. Voor deze
+                            organisaties
+                            geldt
+                            namelijk ook de Richtlijn Opsporing en Vervolging die betrekking heeft op de
+                            strafrechtelijke handhaving van de rechtsorde. Dit betekent dat onder
+                            strikte
+                            voorwaarden
+                            andere normen gelden voor de verwerking van persoonsgegevens, bijvoorbeeld
+                            omdat dit
+                            een
+                            opsporingsbelang dient. Dat laat onverlet dat iCOV voldoet aan de eisenvan
+                            de
+                            Algemene
+                            Verordening Gegevensbescherming die sinds 25 mei 2018 definitief in werking
+                            is
+                            getreden.
+                            Hiervoor zijn onder meer het convenant en de protocollen aangepast en is er
+                            een
+                            privacy
+                            coördinator aangesteld.
                         </div>
-                    </li>
-                    <li class="accordion"> <img src="img/faqpijl.svg" alt="Paarse Pijl">
-                        <p>Hoe gaat ICOV om met cookies op de website</p>
-                        <div class="panel">
-                            <p>
-                                iCOV gebruikt alleen technische cookies om websiteverkeer te kunnen analyseren.
-                                Daarvoor wordt Google Analytics geanonimiseerd gebruikt. Hiervoor is een
-                                bewerkersovereenkomst afgesloten. De laatste cijfers van het IP-adres worden
-                                gemaskeerd,
-                                waardoor uw locatie niet is te achterhalen. Gegevens delen is uitgezet. Er wordt
-                                géén
-                                gebruik gemaakt word van andere Google-diensten in combinatie met de Google
-                                Analytics-cookies.
-                            </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0"><img src="img/faqpijl.svg" alt="Paarse Pijl">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Hoe gaat ICOV om met cookies op de website?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            iCOV gebruikt alleen technische cookies om websiteverkeer te kunnen
+                            analyseren.
+                            Daarvoor wordt Google Analytics geanonimiseerd gebruikt. Hiervoor is
+                            een
+                            bewerkersovereenkomst afgesloten. De laatste cijfers van het
+                            IP-adres worden
+                            gemaskeerd,
+                            waardoor uw locatie niet is te achterhalen. Gegevens delen is
+                            uitgezet. Er wordt
+                            géén
+                            gebruik gemaakt word van andere Google-diensten in combinatie met de
+                            Google
+                            Analytics-cookies.
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
-
 
     </main>
     <footer>
@@ -386,14 +464,27 @@
                 <p>|</p>
                 <p class="eng">ENG</p>
             </div>
-                <p>contact
-                </p>
-                <a href="https://youtu.be/ZZ5LpwO-An4">icov@om.nl</a>
+            <p>contact
+            </p>
+            <a href="https://youtu.be/ZZ5LpwO-An4">icov@om.nl</a>
         </div>
         <div class="fbottom">
             <p>Rick, Merlijn, Max &amp; Fleur. All rights reserved, 2020 &copy;</p>
         </div>
     </footer>
+
+    <script src="script/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
 
