@@ -103,7 +103,6 @@ $('.collapse').collapse()
 
 // Commented code, WIP -----------------------------------
 
-console.log('what')
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 'auto',
   spaceBetween: 30,

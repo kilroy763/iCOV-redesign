@@ -59,7 +59,9 @@ p {
 
 h1 {
     margin-left: 1.5rem;
-    margin: 3rem 0rem 1rem 1.5rem;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+    font-size: 1.7rem;
 }
 
 img {
@@ -69,7 +71,7 @@ img {
 .orange_button {
     border: none;
     margin: 1rem 0rem;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 0px 25px 0px 25px;
     background-color: var(--orange);
     color: white;
@@ -313,7 +315,8 @@ video {
 
 
 .theme h2 {
-    margin: 1.5rem 0rem;
+    margin: 0.7rem 0rem 0.7 1rem !important;
+    font-size: 1.5rem;
 }
 
 .theme img {
@@ -565,6 +568,7 @@ video {
     padding: 1rem;
     margin-top: 2rem;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    font-weight: bold;
 }
 
 .casesbutton:hover {
@@ -581,6 +585,10 @@ video {
 
 /* FAQ */
 
+.faq {
+    margin-bottom: 5rem;
+}
+
 .faq>img {
     width: 100%;
     height: 100px;
@@ -595,6 +603,20 @@ video {
     color: black;
 }
 
+.btn:hover {
+    color: var(--orange);
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:active,
+.btn-link:visited,
+.btn,
+.btn:hover,
+.btn:active,
+.btn:visited {
+    text-decoration: none !important;
+}
 
 /* FAQ end */
 
