@@ -54,7 +54,7 @@ body {
 }
 
 p {
-    margin-bottom: 0 !important ;
+    margin-bottom: 0 !important;
 }
 
 h1 {
@@ -520,7 +520,7 @@ video {
 
 .date p {
     color: white;
-    
+
     margin: 0.2rem 0.7rem;
 }
 
@@ -593,7 +593,6 @@ video {
     width: 100%;
     height: 100px;
     object-fit: cover;
-
 }
 
 .btn {
