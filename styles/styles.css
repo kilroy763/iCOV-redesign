@@ -7,8 +7,17 @@
     - General reset
     - Homepage sections
         - Nav bar
-        - Articles
-
+        - Header
+        - Slider
+        - Themes
+        - Podcast
+        - Cases
+        - FAQ
+        - Foo
+    - Media qeuery's
+        - Tablet
+        - Small desktop
+        - Normal desktop
  */
 
 
@@ -55,6 +64,37 @@ img {
     max-width: 100%;
 }
 
+.orange_button{
+    border: none;
+    margin: 1rem 0rem;
+    padding: 0.7rem;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    
+}
+
+.orange_button:hover{
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black;
+    
+}
+
+/* .freport button:hover {
+    padding: 1rem 1rem;
+    border: none;
+    border-color: none;
+    -webkit-box-shadow: inset 0px 0px 0px 11px var(--orange);
+    -moz-box-shadow: inset 0px 0px 0px 11px var(--orange);
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    border-radius: 0px 25px 0px 25px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+} */
+
 /* =============================================================================================== */
 
 
@@ -72,6 +112,9 @@ img {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,10 +122,7 @@ header {
     background-color: var(--lightgrey);
     list-style: none;
     padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    
+
 }
 
 header a svg {
@@ -190,9 +230,15 @@ header a svg {
     margin: 0 1.5rem;
 }
 
+.headertext figure figcaption p {
+    font-size:z ;
+}
+
 .headertext figure img {
-    width: 100vw;
+    height: auto;
+    width: 100%;
     z-index: -1;
+    object-fit: cover;
 }
 
 video {
@@ -216,17 +262,17 @@ video {
 }    
 
 .slider>div {
-    margin-right: 10%;
-    width: 60vw;
-    height: 60vw;
+    margin-right: 5%;
 
 } 
 
 .slider div h2 {
     position: absolute;
     bottom:0 ;
-    left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: auto;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
 }  
@@ -238,6 +284,8 @@ video {
     background-size: cover;
     height: 60vw;
     width: 60vw;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 #topic1 {
@@ -257,65 +305,40 @@ video {
 /* Themes */
 
 .theme {
-    margin-bottom: 1rem;
+
     padding: 1.5rem;
     background-color: white;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
     border-radius: 0 50px 0 0;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
-.themefold{
-    display: none;
+.theme img, .theme h2{
+    display: inline-block;
+    position:relative;
+
+}
+
+
+.theme h2{
+    margin: 1.5rem 0rem;
 }
 
 .theme img {
     /* height: 5%; */
-    width: 50%;
+    width: 20%;
     max-width: 15rem;
-    display: block;
-    margin: 0 auto;
 }
 
-.theme button {
-    border: none;
-    margin: 0.5rem 0rem;
-    border-radius: 0px 15px 0px 15px;
-    background-color: var(--orange);
-    color: white;
-    padding: 0.5rem;
+.theme p:nth-child(1) {
+    margin-bottom: 2rem;
 }
 
-
-.buttonWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.thema1 button:hover,
-.flinks button:hover {
-    margin-top: 2rem;
-    padding: 1rem 3rem;
-    border: none;
-    border-color: none;
-    box-shadow: inset 0px 0px 0px 5px var(--orange);
-    border-radius: 0px 25px 0px 25px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-}
-
-.buttonWrapper button:hover {
-    padding: 1rem 1rem;
-    border: none;
-    border-color: none;
-    box-shadow: inset 0px 0px 0px 5px var(--orange);
-    border-radius: 0px 25px 0px 25px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-
-}
+/* .theme button {
+    
+} */
 
 /* Themes end */
 
@@ -346,23 +369,22 @@ video {
     flex-direction: row;
     overflow-x: scroll;
     margin-left: 1.5rem;
+    width: auto;
+    height: 40vh;
 }
 
 .podcastwrapper div {
     width: 40vw;
     height: 40vw;
+    
     margin-right: 1rem;
 }
 
 .podcastwrapper div img {
+    width: 40vw;
+    height: 40vw;
     object-fit: cover;
     filter: brightness(50%);
-    max-width: 100%;
-    max-height: 100%;
-    width: 100vw;
-    height: 100vh;
-    /* width: calc(40vw + (25 - 40) * ((100vw - 321px) / (767 - 321))); */
-    /* height: calc(40vw + (25 - 40) * ((100vw - 321px) / (767 - 321))); */
 }
 
 .podcastwrapper div h3 {
@@ -511,6 +533,12 @@ video {
     padding: 1rem;
 }
 
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .praktijkbutton {
     border: none;
     width: 40%;
@@ -520,6 +548,12 @@ video {
     padding: 1rem;
     margin-top: 2rem;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+}
+.praktijkbutton:hover {
+    border-color: none;
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black;
 
 }
 
@@ -659,19 +693,6 @@ footer {
     margin: 0 auto;
 }
 
-.freport button:hover {
-    padding: 1rem 1rem;
-    border: none;
-    border-color: none;
-    -webkit-box-shadow: inset 0px 0px 0px 11px var(--orange);
-    -moz-box-shadow: inset 0px 0px 0px 11px var(--orange);
-    box-shadow: inset 0px 0px 0px 5px var(--orange);
-    border-radius: 0px 25px 0px 25px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-}
-
 .lintje {
     display: block;
     margin: 0 auto;
@@ -714,7 +735,8 @@ footer {
 /* Media querey for bigger smartphone screen sizes */
 
 @media screen and (min-width: 321px) {
-
+    .slider div h2 {
+        font-size: 1.5rem;
 
 }
 
@@ -722,15 +744,178 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Header */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    .headertext {
+        position: absolute;
+        top: 20vh;
+        left: 0;
+    }
+
+    .headertext figure {
+        height: 50vh;
+    }
+
+    .headertekst figure figcaption p {
+        font-size: 1.5rem;
+    }
+    
+    /* Topics */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Themes */
+
+    /* ------------------------------------------------------------------------------------------------ */
+ 
+.theme {
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    border-radius: 0 50px 0 0;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.theme img{
+    display: block;
+    position:relative;
+}
+
+
+.theme h2{
+    margin: 1.5rem 0rem;
+}
+
+.theme img {
+    /* height: 5%; */
+    width: 20%;
+    max-width: 15rem;
+}
+
+.themefold {
+        display: block;
+}
+
+.theme:nth-child(3){
+        background-color: red;
+}
+
+    .orange_button{
+        display: none;
+    }
+
+    /* Podcast */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Cases */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* FAQ */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Footer */
+
+    /* ------------------------------------------------------------------------------------------------ */
 }
 
 /* Media querey for small desktop screen size */
 
 @media screen and (min-width: 1024px) {
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Header */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Topics */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Themes */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Podcast */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Cases */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* FAQ */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Footer */
+
+    /* ------------------------------------------------------------------------------------------------ */
 }
 
 /* Media querey for standard desktop screen size and larger*/
 
 @media screen and (min-width: 1440px) {
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Header */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Topics */
+
+    /* ------------------------------------------------------------------------------------------------ */
+    
+    
+    /* Themes */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Podcast */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Cases */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* FAQ */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Footer */
+
+    /* ------------------------------------------------------------------------------------------------ */
 
 }
