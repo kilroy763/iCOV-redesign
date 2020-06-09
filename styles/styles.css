@@ -24,12 +24,13 @@
 /* General reset */
 /* =============================================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif !important;
     color: black;
-    
+
 
 }
 
@@ -48,12 +49,12 @@
 /* Elements */
 /* =============================================================================================== */
 
- body {
+body {
     overflow-x: hidden;
 }
 
 p {
-    font-size: 0.8rem;
+    margin-bottom: 0 !important ;
 }
 
 h1 {
@@ -65,36 +66,23 @@ img {
     max-width: 100%;
 }
 
-.orange_button{
+.orange_button {
     border: none;
     margin: 1rem 0rem;
-    padding: 0.7rem;
+    padding: 0.7rem 1rem;
     border-radius: 0px 25px 0px 25px;
     background-color: var(--orange);
     color: white;
     font-weight: bold;
-    
+
 }
 
-.orange_button:hover{
+.orange_button:hover {
     box-shadow: inset 0px 0px 0px 5px var(--orange);
     background-color: white;
     color: black;
-    
-}
 
-/* .freport button:hover {
-    padding: 1rem 1rem;
-    border: none;
-    border-color: none;
-    -webkit-box-shadow: inset 0px 0px 0px 11px var(--orange);
-    -moz-box-shadow: inset 0px 0px 0px 11px var(--orange);
-    box-shadow: inset 0px 0px 0px 5px var(--orange);
-    border-radius: 0px 25px 0px 25px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-} */
+}
 
 /* =============================================================================================== */
 
@@ -113,9 +101,6 @@ img {
 }
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -123,7 +108,9 @@ header {
     background-color: var(--lightgrey);
     list-style: none;
     padding: 1rem;
-
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header a svg {
@@ -189,18 +176,18 @@ header a svg {
     transition: .5s ease-in;
 }
 
-.menu ul{
-  background-color: var(--grey);
-  list-style: none;
+.menu ul {
+    background-color: var(--grey);
+    list-style: none;
 }
 
 .menu ul li {
     padding: 1rem 0 1rem 2rem;
 }
 
-.menu ul li a{
-  text-decoration: none;
-  color: black;
+.menu ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 .menu ul li:not(:last-child) {
@@ -232,7 +219,7 @@ header a svg {
 }
 
 .headertext figure figcaption p {
-    font-size:z ;
+    font-size: 0.9rem;
 }
 
 .headertext figure img {
@@ -246,6 +233,7 @@ video {
     width: 100%;
     height: auto;
 }
+
 /* Header end*/
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -260,23 +248,23 @@ video {
     flex-direction: row;
     margin-left: 1.5rem;
 
-}    
+}
 
 .slider>div {
     margin-right: 5%;
 
-} 
+}
 
 .slider div h2 {
     position: absolute;
-    bottom:0 ;
+    bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
     width: auto;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-}  
+}
 
 .innerdiv {
     position: relative;
@@ -316,14 +304,15 @@ video {
     margin-bottom: 2rem;
 }
 
-.theme img, .theme h2{
+.theme img,
+.theme h2 {
     display: inline-block;
-    position:relative;
+    position: relative;
 
 }
 
 
-.theme h2{
+.theme h2 {
     margin: 1.5rem 0rem;
 }
 
@@ -363,62 +352,6 @@ video {
     left: 0;
     z-index: 61;
     border-radius: 0px 100px 0px 0px;
-}
-
-.podcastwrapper {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    margin-left: 1.5rem;
-    width: auto;
-    height: 40vh;
-}
-
-.podcastwrapper div {
-    width: 40vw;
-    height: 40vw;
-    
-    margin-right: 1rem;
-}
-
-.podcastwrapper div img {
-    width: 40vw;
-    height: 40vw;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-
-.podcastwrapper div h3 {
-    position: relative;
-    bottom: calc(58vw + (10 - 58) * ((100vw - 321px) / (767 - 321)));
-    color: white;
-    margin-left: 6px;
-    font-size: 23px;
-    height: 2rem;
-}
-
-.podcastwrapper div p {
-    position: relative;
-    bottom: calc(40vw + (-40 - 40) * ((100vw - 321px) / (767 - 321)));
-    color: white;
-    margin-left: 10px;
-}
-
-.podcastwrapper div input {
-    position: relative;
-    bottom: 25px;
-    left: calc(27vw + (20 - 27) * ((100vw - 321px) / (767 - 321)));
-    width: calc(14vw + (13 - 14) * ((100vw - 321px) / (767 - 321)));
-}
-
-.podcast button {
-    border: none;
-    border-radius: 0 30px 30px 0;
-    background-color: var(--purple);
-    color: white;
-    height: 150px;
-    width: 60px;
-    display: none;
 }
 
 /* Podcast audioplayer */
@@ -473,7 +406,7 @@ video {
     position: relative;
 }
 
-.image--wrapper img{
+.image--wrapper img {
     filter: brightness(50%);
 }
 
@@ -484,7 +417,10 @@ video {
     margin: 3vw;
 }
 
-.image--wrapper h3{
+.image--wrapper h3 {
+    width: auto;
+    font-size: 1.3rem;
+    height: 2rem;
     position: absolute;
     top: 0;
     color: white;
@@ -509,27 +445,34 @@ video {
 
 .image--source {
     max-width: 100%;
-    position:absolute;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
 }
 
-
 .podcast--image {
     min-width: 100%;
     min-height: 100%;
 }
+
 .swiper-container {
     width: 100%;
     height: 100%;
     margin-left: 5%;
-  }
+}
 
-  .swiper-slide {
+.swiper-wrapper {
+    overflow: scroll;
+}
+
+.swiper-slide {
     width: auto;
-  }
+    margin: 1rem;
+    /* overflow: visible; */
+}
+
 
 /* ------------------------------------------------------------------------------------------------ */
 
@@ -565,15 +508,17 @@ video {
 }
 
 .date {
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.5rem;
     background-color: var(--blue);
     border-radius: 0px 15px 0px 15px;
     text-align: center;
-    width: calc(6rem + (50 - 6) * ((100vw - 321px) / (767 - 321)));
+    width: auto;
 }
 
 .date p {
     color: white;
+    
+    margin: 0.2rem 0.7rem;
 }
 
 .articles article {
@@ -581,17 +526,18 @@ video {
     width: 60vw;
     height: 100vh;
     margin-left: 10%;
-    max-height: 31%;
+    max-height: 30%;
     margin-bottom: 1rem;
 }
 
-.articles article img{
+.articles article img {
     display: block;
     max-width: 100%;
     max-height: 100%;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 .casetitle {
@@ -600,7 +546,8 @@ video {
     color: white;
     text-align: left !important;
     bottom: 0;
-    padding: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
 }
 
 .buttonWrapper {
@@ -609,17 +556,18 @@ video {
     align-items: center;
 }
 
-.praktijkbutton {
+.casesbutton {
     border: none;
     width: 40%;
-    border-radius: 0px 15px 0px 15px;
+    border-radius: 0px 25px 0px 25px;
     background-color: var(--orange);
     color: white;
     padding: 1rem;
     margin-top: 2rem;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
 }
-.praktijkbutton:hover {
+
+.casesbutton:hover {
     border-color: none;
     box-shadow: inset 0px 0px 0px 5px var(--orange);
     background-color: white;
@@ -637,7 +585,7 @@ video {
     width: 100%;
     height: 100px;
     object-fit: cover;
-    
+
 }
 
 .btn {
@@ -647,10 +595,6 @@ video {
     color: black;
 }
 
-.btn:hover {
-    color: var(--orange);
-    text-decoration: none;
-}
 
 /* FAQ end */
 
@@ -696,25 +640,25 @@ footer {
     text-decoration: none;
 }
 
-.language_toggle{
+.language_toggle {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
 }
-  
-.language_toggle p{
+
+.language_toggle p {
     padding: 0.2rem;
 }
-  
-.language_toggle p:nth-child(odd){
+
+.language_toggle p:nth-child(odd) {
     transition: all .1s ease-in;
 }
-  
-.language_toggle p:nth-child(odd):hover{
+
+.language_toggle p:nth-child(odd):hover {
     cursor: pointer;
 }
-  
-.toggled{
+
+.toggled {
     transition: all .1s ease-in;
     border-bottom: 2px solid black;
 }
@@ -757,7 +701,7 @@ footer {
 
 /* ------------------- Hidden Desktop elements styles -----------*/
 
-.themefold{
+.themefold {
     display: none;
 }
 
@@ -788,192 +732,193 @@ footer {
     .slider div h2 {
         font-size: 1.5rem;
 
-}
-
-/* Media querey for tablet screen size */
-
-@media screen and (min-width: 768px) {
-
-    /* Nav */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Header */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    video {
-        height: 30vh;
-    }
-    
-    .headertext {
-        position: absolute;
-        top: 20vh;
-        left: 0;
-        height: 30vh;
     }
 
-    .headertext figure {
-        height: 100%;
-        width: 40vw;
+    /* Media querey for tablet screen size */
+
+    @media screen and (min-width: 768px) {
+
+        /* Nav */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Header */
+
+        /* ------------------------------------------------------------------------------------------------ */
+        video {
+            height: 30vh;
+        }
+
+        .headertext {
+            position: absolute;
+            top: 20vh;
+            left: 0;
+            height: 30vh;
+        }
+
+        .headertext figure {
+            height: 100%;
+            width: 40vw;
+        }
+
+        .headertekst figure img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .headertekst figure figcaption p {
+            font-size: 1.5rem;
+        }
+
+        /* Topics */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Themes */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+        .theme {
+            padding: 1.5rem;
+            background-color: white;
+            box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+            border-radius: 0 50px 0 0;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+
+        }
+
+        .theme h2,
+        .theme p {
+            margin: 1.5rem 0rem;
+            display: inline;
+        }
+
+        .theme img {
+            /* height: 5%; */
+            width: 20%;
+            max-width: 15rem;
+        }
+
+        .themefold {
+            display: block;
+        }
+
+        .theme p:nth-child(3) {
+            display: none;
+        }
+
+        .orange_button {
+            display: none;
+        }
+
+        /* Podcast */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Cases */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* FAQ */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Footer */
+
+        /* ------------------------------------------------------------------------------------------------ */
     }
 
-    .headertekst figure img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+    /* Media querey for small desktop screen size */
+
+    @media screen and (min-width: 1024px) {
+        /* Nav */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Header */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Topics */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Themes */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Podcast */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Cases */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* FAQ */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Footer */
+
+        /* ------------------------------------------------------------------------------------------------ */
     }
 
-    .headertekst figure figcaption p {
-        font-size: 1.5rem;
+    /* Media querey for standard desktop screen size and larger*/
+
+    @media screen and (min-width: 1440px) {
+        /* Nav */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Header */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Topics */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Themes */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Podcast */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Cases */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* FAQ */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
+
+        /* Footer */
+
+        /* ------------------------------------------------------------------------------------------------ */
+
     }
-    
-    /* Topics */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Themes */
-
-    /* ------------------------------------------------------------------------------------------------ */
- 
-    .theme {
-        padding: 1.5rem;
-        background-color: white;
-        box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-        border-radius: 0 50px 0 0;
-        max-width: 600px;
-        margin: 0 auto;
-        margin-bottom: 2rem;
-
-    }
-
-    .theme h2, .theme p{
-        margin: 1.5rem 0rem;
-        display: inline;
-    }
-    
-    .theme img {
-        /* height: 5%; */
-        width: 20%;
-        max-width: 15rem;
-    }
-
-    .themefold {
-        display: block;
-    }
-
-    .theme p:nth-child(3){
-        display: none;
-    }
-
-    .orange_button{
-        display: none;
-    }
-
-    /* Podcast */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Cases */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* FAQ */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Footer */
-
-    /* ------------------------------------------------------------------------------------------------ */
-}
-
-/* Media querey for small desktop screen size */
-
-@media screen and (min-width: 1024px) {
-    /* Nav */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Header */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Topics */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Themes */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Podcast */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Cases */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* FAQ */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Footer */
-
-    /* ------------------------------------------------------------------------------------------------ */
-}
-
-/* Media querey for standard desktop screen size and larger*/
-
-@media screen and (min-width: 1440px) {
-    /* Nav */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Header */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Topics */
-
-    /* ------------------------------------------------------------------------------------------------ */
-    
-    
-    /* Themes */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Podcast */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Cases */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* FAQ */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-
-    /* Footer */
-
-    /* ------------------------------------------------------------------------------------------------ */
-
-}
