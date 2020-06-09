@@ -752,14 +752,26 @@ footer {
     /* Header */
 
     /* ------------------------------------------------------------------------------------------------ */
+    video {
+        height: 30vh;
+    }
+    
     .headertext {
         position: absolute;
         top: 20vh;
         left: 0;
+        height: 30vh;
     }
 
     .headertext figure {
-        height: 50vh;
+        height: 100%;
+        width: 40vw;
+    }
+
+    .headertekst figure img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
 
     .headertekst figure figcaption p {
@@ -775,39 +787,35 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
  
-.theme {
-    padding: 1.5rem;
-    background-color: white;
-    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-    border-radius: 0 50px 0 0;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-}
+    .theme {
+        padding: 1.5rem;
+        background-color: white;
+        box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+        border-radius: 0 50px 0 0;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
 
-.theme img{
-    display: block;
-    position:relative;
-}
+    }
 
+    .theme h2, .theme p{
+        margin: 1.5rem 0rem;
+        display: inline;
+    }
+    
+    .theme img {
+        /* height: 5%; */
+        width: 20%;
+        max-width: 15rem;
+    }
 
-.theme h2{
-    margin: 1.5rem 0rem;
-}
-
-.theme img {
-    /* height: 5%; */
-    width: 20%;
-    max-width: 15rem;
-}
-
-.themefold {
+    .themefold {
         display: block;
-}
+    }
 
-.theme:nth-child(3){
-        background-color: red;
-}
+    .theme p:nth-child(3){
+        display: none;
+    }
 
     .orange_button{
         display: none;
