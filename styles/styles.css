@@ -1047,16 +1047,17 @@ footer {
     }
 
     .menu {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center ;
+        position: inherit;
         transition: none;
         z-index: 11;
     }
 
     .menu ul {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         background-color: none;
     }
 
