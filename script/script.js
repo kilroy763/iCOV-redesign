@@ -102,6 +102,10 @@
 
 // Commented code, WIP -----------------------------------
 
+$(window).resize(function(){
+  if ( $('.swiper-slide').height() < $('.swiper-container').height() ) $('.swiper-scrollbar').hide();
+  else $('.swiper-scrollbar').show()
+})
 
 var swiper = new Swiper(".slider", {
   slidesPerView: 'auto',
