@@ -783,6 +783,7 @@ footer {
         font-size: 1.5rem;
 
     }
+}
 
     /* Media query for tablet screen size */
 
@@ -1181,6 +1182,7 @@ footer {
         .swiper-container,
         .swiper-wrapper{
             overflow-x: hidden;
+            cursor: default;
         } 
 
         .image--wrapper {
@@ -1224,7 +1226,6 @@ footer {
             left: 80%;
             bottom: 1vw;
         }
-
  
 
         /* Cases */
