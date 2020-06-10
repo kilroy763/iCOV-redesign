@@ -117,7 +117,7 @@ img {
 
 .abovenav img {
     display: block;
-    margin: 0 auto 5%;
+    margin: 0 auto 25px;
     width: 5vh;
 }
 
@@ -487,7 +487,7 @@ video {
     width: auto;
     margin: 1rem;
     /* overflow: visible; */
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 
@@ -914,7 +914,7 @@ footer {
     }
 
     .swiper-wrapper {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
 
     /* .swiper-slide {
@@ -995,8 +995,8 @@ footer {
 
     .articles article {
         position: relative;
-        height: 40vw;
-        max-height: 30%;
+        height: 25vw;
+        max-height: 100%;
         width: 40vw;
         margin: 0;
     }
@@ -1042,6 +1042,21 @@ footer {
 
     /* Nav */
 
+    header {
+        justify-content: space-between;
+    }
+
+    /* 
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lightgrey);
+    padding: 1rem; */
+
     .nav_toggle {
         display: none;
     }
@@ -1053,19 +1068,18 @@ footer {
     }
 
     .menu ul {
-        width: 75%;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-end;
         background-color: none;
+        background-color: transparent;
     }
 
     .menu ul li {
         padding: 0;
-    }
-
-    .menu ul li {
+        background-color: var(--lightgrey);
         border-bottom: none !important;
     }
 
@@ -1081,11 +1095,33 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
 
+    .videocontainer {
+        display: grid;
+        grid-template-columns: 35vw 65vw;
+        grid-template-rows: 50vh;
+    }
+
+    .videocontainer video {
+        grid-area: 1 / 2 / 2 / 3;
+        height: 100%;
+    }
+
+    .headertekst {
+        grid-area: 1 / 1 / 2 / 2;
+        height: 100%;
+    }
+
+    .headertekst figure,
+    .headertekst figure figcaption,
+    .headertekst figure img {
+        height: 100%;
+    }
+    
 
     /* Topics */
 
     .swiper-wrapper {
-        max-width: 500px;
+        /* max-width: 500px; */
         margin: 0 auto;
     }
 
@@ -1236,13 +1272,43 @@ footer {
         display: block;
     }
 
+    .articles article{
+        width: 30vw;
+    }
+
     /* ------------------------------------------------------------------------------------------------ */
 
 
     /* FAQ */
 
     /* ------------------------------------------------------------------------------------------------ */
+    .faq {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 60vw 40vw;
+        background-color: #f7f7f7;
+    }
 
+    .faq > img{
+        grid-area: 1 / 2 / 2 / 3;
+        height: 100%;
+ 
+        object-fit: cover;
+        background-color: #2f99cc;
+        border-radius: 0 0 0 100px;
+    }
+    .card-body {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .card-header h5{
+        margin-left: 10%;
+    }
+
+    .accordion {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 
     /* Footer */
 
