@@ -19,7 +19,6 @@
 // //---------------------------------------------------------
 
 
-$('.collapse').collapse()
 
 // // code to toggle the line under NL and ENG ---------------
 
@@ -103,19 +102,39 @@ $('.collapse').collapse()
 
 // Commented code, WIP -----------------------------------
 
-var swiper = new Swiper(".swiper-container", {
+
+var swiper = new Swiper(".slider", {
   slidesPerView: 'auto',
   spaceBetween: 30,
   grabCursor: true,
-//   centeredSlides: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  navigation: {
+    nextEl: '.button_topic_right'
+
   },
+  breakpoints: {
+    // when window width is >= 320px
+    1500: {
+      allowSlidePrev: false,
+      allowSlideNext: false,
+      allowTouchMove: false
+    },
+}});
 
-});
-
-
+var swiper2 = new Swiper(".swiper-container", {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.button_podcast_right'
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1500: {
+      allowSlidePrev: false,
+      allowSlideNext: false,
+      allowTouchMove: false
+    },
+}});
 
 //  function klap(a) {
 //   console.log("hallo")
