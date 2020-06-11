@@ -178,6 +178,7 @@ header a svg {
 .menu ul {
     background-color: var(--grey);
     list-style: none;
+    margin-bottom: 0;
 }
 
 .menu ul li {
@@ -240,17 +241,11 @@ video {
 /* Topics */
 
 .slider {
-    height: auto;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: row;
-    margin-left: 1.5rem;
 
 }
 
-.slider>div {
-    margin-right: 5%;
-
+.slider > div {
+    
 }
 
 .slider div h2 {
@@ -269,10 +264,11 @@ video {
     display: inline-block;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
     background-size: cover;
-    height: 60vw;
+    height: 300px;
+    /* height: 60vw;
     width: 60vw;
     max-height: 300px;
-    max-width: 300px;
+    max-width: 300px; */
 }
 
 #topic1 {
@@ -434,9 +430,6 @@ video {
     margin: 1vw;
 }
 
-
-
-
 .swiper-slide div input {
     position: relative;
     bottom: 4vw;
@@ -461,13 +454,6 @@ video {
     margin-left: 5%;
 }
 
-
-.swiper-slide:not(first-child) {
-    width: auto;
-    margin: 1rem;
-    /* overflow: visible; */
-    margin-left: 5%;
-}
 
 
 
@@ -581,12 +567,6 @@ video {
 
 .faq {
     margin-bottom: 5rem;
-}
-
-.faq>img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
 }
 
 summary:hover {
@@ -1005,7 +985,6 @@ footer {
 /* Media querey for small desktop screen size */
 
 @media screen and (min-width: 1024px) {
-
     h1 {
         margin-left: 10vw;
     }
@@ -1014,9 +993,8 @@ footer {
 
     header {
         justify-content: space-between;
+        padding: 12px 10vw;
     }
-
-
 
     .nav_toggle {
         display: none;
@@ -1027,6 +1005,7 @@ footer {
         transition: none;
         z-index: 18;
         right: 0;
+        width: auto;
     }
 
     .menu ul {
@@ -1045,6 +1024,10 @@ footer {
         border-bottom: none !important;
     }
 
+    .menu ul li + li {
+        margin-left: 120px;
+    }
+
     .menu ul li a {
         font-weight: bold;
     }
@@ -1058,6 +1041,46 @@ footer {
     /* ------------------------------------------------------------------------------------------------ */
 
     .videocontainer {
+        position: relative;
+    }
+
+    .headertext {
+        position: relative;
+        background-image: url('/img/icovembleem.svg');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+        top: 0;
+        left: 0;
+        height: auto;
+        padding-top: 70px;
+        padding-left: 10vw;
+        padding-bottom: 70px;
+        padding-right: 70px;
+    }
+
+    .headertext figure {
+        height: auto;
+        width: auto;
+    }
+
+    .headertext figure figcaption {
+        position: relative;
+        top: 0;
+        margin: 0;
+    }
+
+    .videocontainer video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .videocontainer {
         display: grid;
         grid-template-columns: 35vw 65vw;
         grid-template-rows: 50vh;
@@ -1067,52 +1090,42 @@ footer {
         grid-area: 1 / 2 / 2 / 3;
         height: 100%;
     }
-
-    .headertekst {
-        grid-area: 1 / 1 / 2 / 2;
-        height: 100%;
-    }
-
-    .headertekst figure,
-    .headertekst figure figcaption,
-    .headertekst figure img {
-        height: 100%;
-    }
+    */
 
 
     /* Topics */
+    .slider {
+        padding: 0 100px;
+        position: relative;
+    }
+
+    .swiper {
+        overflow: hidden;
+    }
 
     .swiper-wrapper {
         /* max-width: 500px;  */
         margin: 0 auto;
     }
 
-
     .innerdiv {
         background-size: cover;
-        height: 60vw;
-        width: 60vw;
-        max-height: 400px;
-        max-width: 400px;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: block;
+        width: 100%;
     }
 
     .button_topic_right {
         background-color: var(--purple);
         height: auto;
-        width: 100px;
+        width: 60px;
         border-radius: 0px 50px 50px 0;
         z-index: 1000;
-    }
-
-    .button_topic_right img {
-        margin: auto;
-        display: block;
-        margin-top: 175%;
+        position: absolute;
+        height: 100%;
+        right: 20px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -1245,27 +1258,34 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
     .faq {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 60vw 40vw;
         background-color:#EDEDED;
+        display: flex;
+        align-items: stretch;
     }
 
-    .faq>img {
-        grid-area: 1 / 2 / 2 / 3;
-        height: 70%;
+    .faq > div {
+        flex-basis: 60%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
 
-        object-fit: cover;
+    .faq > .art {
         background-color: #2f99cc;
         border-radius: 0 0 0 100px;
+        flex-basis: 40%;
+        order: 2;
+        flex-grow: 0;
+        flex-shrink: 0;
+        position: relative;
     }
 
-    .faq>div {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .faq> div{
-        height: 70%;
+    .faq > .art img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
     }
 
     details summary{
