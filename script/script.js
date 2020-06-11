@@ -205,3 +205,37 @@ var swiper2 = new Swiper(".swiper-container", {
 //     translation = '-33%';
 //   }
 // }
+
+
+
+
+
+
+
+
+/**
+ * Instructies voor tijdlijn:
+ * 
+ * - data-year attribute toevoegen aan elke sectie
+ * - class 'year-section' toevoegen aan elke sectie
+ * - elke sectie 100% hoog / breed maken
+ * - in JS, IntersectionObserver gebruiken
+ */
+
+
+ /*
+
+ var observer = new IntersectionObserver(onIntersect, {
+   threshold: 0.6
+ });
+
+ var sections = document.querySelectorAll('.year-section');
+
+ sections.forEach(section => observer.observe(section));
+
+ function onIntersect(entries) {
+   var element = entries[0];
+   var year = element.dataset.year;
+ }
+
+ */
