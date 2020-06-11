@@ -324,9 +324,7 @@ footer {
 
 /* Media query for bigger smartphone screen sizes */
 
-@media screen and (min-width: 321px) {
-    
-}
+@media screen and (min-width: 321px) {}
 
 /* Media query for tablet screen size */
 
@@ -489,37 +487,78 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
 
-    .articles {
-        margin-top: 2rem;
+    .articlelist {
+        margin-top: 6rem;
     }
-    .articles article {
+
+    .articlelist article {
+        position: relative;
         display: grid;
+        grid-template-rows: 20vh 5vh;
+        margin-top: 4rem;
+        box-shadow:0px 5px 10px var(--grey);
+    }
+
+    .articlelist article img {
+        position: absolute;
+        object-fit: cover;
+        height: 100vh;
+        width: 100vw;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .articlelist article div,
+    .articlelist article button {
+        margin: 0 6rem;
+    }
+
+    .articlelist article button {
+        border: none;
+        border-radius: 0px 25px 0px 25px;
+        background-color: var(--orange);
+        color: white;
+        font-weight: bold;
+        width: 200px;
+    }
+    
+    .articlelist article button:hover {
+        box-shadow: inset 0px 0px 0px 5px var(--orange);
+        background-color: white;
+        color: black;
+    }
+
+    .articlelist article.left {
         grid-template-columns: 35vw 65vw;
-        grid-template-rows: auto;
-        margin-top: 2rem;
     }
 
-    .articles article.left img {
+    .articlelist article.left img {
         grid-area: 1 / 1 / 3 / 2;
+        border-radius: 0 0 100px 0;
     }
 
-    .articles article.left div {
+    .articlelist article.left div {
         grid-area: 1 / 2 / 2 / 3;
     }
 
-    .articles article.left button {
+    .articlelist article.left button {
         grid-area: 2 / 2 / 3 / 3;
     }
 
-    .articles article.right img {
-        grid-area: 1 / 2 / 3 / 3;
+    .articlelist article.right {
+        grid-template-columns: 65vw 35vw;
     }
 
-    .articles article.right div {
+    .articlelist article.right img {
+        grid-area: 1 / 2 / 3 / 3;
+        border-radius: 0 0 0 100px;
+    }
+
+    .articlelist article.right div {
         grid-area: 1 / 1 / 2 / 2;
     }
 
-    .articles article.right button {
+    .articlelist article.right button {
         grid-area: 2 / 1 / 3 / 2;
     }
 
