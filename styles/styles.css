@@ -208,6 +208,22 @@ header a svg {
     position: relative;
 }
 
+.headertext{
+    position: relative;
+        background-image: url('../img/icovembleem.svg');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+        top: 0;
+        left: 0;
+        height: auto;
+        padding-top: 70px;
+        padding-left: 10vw;
+        padding-bottom: 70px;
+        padding-right: 70px;
+}
+
 .headerH1 {
     margin: -1rem 0rem 0rem 0rem;
 }
@@ -758,6 +774,7 @@ footer {
     .headerh1 {
         padding-top: 1rem !important;
     }
+    
 
     .headertext {
         position: absolute;
@@ -1046,7 +1063,7 @@ footer {
 
     .headertext {
         position: relative;
-        background-image: url('/img/icovembleem.svg');
+        background-image: url('../img/icovembleem.svg');
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1060,6 +1077,8 @@ footer {
         padding-right: 70px;
     }
 
+
+   
     .headertext figure {
         height: auto;
         width: auto;
