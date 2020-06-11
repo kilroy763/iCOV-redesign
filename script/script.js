@@ -9,10 +9,12 @@
     menuBtn.classList.add('open');
      menu.classList.add('active');
      menuOpen = true;
+     console.log("open")
    } else {
      menuBtn.classList.remove('open');
      menu.classList.remove('active');
      menuOpen = false;
+     console.log("dicht")
    }
  });
 

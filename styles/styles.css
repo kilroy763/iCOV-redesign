@@ -1,29 +1,8 @@
-/*
-
-    @author: Rick, Max, Merlijn, Fleur
-    Voor iCOV
-
-
-    - General reset
-    - Homepage sections
-        - Nav bar
-        - Header
-        - Slider
-        - Themes
-        - Podcast
-        - Cases
-        - FAQ
-        - Foo
-    - Media qeuery's
-        - Tablet
-        - Small desktop
-        - Normal desktop
- */
-
-
-/* General reset */
-/* =============================================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@author: Rick, Max, Merlijn, Fleur Voor iCOV - General reset - Homepage sections - Nav bar - Header - Slider - Themes - Podcast - Cases - FAQ - Foo - Media qeuery's
+- Tablet - Small desktop - Normal desktop */
+    /* General reset */
+    /* =============================================================================================== */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -610,26 +589,21 @@ video {
     object-fit: cover;
 }
 
-.btn {
-    width: 80%;
-    text-align: left;
-    border-radius: 0;
-    color: black;
-}
-
-.btn:hover {
+summary:hover {
     color: var(--orange);
 }
 
-.btn-link,
-.btn-link:hover,
-.btn-link:active,
-.btn-link:visited,
-.btn,
-.btn:hover,
-.btn:active,
-.btn:visited {
-    text-decoration: none !important;
+details summary{
+    font-weight: bold;
+    background-color: #EDEDED;
+    padding: 0.5rem;
+
+}
+
+details p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #EDEDED;
 }
 
 /* FAQ end */
@@ -917,10 +891,6 @@ footer {
         margin-left: 0.5rem;
     }
 
-    /* .swiper-slide {
-            width: 100%;
-        } */
-
     .image--wrapper {
         width: 20vw;
         height: 20vw;
@@ -1046,25 +1016,17 @@ footer {
         justify-content: space-between;
     }
 
-    /* 
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--lightgrey);
-    padding: 1rem; */
+
 
     .nav_toggle {
         display: none;
     }
 
     .menu {
-        position: inherit;
+        position: relative;
         transition: none;
-        z-index: 11;
+        z-index: 18;
+        right: 0;
     }
 
     .menu ul {
@@ -1116,12 +1078,12 @@ footer {
     .headertekst figure img {
         height: 100%;
     }
-    
+
 
     /* Topics */
 
     .swiper-wrapper {
-        /* max-width: 500px; */
+        /* max-width: 500px;  */
         margin: 0 auto;
     }
 
@@ -1272,7 +1234,7 @@ footer {
         display: block;
     }
 
-    .articles article{
+    .articles article {
         width: 30vw;
     }
 
@@ -1286,29 +1248,45 @@ footer {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 60vw 40vw;
-        background-color: #f7f7f7;
+        background-color:#EDEDED;
     }
 
-    .faq > img{
+    .faq>img {
         grid-area: 1 / 2 / 2 / 3;
-        height: 100%;
- 
+        height: 70%;
+
         object-fit: cover;
         background-color: #2f99cc;
         border-radius: 0 0 0 100px;
     }
-    .card-body {
-        width: 80%;
-        margin-left: 10%;
-    }
 
-    .card-header h5{
-        margin-left: 10%;
-    }
-
-    .accordion {
+    .faq>div {
         grid-area: 1 / 1 / 2 / 2;
     }
+
+    .faq> div{
+        height: 70%;
+    }
+
+    details summary{
+        font-weight: bold;
+        background-color: #EDEDED;
+  
+        margin-bottom: 0.5rem;
+    
+     
+    }
+
+    details{
+        background-color: #EDEDED;
+        padding-left: 15%;
+    }
+    
+    details p{
+        width: 70%;
+        padding-top: 0;
+    }
+    
 
     /* Footer */
 
