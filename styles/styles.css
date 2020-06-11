@@ -241,17 +241,11 @@ video {
 /* Topics */
 
 .slider {
-    height: auto;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: row;
-    margin-left: 1.5rem;
 
 }
 
-.slider>div {
-    margin-right: 5%;
-
+.slider > div {
+    
 }
 
 .slider div h2 {
@@ -270,10 +264,11 @@ video {
     display: inline-block;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
     background-size: cover;
-    height: 60vw;
+    height: 300px;
+    /* height: 60vw;
     width: 60vw;
     max-height: 300px;
-    max-width: 300px;
+    max-width: 300px; */
 }
 
 #topic1 {
@@ -435,9 +430,6 @@ video {
     margin: 1vw;
 }
 
-
-
-
 .swiper-slide div input {
     position: relative;
     bottom: 4vw;
@@ -462,13 +454,6 @@ video {
     margin-left: 5%;
 }
 
-
-.swiper-slide:not(first-child) {
-    width: auto;
-    margin: 1rem;
-    /* overflow: visible; */
-    margin-left: 5%;
-}
 
 
 
@@ -1109,38 +1094,38 @@ footer {
 
 
     /* Topics */
+    .slider {
+        padding: 0 100px;
+        position: relative;
+    }
+
+    .swiper {
+        overflow: hidden;
+    }
 
     .swiper-wrapper {
         /* max-width: 500px;  */
         margin: 0 auto;
     }
 
-
     .innerdiv {
         background-size: cover;
-        height: 60vw;
-        width: 60vw;
-        max-height: 400px;
-        max-width: 400px;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: block;
+        width: 100%;
     }
 
     .button_topic_right {
         background-color: var(--purple);
         height: auto;
-        width: 100px;
+        width: 60px;
         border-radius: 0px 50px 50px 0;
         z-index: 1000;
-    }
-
-    .button_topic_right img {
-        margin: auto;
-        display: block;
-        margin-top: 175%;
+        position: absolute;
+        height: 100%;
+        right: 20px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* ------------------------------------------------------------------------------------------------ */

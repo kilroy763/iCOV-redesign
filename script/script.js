@@ -104,27 +104,19 @@
 
 // Commented code, WIP -----------------------------------
 
-$(window).resize(function(){
-  if ( $('.swiper-slide').height() < $('.swiper-container').height() ) $('.swiper-scrollbar').hide();
-  else $('.swiper-scrollbar').show()
-})
+// $(window).resize(function(){
+//   if ( $('.swiper-slide').height() < $('.swiper-container').height() ) $('.swiper-scrollbar').hide();
+//   else $('.swiper-scrollbar').show()
+// })
 
-var swiper = new Swiper(".slider", {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 50,
   grabCursor: true,
   navigation: {
     nextEl: '.button_topic_right'
-
   },
-  breakpoints: {
-    // when window width is >= 320px
-    1500: {
-      allowSlidePrev: false,
-      allowSlideNext: false,
-      allowTouchMove: false
-    },
-}});
+});
 
 var swiper2 = new Swiper(".swiper-container", {
   slidesPerView: 'auto',
