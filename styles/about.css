@@ -1,0 +1,55 @@
+/* Header */
+
+.highlighttext h1 {
+    margin: 0;
+}
+
+/* ------ */
+
+@media screen and (min-width: 321px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+.introcontainer {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 50vh;
+    grid-template-columns: 10vw 25vw 65vw;
+    overflow: hidden;
+}
+
+.introcontainer > img {
+    grid-area: 1 / 2 / 2 / 4;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+figure {
+    display: inline-block;
+    position: absolute;
+    grid-area: 1 / 1 / 2 / 3;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* .highlighttext {
+    grid-area: 1 / 2 / 2 / 3;
+    z-index: 2;
+} */
+
+@media screen and (min-width: 1440px) {
+}
+
+
+
