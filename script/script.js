@@ -126,7 +126,6 @@ var swiper2 = new Swiper(".swiper-container", {
     nextEl: '.button_podcast_right'
   },
   breakpoints: {
-    // when window width is >= 320px
     1500: {
       allowSlidePrev: false,
       allowSlideNext: false,
