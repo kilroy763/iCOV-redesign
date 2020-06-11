@@ -178,6 +178,7 @@ header a svg {
 .menu ul {
     background-color: var(--grey);
     list-style: none;
+    margin-bottom: 0;
 }
 
 .menu ul li {
@@ -1008,9 +1009,8 @@ footer {
 
     header {
         justify-content: space-between;
+        padding: 12px 10vw;
     }
-
-
 
     .nav_toggle {
         display: none;
@@ -1021,6 +1021,7 @@ footer {
         transition: none;
         z-index: 18;
         right: 0;
+        width: auto;
     }
 
     .menu ul {
@@ -1037,6 +1038,10 @@ footer {
         padding: 0;
         background-color: var(--lightgrey);
         border-bottom: none !important;
+    }
+
+    .menu ul li + li {
+        margin-left: 120px;
     }
 
     .menu ul li a {
