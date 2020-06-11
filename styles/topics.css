@@ -1,0 +1,604 @@
+@author: Rick, Max, Merlijn, Fleur Voor iCOV - General reset - Homepage sections - Nav bar - Header - Slider - Themes - Podcast - Cases - FAQ - Foo - Media qeuery's
+- Tablet - Small desktop - Normal desktop */
+    /* General reset */
+    /* =============================================================================================== */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif !important;
+    color: black;
+
+
+}
+
+:root {
+    --purple: #564BAA;
+    --blue: #42AAE1;
+    --orange: #F06419;
+    --lightgrey: #EDEDED;
+    --grey: #E7E7E7;
+    --rijksblue: #154273;
+}
+
+/* =============================================================================================== */
+
+
+/* Elements */
+/* =============================================================================================== */
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+h1 {
+    margin-left: 1.5rem;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+    font-size: 1.7rem;
+}
+
+.orange_button {
+    border: none;
+    margin: 1rem 0rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+
+}
+
+.orange_button:hover {
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black;
+
+}
+
+.orange_button_desktop {
+    border: none;
+    margin: 1rem 0rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    width: 60%;
+
+}
+
+.orange_button_desktop:hover {
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black;
+
+}
+
+/* =============================================================================================== */
+
+
+/* Homepage */
+/* =============================================================================================== */
+
+/* Nav */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.abovenav img {
+    display: block;
+    margin: 0 auto 25px;
+    width: 5vh;
+}
+
+header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lightgrey);
+    padding: 1rem;
+}
+
+header a svg {
+    width: 25vw;
+    max-width: 114px;
+}
+
+.nav_toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.nav_toggle_line {
+    width: 40px;
+    height: 4px;
+    background: var(--purple);
+    transition: all .5s ease-in-out;
+}
+
+.nav_toggle_line::before,
+.nav_toggle_line::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: var(--purple);
+    transition: all .5s ease-in-out;
+}
+
+.nav_toggle_line::before {
+    transform: translateY(-16px);
+}
+
+.nav_toggle_line::after {
+    transform: translateY(16px);
+}
+
+.nav_toggle.open .nav_toggle_line {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav_toggle.open .nav_toggle_line::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.nav_toggle.open .nav_toggle_line::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu {
+    position: absolute;
+    width: 100vw;
+    right: 100vw;
+    top: 100%;
+    transition: .5s ease-in;
+}
+
+.menu ul {
+    background-color: var(--grey);
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 1rem 0 1rem 2rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li:not(:last-child) {
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.active {
+    right: 0%;
+    transition: .5s ease-in;
+}
+
+/* Nav end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Header */
+
+.highlighttext h1 {
+    margin: 0;
+}
+
+
+
+/* Header end*/
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Topics */
+
+
+/* FAQ end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Footer */
+
+footer {
+    background-color: #E7E7E7;
+    padding-top: 2rem;
+}
+
+.freport p {
+    width: 300px;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.flogo {
+    display: block;
+    padding-bottom: 5%;
+    width: 25vw;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.flanguage {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 0 auto;
+}
+
+.flanguage p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.flanguage a {
+    text-align: center;
+    color: #660099;
+    text-decoration: none;
+}
+
+.language_toggle {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.language_toggle p {
+    padding: 0.2rem;
+}
+
+.language_toggle p:nth-child(odd) {
+    transition: all .1s ease-in;
+}
+
+.language_toggle p:nth-child(odd):hover {
+    cursor: pointer;
+}
+
+.toggled {
+    transition: all .1s ease-in;
+    border-bottom: 2px solid black;
+}
+
+.fbottom {
+    background-color: grey;
+    margin-top: 2rem;
+}
+
+.fbottom p {
+    width: 100%;
+    text-align: center;
+}
+
+.freport button {
+    border: none;
+    margin: 0.5rem 0rem;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.freport {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lintje {
+    display: block;
+    margin: 0 auto;
+    height: 20px;
+    width: 60px;
+    align-content: center;
+    background-color: var(--rijk);
+}
+
+/* Footer end */
+
+
+/* ------------------- Hidden Desktop elements styles -----------*/
+
+.desktopNav {
+    display: none;
+}
+
+/* Media query for bigger smartphone screen sizes */
+
+@media screen and (min-width: 321px) {
+    
+}
+
+/* Media query for tablet screen size */
+
+@media screen and (min-width: 768px) {
+
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Header */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Topics */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+
+    /* FAQ */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+
+    /* Footer */
+
+    /* ------------------------------------------------------------------------------------------------ */
+}
+
+/* Media querey for small desktop screen size */
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        margin-left: 10vw;
+    }
+
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+    header {
+        justify-content: space-between;
+    }
+
+    .nav_toggle {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        transition: none;
+        z-index: 18;
+        right: 0;
+    }
+
+    .menu ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: none;
+        background-color: transparent;
+    }
+
+    .menu ul li {
+        padding: 0;
+        background-color: var(--lightgrey);
+        border-bottom: none !important;
+    }
+
+    .menu ul li a {
+        font-weight: bold;
+    }
+
+    /* Header */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    .highlight {
+        position: relative;
+        display: grid;
+        width: 100%;
+        grid-template-rows: 50vh;
+        grid-template-columns: 10vw 25vw 65vw;
+        overflow: hidden;
+    }
+
+    img.coverimage {
+        grid-area: 1 / 2 / 2 / 4;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    img.border {
+        display: inline-block;
+        position: absolute;
+        grid-area: 1 / 1 / 2 / 3;
+        object-fit: cover;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .highlighttext {
+        grid-area: 1 / 2 / 2 / 3;
+        z-index: 2;
+    }
+
+
+    /* 3 Highlighted articles */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+    .bigarticles {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: 0 10vw;
+        justify-content: space-between;
+    }
+
+    .bigarticles article {
+        position: relative;
+        width: 25vw;
+        height: 75vh;
+    }
+
+    .bigarticles article img {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        z-index: -1;
+    }
+
+    .bigarticles article h2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        padding: 1vh;
+        color: white;
+    }
+
+    /* 3 Highlighted articles */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+    .articles {
+        margin-top: 2rem;
+    }
+    .articles article {
+        display: grid;
+        grid-template-columns: 35vw 65vw;
+        grid-template-rows: auto;
+        margin-top: 2rem;
+    }
+
+    .articles article.left img {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .articles article.left div {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .articles article.left button {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .articles article.right img {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    .articles article.right div {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .articles article.right button {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    /* Footer */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+    .footerflex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .freport {
+        position: relative;
+    }
+
+    .freport p {
+        text-align: left;
+    }
+
+    .freport button {
+        position: absolute;
+        left: 0;
+    }
+
+    .flanguage p,
+    .flanguage a {
+        text-align: right;
+    }
+}
+
+/* Media querey for standard desktop screen size and larger*/
+
+@media screen and (min-width: 1440px) {
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Header */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Topics */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Themes */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Podcast */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Cases */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* FAQ */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Footer */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+}
