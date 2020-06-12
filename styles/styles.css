@@ -33,7 +33,7 @@ body {
 }
 
 p {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -326,7 +326,6 @@ video {
 
 }
 
-
 .theme h2 {
     margin: 0.7rem 0rem 0.7 1rem !important;
     font-size: 1.5rem;
@@ -589,14 +588,14 @@ summary:hover {
     color: var(--orange);
 }
 
-details summary{
+.faq details summary{
     font-weight: bold;
     background-color: #EDEDED;
     padding: 0.5rem;
 
 }
 
-details p{
+.faq details p{
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: #EDEDED;
@@ -1085,8 +1084,6 @@ footer {
         padding-right: 70px;
     }
 
-
-   
     .headertext figure {
         height: auto;
         width: auto;
@@ -1315,21 +1312,18 @@ footer {
         max-height: 100%;
     }
 
-    details summary{
+    .faq details summary{
         font-weight: bold;
         background-color: #EDEDED;
-  
         margin-bottom: 0.5rem;
-    
-     
     }
 
-    details{
+    .faq details{
         background-color: #EDEDED;
         padding-left: 15%;
     }
     
-    details p{
+    .faq details p{
         width: 70%;
         padding-top: 0;
     }
