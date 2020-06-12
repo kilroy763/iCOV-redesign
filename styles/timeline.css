@@ -6,8 +6,18 @@
     color: black;
     scroll-behavior: smooth;
     /* overflow-x: hidden; */
-
 }
+
+
+:root {
+    --purple: #564BAA;
+    --blue: #42AAE1;
+    --orange: #F06419;
+    --lightgrey: #EDEDED;
+    --grey: #E7E7E7;
+    --rijksblue: #154273;
+}
+
 
 /* Nav */
 
@@ -117,98 +127,57 @@ header a svg {
     transition: .5s ease-in;
 }
 
-/* Nav end */
 
 nav{
     display: block;
 }
 
 
-:root {
-    --purple: #564BAA;
-    --blue: #42AAE1;
-    --orange: #F06419;
-    --lightgrey: #EDEDED;
-    --grey: #E7E7E7;
-    --rijksblue: #154273;
-}
+/* Nav end */
 
+  
+/* year sections with text */
 
-.image1 img {
+.year-section img {
     position: relative; 
     filter: brightness(50%);
-    border-radius: 0 0  250px 0;
+    border-radius: 0 0  150px 0;
     background-repeat:no-repeat;
     background-size: 99vw;
     width: 99vw;
-    height: 100vh;
+    height: 75vh;
     object-fit: cover;
-
 }
+
+.year-section:nth-child(2) img{
+    top: -20%;
+    z-index: -1;
+}
+
 .tekst1{
     position: absolute;
     top: 0;
+    width: 100vw;
 }   
 
-.image1{
+.year-section{
+
     position: relative;
-}
-
-nav a{
-    position: relative;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1.6em;
-    display: inline-block;
-    
-}
- 
-body > nav {
-    margin-top: 15%;
-}
-nav{
-    position: fixed;
-
-    width: 10%;
-    height: 100%;
-    text-align: center;
-    right: 0;
-    z-index: 1;
-
 
 }
 
-nav a:hover,
-section#one:hover ~ nav a[href="#one"],
-section#three:hover ~ nav a[href="#three"],
-section#two:hover ~ nav a[href="#two"],
-section#four:hover ~ nav a[href="#four"] 
-{
-    background-color: #000;
-    color: #fff;
-}
+/* year sections with text end */
 
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    filter:alpha(opacity=70);
-    -moz-opacity:0.7;
-    -khtml-opacity: 0.7;
-    opacity: 0.7;
-    z-index: 100;
-    display: none;
+/* ------------------------------------------------------------------------------------------------ */
 
-    }
+/* Overlay */
+
     .cnt223 a{
     text-decoration: none;
     }
+
     .popup{
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     display: none;
     position: fixed;
@@ -220,10 +189,8 @@ section#four:hover ~ nav a[href="#four"]
         color: white;
     }
     .cnt223{
-    min-width: 600px;
-    width: 600px;
-    min-height: 150px;
-    margin: 100px auto;
+    width: auto;
+    margin: 0 auto;
     background: var(--purple);
     position: relative;
     z-index: 103;
@@ -258,7 +225,149 @@ section#four:hover ~ nav a[href="#four"]
     cursor: pointer;
     }
 
-@media screen and (min-width: 1024px) {
+/* Overlay end */
+
+
+
+.tekst1 h1, .tekst1 h2, .tekst1 button{
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 15%;
+
+}
+
+
+.year-section h1, .year-section h2{
+    max-width: 70%;
+}
+
+button{
+    border: none;
+    width: 30%;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    font-weight: bold;
+}
+
+/* timeline */
+
+/* nav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 1.6em;
+    display: inline-block;
+
+}
+ 
+body > nav {
+    margin-top: 15%;
+}
+nav{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10%;
+    text-align: center;
+    z-index: 50;
+} */
+
+/* timeline end */
+
+
+@media screen and (min-width: 768px) {
+
+    
+/* year sections with text */
+
+.year-section img {
+    position: relative; 
+    filter: brightness(50%);
+    border-radius: 0 0  250px 0;
+    background-repeat:no-repeat;
+    background-size: 99vw;
+    width: 99vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.year-section:nth-child(2) img{
+    top: -20%;
+    z-index: -1;
+}
+
+.tekst1{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}   
+
+.year-section{
+    position: relative;
+}
+
+/* year sections with text end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* timeline */
+
+nav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.6em;
+    display: inline-block;
+
+}
+ 
+body > nav {
+    height: 100vh;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+nav{
+    position: fixed;
+    width: 5%;
+    text-align: center;
+    right: 0;
+    z-index: 1;
+}
+
+/* timeline end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Overlay */
+    .popup{
+    width: 100%;
+    }
+
+    .cnt223{
+    min-width: 600px;
+    width: 600px;
+    min-height: 150px;
+    margin: 100px auto;
+    }
+
+
+/* Overlay end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
 .tekst1 h1, .tekst1 h2, .tekst1 button{
 
     display: block;
@@ -271,7 +380,7 @@ section#four:hover ~ nav a[href="#four"]
 }
 
 
-.image1 h1, .image1 h2{
+.year-section h1, .year-section h2{
     max-width: 50%;
 }
 
@@ -323,4 +432,17 @@ header {
 .menu ul li a {
     font-weight: bold;
 }
+
+.werkend{
+    color: green;
+    font-weight: bold;
+}
+
+.werkt{
+color: white;
+font-weight: normal;
+}
+
+
  }
+

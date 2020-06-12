@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/timeline.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/swiper.min.css">
+    <title>Tijdlijn</title>
 </head>
 <body>
     <section class="abovenav">
@@ -36,12 +37,11 @@
         </nav>
     </header>
     <nav>
-        <a href="#one">2020</a>
-        <a href="#two">2019</a>
+        <a href="#one" class="werkend">2020</a>
+        <a href="#two" >2019</a>
         <a href="#three">2018</a>
         <a href="#four">2017</a>
-        <a href="#five">2016</a>
-        <a href="#six">2015</a>
+
     
     </nav>
               
@@ -58,63 +58,80 @@
             </div>
             </div>
 
-        <section class="image1" id="one">
-            <img src="img/rechtzaal.jpg" alt="">
-            <div class="tekst1">
-            <h1>iCOV in de rechtspraak</h1>
-            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
-            <button>Lees meer</button>
-            </div>
-        </section>
-
-        <div class="image1" id="two">
-            <img src="img/beslagnameauto.jpg" alt="">
-            <div class="tekst1">
-            <h1>iCOV in de rechtspraak</h1>
-            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
-            <button>Lees meer</button>
-            </div>
-        </div>
-        <div class="image1" id="three">
-            <img src="img/rotterdam.jpg" alt="">
-            <div class="tekst1">
-            <h1>iCOV in de rechtspraak</h1>
-            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
-            <button>Lees meer</button>
-            </div>
-        </div>
-        <div class="image1" id="four">
-            <img src="img/chineesrestaurant.jpg" alt="">
-            <div class="tekst1">
-            <h1>iCOV in de rechtspraak</h1>
-            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
-            <button>Lees meer</button>
-            </div>
-        </div>
-        <div class="image1" id="five">
-            <img src="img/rotterdam.jpg" alt="">
-            <div class="tekst1">
-            <h1>iCOV in de rechtspraak</h1>
-            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
-            <button>Lees meer</button>
-            </div>
-        </div>
-        <div class="image1" id="six">
-            <img src="img/rotterdam.jpg" alt="">
-            <div class="tekst1">
-            <h1>iCOV in de rechtspraak</h1>
-            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
-            <button>Lees meer</button>
-            </div>
-        </div>
+            <!-- <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> -->
+                        <section class="year-section" id="one">
+                            <img src="img/rechtzaal.jpg" alt="">
+                            <div class="tekst1">
+                            <h1>iCOV in de rechtspraak</h1>
+                            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
+                            <button>Lees meer</button>
+                            </div>
+                        </section>
+                    <!-- </div>
+                    <div class="swiper-slide"> -->
+                        <section class="year-section" id="two" data-year="2019">
+                            <img src="img/beslagnameauto.jpg" alt="">
+                            <div class="tekst1">
+                            <h1>iCOV in de rechtspraak</h1>
+                            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
+                            <button>Lees meer</button>
+                            </div>
+                        </section>
+                    <!-- </div>
+                        <div class="swiper-slide"> -->
+                        <section class="year-section" id="three" data-year="2019">
+                            <img src="img/rotterdam.jpg" alt="">
+                            <div class="tekst1">
+                            <h1>iCOV in de rechtspraak</h1>
+                            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
+                            <button>Lees meer</button>
+                            </div>
+                        </section>
+                    <!-- </div>
+                        <div class="swiper-slide"> -->
+                        <section class="year-section" id="four" data-year="2019">
+                            <img src="img/chineesrestaurant.jpg" alt="">
+                            <div class="tekst1">
+                            <h1>iCOV in de rechtspraak</h1>
+                            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
+                            <button>Lees meer</button>
+                            </div>
+                        </section>
+                    <!-- </div>
+                        <div class="swiper-slide"> -->
+                        <section class="year-section" id="five" data-year="2019">
+                            <img src="img/rotterdam.jpg" alt="">
+                            <div class="tekst1">
+                            <h1>iCOV in de rechtspraak</h1>
+                            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
+                            <button>Lees meer</button>
+                            </div>
+                        </section>
+                    <!-- </div>
+                        <div class="swiper-slide"> -->
+                        <section class="year-section" id="six" data-year="2019">
+                            <img src="img/rotterdam.jpg" alt="">
+                            <div class="tekst1">
+                            <h1>iCOV in de rechtspraak</h1>
+                            <h2>Rapportages van iCOV worden regelmatig gebruikt voor de bewijsvoering in een rechtszaal. Een overzicht van de meest spraakmakende zaken.</h2>
+                            <button>Lees meer</button>
+                            </div>
+                        </section>
+                    <!-- </div>
+                    </div>
+                    </div> -->
 
 
         
     </main>
+    <script src="script/swiper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="script/script.js"></script>
+        <script src="script/script.js"></script>
+
 
 </body>
 </html>
