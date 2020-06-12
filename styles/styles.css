@@ -910,7 +910,8 @@ footer {
         grid-template-rows: auto;
         flex-direction: row;
         justify-content: center;
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
         /* height: 50vh; */
     }
 
@@ -961,7 +962,7 @@ footer {
 
     .articles article {
         position: relative;
-        height: 25vw;
+        height: 20vw;
         max-height: 100%;
         width: 40vw;
         margin: 0;
@@ -1066,13 +1067,13 @@ footer {
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 500px;
+        width: 700px;
         top: 0;
         left: 0;
         height: auto;
-        padding-top: 70px;
+        padding-top: 120px;
         padding-left: 10vw;
-        padding-bottom: 70px;
+        padding-bottom: 120px;
         padding-right: 70px;
     }
 
@@ -1085,6 +1086,10 @@ footer {
         position: relative;
         top: 0;
         margin: 0;
+    }
+
+    .headertext figure figcaption h1{
+        margin-bottom: 1rem;
     }
 
     .videocontainer video {
@@ -1266,7 +1271,7 @@ footer {
     }
 
     .articles article {
-        width: 30vw;
+        width: 20vw;
     }
 
     /* ------------------------------------------------------------------------------------------------ */

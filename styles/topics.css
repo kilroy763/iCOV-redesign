@@ -347,8 +347,12 @@ header a svg {
         font-weight: bold;
     }
 
-    .navbuttons div img {
-        background-color: black;
+    .navbuttons div .left {
+        color: black;
+    }
+
+    .navbuttons div .right {
+        color: black;
     }
 
 /* Nav buttons end */
@@ -663,11 +667,6 @@ footer {
         font-weight: bold;
     }
 
-    .navbuttons div img {
-        background-color: black;
-    }
-
-
     /* Footer */
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -724,6 +723,10 @@ footer {
 
     .menu ul li a {
         font-weight: bold;
+    }
+
+    .menu ul li:nth-child(2) a{
+        color: var(--purple);
     }
 
     /* Header */

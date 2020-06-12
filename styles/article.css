@@ -107,6 +107,7 @@ header a svg {
 .menu ul {
     background-color: var(--grey);
     list-style: none;
+    margin-bottom: 0;
 }
 
 .menu ul li {
@@ -126,12 +127,6 @@ header a svg {
     right: 0%;
     transition: .5s ease-in;
 }
-
-
-nav{
-    display: block;
-}
-
 
 /* Nav end */
 
@@ -277,6 +272,9 @@ footer {
     position: absolute;
 }
 
+
+
+
 .head{
 
     position: relative;
@@ -290,17 +288,19 @@ footer {
 }
 
 
-.head > img{
+.coverimg {
     width: 100vw;
     height: 40vh;
     object-fit: cover;
- 
+    filter: brightness(50%);
+    z-index: -1;
 }
 
 .head div img {
     height: 50px;
     width: 50px;
     object-fit: contain;
+    
 
 }
 
@@ -452,4 +452,56 @@ section{
         text-align: right;
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+    header {
+        justify-content: space-between;
+        padding: 12px 10vw;
+    }
+
+    .nav_toggle {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        transition: none;
+        z-index: 18;
+        right: 0;
+        width: auto;
+    }
+
+    .menu ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: none;
+        background-color: transparent;
+    }
+
+    .menu ul li {
+        padding: 0;
+        background-color: var(--lightgrey);
+        border-bottom: none !important;
+    }
+
+    .menu ul li+li {
+        margin-left: 120px;
+    }
+
+    .menu ul li a {
+        font-weight: bold;
+    }
+
+    .menu ul li:nth-child(2) a{
+        color: var(--purple);
+    }
 }

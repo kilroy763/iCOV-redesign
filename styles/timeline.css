@@ -107,6 +107,7 @@ header a svg {
 .menu ul {
     background-color: var(--grey);
     list-style: none;
+    margin-bottom: 0;
 }
 
 .menu ul li {
@@ -125,11 +126,6 @@ header a svg {
 .active {
     right: 0%;
     transition: .5s ease-in;
-}
-
-
-nav{
-    display: block;
 }
 
 
@@ -287,6 +283,8 @@ nav{
 @media screen and (min-width: 768px) {
 
     
+
+    
 /* year sections with text */
 
 .year-section img {
@@ -321,7 +319,7 @@ nav{
 
 /* timeline */
 
-nav a{
+.verticalnav a{
     position: relative;
     color: white;
     text-decoration: none;
@@ -331,7 +329,7 @@ nav a{
 
 }
  
-body > nav {
+body > .verticalnav {
     height: 100vh;
     margin-top: 15%;
     display: flex;
@@ -339,7 +337,7 @@ body > nav {
     align-items: center;
    
 }
-nav{
+.verticalnav{
     position: fixed;
     width: 5%;
     text-align: center;
@@ -492,5 +490,56 @@ font-weight: normal;
 
 
 
+ }
+
+ @media screen and (min-width: 1024px) {
+     /* Nav */
+
+    /* ------------------------------------------------------------------------------------------------ */
+
+    header {
+        justify-content: space-between;
+        padding: 12px 10vw;
+    }
+
+    .nav_toggle {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        transition: none;
+        z-index: 18;
+        right: 0;
+        width: auto;
+    }
+
+    .menu ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: none;
+        background-color: transparent;
+    }
+
+    .menu ul li {
+        padding: 0;
+        background-color: var(--lightgrey);
+        border-bottom: none !important;
+    }
+
+    .menu ul li+li {
+        margin-left: 120px;
+    }
+
+    .menu ul li a {
+        font-weight: bold;
+    }
+
+    .menu ul li:nth-child(3) a{
+        color: var(--purple);
+    }
  }
 
