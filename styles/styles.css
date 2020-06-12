@@ -1,4 +1,4 @@
-/* @author: Rick, Max, Merlijn, Fleur Voor iCOV - General reset - Homepage sections - Nav bar - Header - Slider - Themes - Podcast - Cases - FAQ - Foo - Media qeuery's
+@author: Rick, Max, Merlijn, Fleur Voor iCOV - General reset - Homepage sections - Nav bar - Header - Slider - Themes - Podcast - Cases - FAQ - Foo - Media qeuery's
 - Tablet - Small desktop - Normal desktop */
     /* General reset */
     /* =============================================================================================== */
@@ -210,29 +210,29 @@ header a svg {
 
 .headertext{
     position: relative;
-        background-image: url('../img/border.svg');
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: auto;
-        padding-top: 40px;
-        padding-left: 1.5rem;
-        padding-bottom: 40px;
-        padding-right: 50px;
+    background-image: url('../img/border.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 10vw;
+    padding-bottom: 70px;
+    padding-right: 70px;
 }
 
 .headerH1 {
     margin: -1rem 0rem 0rem 0rem;
 }
 
-/* .headertext figure figcaption {
+.headertext figure figcaption {
     position: absolute;
     top: 10%;
     margin: 0 1.5rem;
-} */
+}
 
 .headertext figure figcaption p {
     font-size: 0.9rem;
@@ -281,10 +281,10 @@ video {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
     background-size: cover;
     height: 300px;
-    height: 60vw;
+    /* height: 60vw;
     width: 60vw;
     max-height: 300px;
-    max-width: 300px;
+    max-width: 300px; */
 }
 
 #topic1 {
@@ -1056,14 +1056,6 @@ footer {
     /* Header */
 
     /* ------------------------------------------------------------------------------------------------ */
-
-    .headertext figure {
-        position: relative;
-    }
-    
-    .headerH1 {
-        margin: -1rem 0rem 0rem 0rem;
-    }
 
     .videocontainer {
         position: relative;
