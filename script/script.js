@@ -152,30 +152,29 @@ $(function(){
 //   else $('.swiper-scrollbar').show()
 // })
 
-// var swiper = new Swiper(".swiper", {
-//   slidesPerView: 3,
-//   spaceBetween: 50,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: '.button_topic_right'
-//   },
-// });
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.button_topic_right'
+  },
+});
 
-// var swiper2 = new Swiper(".swiper-container", {
-//   slidesPerView: 'auto',
-//   spaceBetween: 30,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: '.button_podcast_right'
-//   },
-//   breakpoints: {
-//     // when window width is >= 320px
-//     1500: {
-//       allowSlidePrev: false,
-//       allowSlideNext: false,
-//       allowTouchMove: false
-//     },
-// }});
+var swiper2 = new Swiper(".swiper-container", {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.button_podcast_right'
+  },
+  breakpoints: {
+    1500: {
+      allowSlidePrev: false,
+      allowSlideNext: false,
+      allowTouchMove: false
+    },
+}});
 
 //  function klap(a) {
 //   console.log("hallo")
