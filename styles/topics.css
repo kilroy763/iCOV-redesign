@@ -80,6 +80,10 @@ h1 {
 
 }
 
+a {
+    display: contents;
+}
+
 /* =============================================================================================== */
 
 
@@ -203,6 +207,10 @@ header a svg {
 
 .highlight {
     display: none;
+}
+
+.border {
+    border: none !important;
 }
 
 /* Header end*/

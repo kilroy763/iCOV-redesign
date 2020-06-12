@@ -444,5 +444,53 @@ font-weight: normal;
 }
 
 
+ /* Nav */
+
+ header {
+    justify-content: space-between;
+    padding: 12px 10vw;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    transition: none;
+    z-index: 18;
+    right: 0;
+    width: auto;
+}
+
+.menu ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: none;
+    background-color: transparent;
+}
+
+.menu ul li {
+    padding: 0;
+    background-color: var(--lightgrey);
+    border-bottom: none !important;
+}
+
+.menu ul li + li {
+    margin-left: 120px;
+}
+
+.menu ul li a {
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
  }
 

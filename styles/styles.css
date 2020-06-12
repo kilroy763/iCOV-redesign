@@ -1121,7 +1121,9 @@ footer {
 
     .swiper-wrapper {
         /* max-width: 500px;  */
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin-left: 5%;
+
     }
 
     .innerdiv {
