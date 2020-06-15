@@ -404,7 +404,6 @@ video {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    
 }
 
 .slider2::-webkit-scrollbar {
@@ -1185,6 +1184,10 @@ footer {
         scrollbar-width: 100%;
     }
     
+    .slider2 div:not(:first-child) {
+        margin-left: 5%;
+    }
+
     .swiper-wrapper{
         width: 100% !important;
         height: 100% !important;
