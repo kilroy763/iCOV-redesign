@@ -1092,7 +1092,6 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
 
-
     /* Header */
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -1100,7 +1099,6 @@ footer {
     .videocontainer {
         position: relative;
     }
-
 
     .headertext {
         position: relative;
@@ -1138,7 +1136,6 @@ footer {
         grid-template-columns: 35vw 65vw;
         grid-template-rows: 360px;
         position: relative;
-
     }
 
     .videocontainer video {
@@ -1186,7 +1183,6 @@ footer {
         flex-direction: column;
         max-width: 450px;
         text-align: left;
-
     }
 
     .themecontainer {
@@ -1204,7 +1200,6 @@ footer {
     .theme:nth-child(2) {
         grid-area: 1 / 3 / 2 / 4;
         margin-left: 10%;
-
     }
 
     .theme:nth-child(3) {
@@ -1225,8 +1220,6 @@ footer {
     }
 
     /* ------------------------------------------------------------------------------------------------ */
-
-
 
     /* Podcast */
 
@@ -1278,9 +1271,6 @@ footer {
         justify-content: center;
     }
 
-
-
-
     /* Cases */
 
     .date:nth-child(3),
@@ -1294,10 +1284,10 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
 
-
     /* FAQ */
 
     /* ------------------------------------------------------------------------------------------------ */
+    
     .faq {
         background-color: #EDEDED;
         display: flex;
@@ -1345,7 +1335,6 @@ footer {
         width: 70%;
         padding-top: 0;
     }
-
 
     /* Footer */
 
