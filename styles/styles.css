@@ -1053,8 +1053,13 @@ footer {
         padding: 12px 10vw;
     }
 
-    header a svg:hover {
+    .logo {
+        transition: 0.2s;
+    }
+
+    .logo:hover {
         fill: var(--purple);
+        transition: 0.2s;
     }
 
     .nav_toggle {
@@ -1421,6 +1426,16 @@ footer {
     /* Footer */
 
     /* ------------------------------------------------------------------------------------------------ */
+
+    .flogo {
+        max-width: 150px;
+        transition: 0.2s;
+    }
+
+    .flogo:hover {
+        fill: var(--purple);
+        transition: 0.2s;
+    }
 
     .footerflex {
         display: flex;
