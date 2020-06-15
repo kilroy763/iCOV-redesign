@@ -278,10 +278,10 @@ video {
     color: white;
     width: auto;
     height: auto;
+
     bottom: 0;
     left: 0;
     right: 0;
-    top: 100;
     padding: 10px;
     transition-duration: 0.5s;
 }
@@ -808,6 +808,7 @@ footer {
 
     video {
         height: 24vh;
+        object-fit: cover;
     }
 
     .headerh1 {
@@ -1127,7 +1128,6 @@ footer {
         padding-top: 60px;
         padding-left: 10vw;
         padding-bottom: 40px;
-        transition-duration: 0.5s;
     }
 
     .headertext figure {
@@ -1188,6 +1188,19 @@ footer {
         justify-content: center;
         align-items: center;
         box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.75);
+    }
+
+    .swiper-slide h2 {
+        position: absolute;
+        color: white;
+        width: auto;
+        height: auto;
+        top: 320px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        transition-duration: 0.5s;
     }
 
     .swiper-slide:hover p{    
