@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif !important;
     color: black;
     scroll-behavior: smooth;
+    
     /* overflow-x: hidden; */
 }
 
@@ -18,7 +19,14 @@
     --rijksblue: #154273;
 }
 
+body{
+    background-color: var(--blue);
+}
 
+.abovenav{
+    background-color: white;
+   padding-bottom: 0.1rem;
+}
 /* Nav */
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -130,6 +138,112 @@ header a svg {
 
 
 /* Nav end */
+
+/* Footer */
+
+footer {
+    background-color: #E7E7E7;
+    padding-top: 2rem;
+}
+
+.freport p {
+    width: 300px;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.freport button:hover {
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.flogo {
+    display: block;
+    padding-bottom: 5%;
+    width: 25vw;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.flanguage {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 0 auto;
+}
+
+.flanguage p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.flanguage a {
+    text-align: center;
+    color: #660099;
+    text-decoration: none;
+}
+
+.language_toggle {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.language_toggle p {
+    padding: 0.2rem;
+}
+
+.language_toggle p:nth-child(odd) {
+    transition: all .1s ease-in;
+}
+
+.language_toggle p:nth-child(odd):hover {
+    cursor: pointer;
+}
+
+.toggled {
+    transition: all .1s ease-in;
+    border-bottom: 2px solid black;
+}
+
+.fbottom {
+    background-color: grey;
+    margin-top: 2rem;
+}
+
+.fbottom p {
+    width: 100%;
+    text-align: center;
+}
+
+.freport button {
+    border: none;
+    margin: 0.5rem 0rem;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem 1rem;
+    width: 150px !important;
+}
+
+.freport {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lintje {
+    display: block;
+    margin: 0 auto;
+    height: 20px;
+    width: 60px;
+    align-content: center;
+    background-color: var(--rijk);
+}
+
+/* Footer end */
 
   
 /* year sections with text */
@@ -541,5 +655,46 @@ font-weight: normal;
     .menu ul li:nth-child(3) a{
         color: var(--purple);
     }
- }
+
+    
+    .footerflex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .freport {
+        position: relative;
+    }
+
+    .freport p {
+        text-align: left;
+    }
+
+    .freport button {
+        position: absolute;
+        left: 0;
+    }
+
+    .flanguage p,
+    .flanguage a {
+        text-align: right;
+    }
+}
+
+#navbar #first.active {
+    background: rgb(0,106,221);
+  }
+  #navbar #second.active {
+    background: rgb(255,25,129);
+  }
+  #navbar #third.active {
+    background: #fff;
+    color: #222;
+  }
+  #navbar #fourth.active {
+    background: #FFDF19;
+  }
 
