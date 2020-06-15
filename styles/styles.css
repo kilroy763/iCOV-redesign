@@ -93,7 +93,7 @@ img {
     box-shadow: inset 0px 0px 0px 5px var(--orange);
     background-color: white;
     color: black;
-
+    cursor: pointer;
 }
 
 /* =============================================================================================== */
@@ -408,7 +408,7 @@ video {
 }
 
 .slider2 div {
-    margin-left: 4%;
+    margin-left: 8%;
 }
 
 /* Podcast audioplayer */
@@ -600,6 +600,7 @@ video {
     box-shadow: inset 0px 0px 0px 5px var(--orange);
     background-color: white;
     color: black;
+    cursor: pointer;
 
 }
 
@@ -652,6 +653,10 @@ footer {
     width: 300px;
     margin-bottom: 1rem;
     margin: 0 auto;
+}
+
+.freport button:hover {
+    cursor: pointer;
 }
 
 .flogo {
@@ -1220,6 +1225,7 @@ footer {
     .swiper-slide:hover h2 {
         top: 0;
         transition-duration: 0.5s;
+
     }
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -1268,6 +1274,10 @@ footer {
 
     .orange_button_desktop {
         display: block;
+    }
+
+    .orange_button_desktop:hover {
+        cursor: pointer;
     }
 
     /* ------------------------------------------------------------------------------------------------ */
