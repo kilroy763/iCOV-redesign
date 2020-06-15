@@ -295,7 +295,6 @@ var swiper = new Swiper(".swiper-container", {
 
 
 
-
 // const blok = document.querySelectorAll('.year-section');
 
 // observer = new IntersectionObserver((entries) =>{
