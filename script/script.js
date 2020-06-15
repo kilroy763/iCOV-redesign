@@ -146,6 +146,8 @@ $(function(){
 // })
 
 var swiper = new Swiper(".swiper-container", {
+  spaceBetween: 15,
+  slidesPerView: 1,
   grabCursor: true,
   navigation: {
     nextEl: '.button_topic_right'

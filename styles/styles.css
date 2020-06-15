@@ -747,8 +747,7 @@ footer {
 }
 
 .hide {
-    right: 100vw;
-    transition-duration: 0.5s;
+    display: none;
 }
 
 .desktopNav {
@@ -1109,6 +1108,10 @@ footer {
 
     .videocontainer {
         position: relative;
+    }
+
+    video:hover {
+        cursor: pointer;
     }
 
     .headertext {
