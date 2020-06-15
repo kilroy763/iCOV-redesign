@@ -370,14 +370,16 @@ header a svg {
         margin: 1rem;
         color: var(--orange);
         font-weight: bold;
+        padding-bottom: 14px;
     }
 
-    .navbuttons div .left {
-        color: black;
+    .navbuttons div img {
+        height: 20px;
+        margin: auto;
     }
 
     .navbuttons div .right {
-        color: black;
+        transform: rotate(180deg);
     }
 
 /* Nav buttons end */
