@@ -270,6 +270,7 @@ video {
 
 .swiper-slide {
     position: relative;
+    overflow: hidden;
 }
 
 .swiper-slide h2 {
@@ -280,12 +281,21 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
+    top: 100;
     padding: 10px;
+    transition-duration: 0.5s;
 }
 
 .swiper-slide p {
     position: absolute;
-    display: none;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    color: white;
+    padding: 10px;
+    transition-duration: 0.5s;
+    max-width: 100%;
+    opacity: 0;
 }
 
 #topic1 {
@@ -316,7 +326,7 @@ video {
     position: relative;
     overflow: visible !important; /* important om swiper te overwriten */
     height: 300px;
-    width: auto;
+    width: 100vw;
     margin: 0 1.5rem !important;
 }
 
@@ -390,7 +400,7 @@ video {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    scrollbar-width: none;
+
 }
 
 .slider2::-webkit-scrollbar {
@@ -737,7 +747,8 @@ footer {
 }
 
 .hide {
-    display: none;
+    right: 100vw;
+    transition-duration: 0.5s;
 }
 
 .desktopNav {
@@ -1085,7 +1096,7 @@ footer {
         transition: 0.3s;
     }
 
-    .menu ul li a:hover {
+    .menu ul li:hover a {
         color: var(--purple);
         transition: 0.3s;
     }
@@ -1113,6 +1124,7 @@ footer {
         padding-top: 60px;
         padding-left: 10vw;
         padding-bottom: 40px;
+        transition-duration: 0.5s;
     }
 
     .headertext figure {
@@ -1148,12 +1160,16 @@ footer {
         object-fit: cover;
     }
 
-
     /* Topics */
 
+    .slider2{
+        scrollbar-width: 100%;
+    }
+    
     .swiper-container {
         height: 400px;
         margin: 0 10vw !important;
+        width: auto;
     }
 
     .button_topic_right {
@@ -1169,6 +1185,25 @@ footer {
         justify-content: center;
         align-items: center;
         box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.75);
+    }
+
+    .swiper-slide:hover p{    
+        /* display: block; */
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 95%;
+        height: auto;
+        color: white;
+        transition-duration: all 0.3s ease-in;
+        opacity: 100;
+
+    }
+
+    .swiper-slide:hover h2 {
+        top: 0;
+        transition-duration: 0.5s;
     }
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -1324,6 +1359,7 @@ footer {
         font-weight: bold;
         background-color: #EDEDED;
         margin-bottom: 0.5rem;
+        cursor: help;
     }
 
     .faq details {
