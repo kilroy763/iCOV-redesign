@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCOV Mobile </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/swiper.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <script defer src="script/swiper.min.js"></script>
     <script defer src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -47,7 +46,7 @@
 
     <main>
         <div class="videocontainer">
-            <video src="img/icov.mp4" controls poster="img/thumbnail.jpg"></video>
+            <video class="headervideo" src="img/iCOVuitleg.mp4" controls poster="img/thumbnail.jpg"></video>
             <section class="headertext">
                 <figure>
                     <figcaption>
@@ -66,59 +65,65 @@
         </div>
 
         <h1>Actueel</h1>
-
-        <div class="slider">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="innerdiv" id="topic1">
-                            <h2>Mondkapjesfraude in kiem gesmoord</h2>
-                            <p class="hoverarticle1">
-                                Een man en een vrouw uit Dordrecht (beiden 27 jaar) zijn opgepakt omdat ze miljoenen
-                                wilden
-                                verdienen aan fraude met mondkapjes. Mede door de hulp van iCOV kon het stel worden
-                                opgepakt
-                                voordat de oplichting had plaatsgevonden.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="innerdiv" id="topic2">
-                            <h2>Grapperhaus op bezoek</h2>
-                            <p class="hoverarticle2">
-                                Minister Grapperhaus van J&V was woensdag 8 januari jl op werkbezoek bij iCOV. Hij heeft
-                                zich onder meer laten informeren over de werkwijze van iCOV. Hierbij is ingezoomd op de
-                                mogelijkheden en beperkingen van informatie-uitwisseling.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="innerdiv" id="topic3">
-                            <h2>iCOV in de rechtzaal</h2>
-                            <p class="hoverarticle3">
-                                iCOV leverde onlangs een bijdrage aan de veroordeling van twee kopstukken van een
-                                spraakmakend Haags witwasnetwerk.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="innerdiv" id="topic4">
-                            <h2>Grapperhaus op bezoek</h2>
-                            <p class="hoverarticle4">
-                                Gees Grootscholten (hoofd iCOV, van het Openbaar Ministerie) en Curd Brenninkmeijer
-                                (voormalig MT-lid iCOV, van de Politie) bespreken in Politievakblad Blauw hoe zij
-                                opsporingsmedewerkers helpen bij het verkrijgen van inzicht en overzicht in het
-                                crimineel
-                                vermogen van een of meer subjecten.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="topic1">
+                <h2>Mondkapjesfraude in kiem gesmoord</h2>
+                <p class="hoverarticle1">
+                    Een man en een vrouw uit Dordrecht (beiden 27 jaar) zijn opgepakt omdat ze miljoenen
+                    wilden
+                    verdienen aan fraude met mondkapjes. Mede door de hulp van iCOV kon het stel worden
+                    opgepakt
+                    voordat de oplichting had plaatsgevonden.
+                </p>
+              </div>
+              <div class="swiper-slide" id="topic2">
+                <h2>Grapperhaus op bezoek</h2>
+                <p class="hoverarticle2">
+                    Minister Grapperhaus van J&V was woensdag 8 januari jl op werkbezoek bij iCOV. Hij heeft
+                    zich onder meer laten informeren over de werkwijze van iCOV. Hierbij is ingezoomd op de
+                    mogelijkheden en beperkingen van informatie-uitwisseling.
+                </p>
+              </div>
+              <div class="swiper-slide" id="topic3">
+                <h2>iCOV in de rechtzaal</h2>
+                <p class="hoverarticle3">
+                    iCOV leverde onlangs een bijdrage aan de veroordeling van twee kopstukken van een
+                    spraakmakend Haags witwasnetwerk.
+                </p>
+              </div>
+              <div class="swiper-slide" id="topic4">
+                <h2>Grapperhaus op bezoek</h2>
+                <p class="hoverarticle4">
+                    Gees Grootscholten (hoofd iCOV, van het Openbaar Ministerie) en Curd Brenninkmeijer
+                    (voormalig MT-lid iCOV, van de Politie) bespreken in Politievakblad Blauw hoe zij
+                    opsporingsmedewerkers helpen bij het verkrijgen van inzicht en overzicht in het
+                    crimineel
+                    vermogen van een of meer subjecten.
+                </p>
+              </div>
+              <div class="swiper-slide" id="topic1">
+                <h2>Mondkapjesfraude in kiem gesmoord</h2>
+                <p class="hoverarticle1">
+                    Een man en een vrouw uit Dordrecht (beiden 27 jaar) zijn opgepakt omdat ze miljoenen
+                    wilden
+                    verdienen aan fraude met mondkapjes. Mede door de hulp van iCOV kon het stel worden
+                    opgepakt
+                    voordat de oplichting had plaatsgevonden.
+                </p>
+              </div>
+              <div class="swiper-slide" id="topic2">
+                <h2>Grapperhaus op bezoek</h2>
+                <p class="hoverarticle2">
+                    Minister Grapperhaus van J&V was woensdag 8 januari jl op werkbezoek bij iCOV. Hij heeft
+                    zich onder meer laten informeren over de werkwijze van iCOV. Hierbij is ingezoomd op de
+                    mogelijkheden en beperkingen van informatie-uitwisseling.
+                </p>
+              </div>
             </div>
 
             <div class="button_topic_right"><img src="img/pijlrechts.svg" alt="pijl rechts"></div>
         </div>
-
 
         <h1>Thema's</h1>
         <section class="themecontainer">
@@ -183,9 +188,8 @@
                 vernieuwende
                 wetgeving en afpakken van crimineel vermogen.
             </p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div>
+            <div class="slider2"> 
                         <div>
                             <div class="image--wrapper">
                                 <img class="image--source" src="img/bobhoogenboom.jpg" alt="Bob Hoogenboom">
@@ -194,8 +198,8 @@
                             </div>
                             <input type="image" src="img/playbutton.svg" class="hoiaudio" />
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+             
+                    <div>
                         <div>
                             <div class="image--wrapper">
                                 <img class="image--source" src="img/janneke.jpg" alt="Janneke de Smet-Dierckx">
@@ -205,7 +209,7 @@
                             <input type="image" src="img/playbutton.svg" class="hoiaudio" />
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div >
                         <div>
                             <div class="image--wrapper">
                                 <img class="image--source" src="img/jorasverwerda.jpg" alt="Joras Ferwerda">
@@ -215,7 +219,7 @@
                             <input type="image" src="img/playbutton.svg" class="hoiaudio" />
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div>
                         <div>
                             <div class="image--wrapper">
                                 <img class="image--source" src="img/kellyvink.jpg" alt="Kelly Vink">
@@ -225,11 +229,10 @@
                             <input type="image" src="img/playbutton.svg" class="hoiaudio" />
                         </div>
                     </div>
+                </div>
                     <div class="button_podcast_right"><img src="img/pijlrechts.svg" alt=""></div>
                 </div>
-
-            </div>
-
+                
         </section>
 
         <section class="removeaudioplayer">

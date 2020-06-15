@@ -1,16 +1,31 @@
-@author: Rick, Max, Merlijn, Fleur Voor iCOV - General reset - Homepage sections - Nav bar - Header - Slider - Themes - Podcast - Cases - FAQ - Foo - Media qeuery's
-- Tablet - Small desktop - Normal desktop */
-    /* General reset */
-    /* =============================================================================================== */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*
+@author: Rick, Max, Merlijn, Fleur 
+Voor iCOV 
+- General reset 
+- Homepage sections 
+- Nav bar 
+- Header 
+- Slider 
+- Themes 
+- Podcast 
+- Cases 
+- FAQ 
+- Footer 
+- Media qeuery's
+- Tablet 
+- Desktop 
+ */
+
+/* General reset */
+/* =============================================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif !important;
     color: black;
-
-
 }
 
 :root {
@@ -24,8 +39,8 @@
 
 /* =============================================================================================== */
 
-
 /* Elements */
+
 /* =============================================================================================== */
 
 body {
@@ -55,14 +70,12 @@ img {
     background-color: var(--orange);
     color: white;
     font-weight: bold;
-
 }
 
 .orange_button:hover {
     box-shadow: inset 0px 0px 0px 5px var(--orange);
     background-color: white;
     color: black;
-
 }
 
 .orange_button_desktop {
@@ -74,7 +87,6 @@ img {
     color: white;
     font-weight: bold;
     width: 60%;
-
 }
 
 .orange_button_desktop:hover {
@@ -85,7 +97,6 @@ img {
 }
 
 /* =============================================================================================== */
-
 
 /* Homepage */
 /* =============================================================================================== */
@@ -204,24 +215,24 @@ header a svg {
 /* ------------------------------------------------------------------------------------------------ */
 
 /* Header */
+
 .headertext figure {
     position: relative;
 }
 
-.headertext{
+.headertext {
     position: relative;
     background-image: url('../img/border.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 500px;
+    width: 98vw;
+    height: 125px;
     top: 0;
     left: 0;
-    height: auto;
-    padding-top: 70px;
-    padding-left: 10vw;
+    padding-top: 20px;
+    padding-left: 2vw;
     padding-bottom: 70px;
-    padding-right: 70px;
 }
 
 .headerH1 {
@@ -232,6 +243,7 @@ header a svg {
     position: absolute;
     top: 10%;
     margin: 0 1.5rem;
+    width: 75vw;
 }
 
 .headertext figure figcaption p {
@@ -256,49 +268,59 @@ video {
 
 /* Topics */
 
-.slider {
-
-}
-
-.slider > div {
-    
-}
-
-.slider div h2 {
-    position: absolute;
-    bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: auto;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-}
-
-.innerdiv {
+.swiper-slide {
     position: relative;
-    display: inline-block;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
-    background-size: cover;
-    height: 300px;
-    /* height: 60vw;
-    width: 60vw;
-    max-height: 300px;
-    max-width: 300px; */
+}
+
+.swiper-slide h2 {
+    position: absolute;
+    color: white;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.swiper-slide p {
+    position: absolute;
+    display: none;
 }
 
 #topic1 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/mondkapje.jpg);
-    background-size: cover;
+}
+
+#topic2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
 }
 
 #topic3 {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/rechtzaal.jpg);
-    background-size: cover;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+#topic4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/rotterdam.jpg);
+}
+
+#topic1,
+#topic2,
+#topic3,
+#topic4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-container {
+    position: relative;
+    overflow: visible !important; /* important om swiper te overwriten */
+    height: 300px;
+    width: auto;
+    margin: 0 1.5rem !important;
+}
+
+.button_topic_right {
     display: none;
 }
 
@@ -332,7 +354,6 @@ video {
 }
 
 .theme img {
-    /* height: 5%; */
     width: 20%;
     max-width: 15rem;
 }
@@ -340,10 +361,6 @@ video {
 .theme p:nth-child(1) {
     margin-bottom: 2rem;
 }
-
-/* .theme button {
-    
-} */
 
 /* Themes end */
 
@@ -359,7 +376,6 @@ video {
 
 .podcast>p {
     padding: 1rem 1.5rem;
-
 }
 
 .podcastpicture {
@@ -370,8 +386,22 @@ video {
     border-radius: 0px 100px 0px 0px;
 }
 
-/* Podcast audioplayer */
+.slider2 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
 
+.slider2::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.slider2 div {
+    margin-left: 4%;
+}
+
+/* Podcast audioplayer */
 
 .removeaudioplayer {
     display: none;
@@ -413,7 +443,6 @@ video {
 
 /* Temp Slider Swiper styles */
 
-
 .image--wrapper {
     width: 40vw;
     height: 40vw;
@@ -432,7 +461,7 @@ video {
     position: absolute;
     bottom: 0;
     color: white;
-    margin: 3vw;
+    margin: 2vw;
 }
 
 .image--wrapper h3 {
@@ -445,10 +474,10 @@ video {
     margin: 1vw;
 }
 
-.swiper-slide div input {
+.slider2 div input {
     position: relative;
-    bottom: 4vw;
-    left: 80%;
+    bottom: 3vh;
+    left: 90%;
     z-index: 20;
 }
 
@@ -462,24 +491,14 @@ video {
     object-fit: cover;
 }
 
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-left: 5%;
-}
-
-
-
-
 /* ------------------------------------------------------------------------------------------------ */
 
 /* Cases */
+
 .cases {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* height: 50vh; */
 }
 
 .timeline,
@@ -588,17 +607,24 @@ summary:hover {
     color: var(--orange);
 }
 
-.faq details summary{
+.faq details summary {
     font-weight: bold;
     background-color: #EDEDED;
     padding: 0.5rem;
-
 }
 
-.faq details p{
+.faq details p {
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: #EDEDED;
+}
+
+
+.art img {
+    border-radius: 0;
+    max-height: 125px;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* FAQ end */
@@ -710,6 +736,10 @@ footer {
     display: none;
 }
 
+.hide {
+    display: none;
+}
+
 .desktopNav {
     display: none;
 }
@@ -767,24 +797,32 @@ footer {
     /* ------------------------------------------------------------------------------------------------ */
 
     video {
-        height: 22vh;
+        height: 24vh;
     }
 
     .headerh1 {
         padding-top: 1rem !important;
     }
-    
+
 
     .headertext {
         position: absolute;
         top: 20vh;
         left: 0;
-        height: 30vh;
+        height: 16vh;
+        width: 350px;
+        padding-left: 0;
     }
 
     .headertext figure {
         height: 100%;
-        width: 50vw;
+        width: 20vw;
+    }
+
+    .headertext figure figcaption {
+        width: 45vw;
+        max-width: 300px;
+        margin-left: 1.5rem;
     }
 
     .headertekst figure img {
@@ -801,6 +839,9 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
 
+    .swiper-container {
+        height: 300px;
+    }
 
     /* Themes */
 
@@ -834,7 +875,6 @@ footer {
     }
 
     .theme img {
-        /* height: 5%; */
         width: 90%;
         margin-top: 30%;
         max-width: 15rem;
@@ -856,6 +896,7 @@ footer {
     /* Podcast */
 
     /* ------------------------------------------------------------------------------------------------ */
+
     .podcast {
         display: grid;
         grid-template-columns: 40vw 60vw;
@@ -877,16 +918,6 @@ footer {
         max-width: 52vw;
     }
 
-    .swiper-container {
-        grid-area: 2 / 2 / 3 / 3;
-        margin-left: 1rem;
-        margin-top: 5vw;
-    }
-
-    .swiper-wrapper {
-        margin-left: 0.5rem;
-    }
-
     .image--wrapper {
         width: 20vw;
         height: 20vw;
@@ -894,15 +925,9 @@ footer {
         max-height: 200px;
     }
 
-    .swiper-slide div input {
-        bottom: 3vw;
-        left: 80%;
-    }
-
     /* Cases */
 
     /* ------------------------------------------------------------------------------------------------ */
-
 
     .cases {
         display: grid;
@@ -912,14 +937,12 @@ footer {
         justify-content: center;
         width: 85%;
         margin: 0 auto;
-        /* height: 50vh; */
     }
 
     .timeline,
     .articles {
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
         height: auto;
         width: 100%;
     }
@@ -968,16 +991,6 @@ footer {
         margin: 0;
     }
 
-    /* .articles article img {
-            display: block;
-            max-width: 100%;
-            max-height: 100%;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            filter: brightness(50%);
-        } */
-
     .casetitle {
         position: absolute;
         z-index: 1;
@@ -1002,6 +1015,7 @@ footer {
 /* Media querey for small desktop screen size */
 
 @media screen and (min-width: 1024px) {
+
     h1 {
         margin-left: 10vw;
     }
@@ -1011,6 +1025,10 @@ footer {
     header {
         justify-content: space-between;
         padding: 12px 10vw;
+    }
+
+    header a svg:hover {
+        fill: var(--purple);
     }
 
     .nav_toggle {
@@ -1036,19 +1054,41 @@ footer {
     }
 
     .menu ul li {
+        display: inline-block;
         padding: 0;
         background-color: var(--lightgrey);
         border-bottom: none !important;
     }
 
-    .menu ul li + li {
+    .menu ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 5px;
+        margin-top: 5px;
+        background-color: var(--purple);
+        transition: width .3s;
+    }
+
+    .menu ul li:hover::after {
+        width: 100%;
+    }
+
+    .menu ul li+li {
         margin-left: 120px;
     }
 
     .menu ul li a {
         font-weight: bold;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
     }
 
+    .menu ul li a:hover {
+        color: var(--purple);
+        transition: 0.3s;
+    }
 
     /* ------------------------------------------------------------------------------------------------ */
 
@@ -1061,20 +1101,20 @@ footer {
         position: relative;
     }
 
+
     .headertext {
         position: relative;
         background-image: url('../img/border.svg');
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 700px;
+        width: 400px;
         top: 0;
         left: 0;
-        height: auto;
-        padding-top: 120px;
+        height: 260px;
+        padding-top: 60px;
         padding-left: 10vw;
-        padding-bottom: 120px;
-        padding-right: 70px;
+        padding-bottom: 40px;
     }
 
     .headertext figure {
@@ -1086,13 +1126,23 @@ footer {
         position: relative;
         top: 0;
         margin: 0;
+        max-width: 340px;
     }
 
-    .headertext figure figcaption h1{
+    .headertext figure figcaption h1 {
         margin-bottom: 1rem;
     }
 
+    .videocontainer {
+        display: grid;
+        grid-template-columns: 35vw 65vw;
+        grid-template-rows: 360px;
+        position: relative;
+
+    }
+
     .videocontainer video {
+        grid-area: 1 / 1 / 2 / 3;
         position: absolute;
         top: 0;
         left: 0;
@@ -1101,54 +1151,27 @@ footer {
         object-fit: cover;
     }
 
-    /* .videocontainer {
-        display: grid;
-        grid-template-columns: 35vw 65vw;
-        grid-template-rows: 50vh;
-    }
-
-    .videocontainer video {
-        grid-area: 1 / 2 / 2 / 3;
-        height: 100%;
-    }
-    */
-
 
     /* Topics */
-    .slider {
-        padding: 0 100px;
-        position: relative;
-    }
 
-    .swiper {
-        overflow: hidden;
-    }
-
-    .swiper-wrapper {
-        /* max-width: 500px;  */
-        /* margin: 0 auto; */
-        margin-left: 5%;
-
-    }
-
-    .innerdiv {
-        background-size: cover;
-        width: 100%;
+    .swiper-container {
+        height: 400px;
+        margin: 0 10vw !important;
     }
 
     .button_topic_right {
         background-color: var(--purple);
-        height: auto;
-        width: 60px;
-        border-radius: 0px 50px 50px 0;
-        z-index: 1000;
+        border-radius: 0px 40px 40px 0;
+        z-index: 420;
         position: absolute;
+        width: 60px;
         height: 100%;
-        right: 20px;
+        right: -5vw;
         top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.75);
     }
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -1214,11 +1237,14 @@ footer {
         font-size: 1.2rem;
     }
 
-    /* .swiper-container,
-        .swiper-wrapper{
-            overflow-x: hidden;
-            cursor: default;
-        }  */
+    .podcast>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slider2 {
+        width: 90%;
+    }
 
     .image--wrapper {
         width: 40vw;
@@ -1245,22 +1271,14 @@ footer {
     .button_podcast_right {
         background-color: var(--purple);
         height: 200px;
-        width: 75px;
-        border-radius: 0px 50px 50px 0;
-        margin: 1rem;
-
+        width: 50px;
+        border-radius: 0px 30px 30px 0;
+        box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
     }
 
-    .button_podcast_right img {
-        margin: auto;
-        display: block;
-        margin-top: 100%;
-    }
 
-    .swiper-slide div input {
-        left: 80%;
-        bottom: 1vw;
-    }
 
 
     /* Cases */
@@ -1281,18 +1299,18 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
     .faq {
-        background-color:#EDEDED;
+        background-color: #EDEDED;
         display: flex;
         align-items: stretch;
     }
 
-    .faq > div {
+    .faq>div {
         flex-basis: 60%;
         flex-grow: 0;
         flex-shrink: 0;
     }
 
-    .faq > .art {
+    .faq>.art {
         background-color: #2f99cc;
         border-radius: 0 0 0 100px;
         flex-basis: 40%;
@@ -1302,31 +1320,32 @@ footer {
         position: relative;
     }
 
-    .faq > .art img {
+    .faq>.art img {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: auto;
         max-height: 100%;
+        object-fit: fill;
     }
 
-    .faq details summary{
+    .faq details summary {
         font-weight: bold;
         background-color: #EDEDED;
         margin-bottom: 0.5rem;
     }
 
-    .faq details{
+    .faq details {
         background-color: #EDEDED;
         padding-left: 15%;
     }
-    
-    .faq details p{
+
+    .faq details p {
         width: 70%;
         padding-top: 0;
     }
-    
+
 
     /* Footer */
 

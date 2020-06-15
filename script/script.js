@@ -20,7 +20,12 @@
 
 // //---------------------------------------------------------
 
+const video = document.querySelector('.headervideo');
+const headerText = document.querySelector('.headertext');
 
+video.addEventListener( 'click', function() {
+  headerText.classList.toggle('hide');
+});
 
 // // code to toggle the line under NL and ENG ---------------
 
@@ -71,22 +76,21 @@ $(function(){
  
 
 
-  
-  var swiper3 = new Swiper('.swiper-container', {
-    centeredSlides: true,
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-      breakpoints: {
-    // when window width is >= 320px
-    1500: {
+// var swiper3 = new Swiper('.swiper-container', {
+//     centeredSlides: true,
+//     grabCursor: true,
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
+//       breakpoints: {
+//     // when window width is >= 320px
+//     1500: {
 
-			noSwiping: true,
-			allowSlidePrev: false,
-			allowSlideNext: false
-    },
-  }});
+// 			noSwiping: true,
+// 			allowSlidePrev: false,
+// 			allowSlideNext: false
+//     },
+//   }});
 
 
 
@@ -134,17 +138,6 @@ $(function(){
 
 // //------------------------------------------------------ 
 
-
-// const acc = document.getElementsByClassName("accordion");
-
-//  for (let i = 0; i < acc.length; i++) {
-//  acc[i].addEventListener("click", function(i) {
-//   const panel = document.getElementsByClassName("panel");
-//   console.log(panel)
-//   panel[i].classList.add("panelOn")
-//  })
-// }
-
 // Commented code, WIP -----------------------------------
 
 // $(window).resize(function(){
@@ -152,53 +145,27 @@ $(function(){
 //   else $('.swiper-scrollbar').show()
 // })
 
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 50,
+var swiper = new Swiper(".swiper-container", {
   grabCursor: true,
   navigation: {
     nextEl: '.button_topic_right'
   },
-});
-
-var swiper2 = new Swiper(".swiper-container", {
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  grabCursor: true,
-  navigation: {
-    nextEl: '.button_podcast_right'
-  },
   breakpoints: {
-    1500: {
-      allowSlidePrev: false,
-      allowSlideNext: false,
-      allowTouchMove: false
+    // when window width is >= 320px
+    1: {
+      spaceBetween: 15,
+      slidesPerView: 1
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 2
+    },
+    1024: {
+      spaceBetween: 50,
+      slidesPerView: 3
     },
 }});
 
-//  function klap(a) {
-//   console.log("hallo")
-//   panel[a].classList.toggle("panelOn")
-//  }
-
-// let acc = document.getElementsByClassName("accordion");
-// let panel = document.getElementsByClassName("panel");
-// let i;
-
-//  for (i = 0; i < acc.length; i++) {
-//  acc[i].addEventListener("click", function() {
-//     console.log('klikie')
-//     // const panelt = document.querySelector(".panel");
-//     let panelState;
-//     if (panelState == true) {
-//       panel[i].classList.remove("panelOn");
-//       panelState = false;
-//     } else {
-//       panel[i].classList.add("panelOn");
-//       panelState = true;
-//     }
-//   });
-// }
 
 // =================================================================================================
 
@@ -241,12 +208,6 @@ var swiper2 = new Swiper(".swiper-container", {
 // }
 
 
-
-
-
-
-
-
 /**
  * Instructies voor tijdlijn:
  * 
@@ -287,33 +248,51 @@ var swiper2 = new Swiper(".swiper-container", {
 
 //
 
-const header = document.querySelector(".werkend");
-const sectionOne = document.querySelector("#one");
 
-var thresholds = IntersectionObserver.thresholds;
-console.log(thresholds)
 
-const sectionOneOptions = {
-  threshold: 0.5
-};
 
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.intersectionRatio > 0.5) {
-      header.classList.add("werkt");
-      console.log('werkt')
-    } else {
-      header.classList.remove("werkt");
-      console.log('weg')
-    }
-  });
-},
-sectionOneOptions);
 
-sectionOneObserver.observe(sectionOne);
+// const header = document.querySelector(".werkend");
+// const sectionOne = document.querySelector("#one");
+
+// var thresholds = IntersectionObserver.thresholds;
+// console.log(thresholds)
+
+// const sectionOneOptions = {
+//   threshold: 0.5
+// };
+
+// const sectionOneObserver = new IntersectionObserver(function(
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach(entry => {
+//     if (!entry.intersectionRatio > 0.5) {
+//       header.classList.add("werkt");
+//       console.log('werkt')
+//     } else {
+//       header.classList.remove("werkt");
+//       console.log('weg')
+//     }
+//   });
+// },
+// sectionOneOptions);
+
+// sectionOneObserver.observe(sectionOne);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const blok = document.querySelectorAll('.year-section');
 
