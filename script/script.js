@@ -25,7 +25,7 @@ const headerText = document.querySelector('.headertext');
 
 video.addEventListener( 'click', function() {
   headerText.classList.toggle('hide');
-});
+}); 
 
 // // code to toggle the line under NL and ENG ---------------
 
@@ -147,7 +147,7 @@ $(function(){
 
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 15,
-  slidesPerView: 1,
+ 
   grabCursor: true,
   navigation: {
     nextEl: '.button_topic_right'
@@ -156,11 +156,11 @@ var swiper = new Swiper(".swiper-container", {
     // when window width is >= 320px
     1: {
       spaceBetween: 15,
-      slidesPerView: 1
+      slidesPerView: 1.5
     },
     768: {
       spaceBetween: 20,
-      slidesPerView: 2
+      slidesPerView: 2.5
     },
     1024: {
       spaceBetween: 50,

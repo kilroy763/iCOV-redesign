@@ -325,9 +325,14 @@ video {
 .swiper-container {
     position: relative;
     height: 300px;
-    width: 100vw;
+    width: 93vw;
     margin: 0 1.5rem !important;
 }
+
+ .swiper-wrapper{
+    width: 150px !important;
+    height: 251px !important;
+} 
 
 .button_topic_right {
     display: none;
@@ -399,16 +404,21 @@ video {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-
+    
 }
 
 .slider2::-webkit-scrollbar {
     width: 0 !important;
 }
 
-.slider2 div {
-    margin-left: 8%;
+.slider2 div:first-child {
+    margin-left: 4%;
 }
+
+.slider2 div:not(:first-child) {
+    margin-left: 10%;
+}
+
 
 /* Podcast audioplayer */
 
@@ -457,7 +467,6 @@ video {
     height: 40vw;
     max-width: 200px;
     max-height: 200px;
-    background-color: red;
     overflow: hidden;
     position: relative;
 }
@@ -487,7 +496,7 @@ video {
     position: relative;
     bottom: 3vh;
     left: 90%;
-    z-index: 20;
+    z-index: 2;
 }
 
 .image--source {
@@ -655,6 +664,9 @@ footer {
 }
 
 .freport button:hover {
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -1173,6 +1185,11 @@ footer {
         scrollbar-width: 100%;
     }
     
+    .swiper-wrapper{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
     .swiper-container {
         height: 400px;
         overflow: visible !important; /* important om swiper te overwriten */
