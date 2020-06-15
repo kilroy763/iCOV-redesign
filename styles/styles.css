@@ -303,7 +303,7 @@ video {
 }
 
 #topic2 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/grapperhaus2.png);
 }
 
 #topic3 {
@@ -324,7 +324,6 @@ video {
 
 .swiper-container {
     position: relative;
-    overflow: visible !important; /* important om swiper te overwriten */
     height: 300px;
     width: 100vw;
     margin: 0 1.5rem !important;
@@ -1176,6 +1175,7 @@ footer {
     
     .swiper-container {
         height: 400px;
+        overflow: visible !important; /* important om swiper te overwriten */
         margin: 0 10vw !important;
         width: auto;
     }
