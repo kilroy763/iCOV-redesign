@@ -6,7 +6,7 @@
     color: black;
     scroll-behavior: smooth;
     
-    /* overflow-x: hidden; */
+    overflow-x: hidden; 
 }
 
 
@@ -23,13 +23,17 @@ body{
     background-color: var(--blue);
 }
 
-.abovenav{
-    background-color: white;
-   padding-bottom: 0.1rem;
-}
+
+
 /* Nav */
 
 /* ------------------------------------------------------------------------------------------------ */
+
+.abovenav{
+    background-color: white;
+   padding-bottom: 0.1rem;
+
+}
 
 .abovenav img {
     display: block;
@@ -134,10 +138,12 @@ header a svg {
 .active {
     right: 0%;
     transition: .5s ease-in;
+    color: rgb(0, 255, 0);;
 }
 
 /* Nav end */
 
+/* ------------------------------------------------------------------------------------------------ */
 
 /* Footer */
 
@@ -254,7 +260,8 @@ footer {
 
 /* Footer end */
 
-  
+/* ------------------------------------------------------------------------------------------------ */
+
 /* year sections with text */
 
 .year-section img {
@@ -282,8 +289,37 @@ footer {
 .year-section{
 
     position: relative;
+}
+
+
+.tekst1 h1, .tekst1 h2, .tekst1 button{
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 15%;
 
 }
+
+
+.year-section h1, .year-section h2{
+    max-width: 70%;
+}
+
+button{
+    border: none;
+    width: 30%;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    font-weight: bold;
+}
+
 
 /* year sections with text end */
 
@@ -346,37 +382,9 @@ footer {
 
 /* Overlay end */
 
+/* ------------------------------------------------------------------------------------------------ */
 
-
-.tekst1 h1, .tekst1 h2, .tekst1 button{
-
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    color: white;
-    margin-top: 15%;
-
-}
-
-
-.year-section h1, .year-section h2{
-    max-width: 70%;
-}
-
-button{
-    border: none;
-    width: 30%;
-    border-radius: 0px 25px 0px 25px;
-    background-color: var(--orange);
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
-    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-    font-weight: bold;
-}
-
-/* timeline */
+/* timeline mobile */
 
 /* nav a{
     position: relative;
@@ -405,10 +413,14 @@ nav{
 
 @media screen and (min-width: 768px) {
 
-    
-
-    
 /* year sections with text */
+
+.year-section {
+    position: relative;
+    top: -100px;
+    height: 100vh;
+    overflow-y: visible;
+}
 
 .year-section img {
     position: relative; 
@@ -417,7 +429,7 @@ nav{
     background-repeat:no-repeat;
     background-size: 99vw;
     width: 99vw;
-    height: 100vh;
+    height: 110%;
     object-fit: cover;
 }
 
@@ -435,6 +447,33 @@ nav{
 .year-section{
     position: relative;
 }
+
+.tekst1 h1, .tekst1 h2, .tekst1 button{
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.year-section h1, .year-section h2{
+    max-width: 50%;
+}
+
+button{
+    border: none;
+    width: 10%;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    font-weight: bold;
+}
+
 
 /* year sections with text end */
 
@@ -473,54 +512,6 @@ body > .verticalnav {
     z-index: 1;
 }
 
-/* timeline end */
-
-/* ------------------------------------------------------------------------------------------------ */
-
-/* Overlay */
-    .popup{
-    width: 100%;
-    }
-
-    .cnt223{
-    min-width: 600px;
-    width: 600px;
-    min-height: 150px;
-    margin: 100px auto;
-    }
-
-
-/* Overlay end */
-
-/* ------------------------------------------------------------------------------------------------ */
-
-.tekst1 h1, .tekst1 h2, .tekst1 button{
-
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    color: white;
-    margin-top: 10%;
-
-}
-
-
-.year-section h1, .year-section h2{
-    max-width: 50%;
-}
-
-button{
-    border: none;
-    width: 10%;
-    border-radius: 0px 25px 0px 25px;
-    background-color: var(--orange);
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
-    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-    font-weight: bold;
-}
 
 header {
     justify-content: space-between;
@@ -570,6 +561,28 @@ font-weight: normal;
 }
 
 
+
+/* timeline end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* Overlay */
+    .popup{
+    width: 100%;
+    }
+
+    .cnt223{
+    min-width: 600px;
+    width: 600px;
+    min-height: 150px;
+    margin: 100px auto;
+    }
+
+
+/* Overlay end */
+
+/* ------------------------------------------------------------------------------------------------ */
+
  /* Nav */
 
  header {
@@ -615,8 +628,6 @@ font-weight: normal;
 
 
 /* ------------------------------------------------------------------------------------------------ */
-
-
 
  }
 
@@ -698,7 +709,7 @@ font-weight: normal;
 
     /* ------------------------------------------------------------------------------------------------ */
 
-
+    /* footer */
     
     .footerflex {
         display: flex;
@@ -718,7 +729,7 @@ font-weight: normal;
 
     .freport button {
         position: absolute;
-        left: 0;
+        left: 0; 
     }
 
     .flanguage p,
@@ -734,20 +745,5 @@ font-weight: normal;
         fill: var(--purple);
         transition: 0.2s;
     }
-    
+
 }
-
-#navbar #first.active {
-    background: rgb(0,106,221);
-  }
-  #navbar #second.active {
-    background: rgb(255,25,129);
-  }
-  #navbar #third.active {
-    background: #fff;
-    color: #222;
-  }
-  #navbar #fourth.active {
-    background: #FFDF19;
-  }
-

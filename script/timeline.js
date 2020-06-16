@@ -30,7 +30,6 @@ const iObserver = new IntersectionObserver(entries => {
 
   if (entries[0].isIntersecting) {
     const year = target.dataset.year;
-
     const currentlyActive = document.querySelector('.verticalnav a.active');
     const shouldBeActive = document.querySelector('.verticalnav a[data-year="' + year + '"]');
 

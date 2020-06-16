@@ -105,10 +105,136 @@ img {
 
 /* ------------------------------------------------------------------------------------------------ */
 
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay > section {
+    background-color: rgba(86, 75, 170, 0.8);
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    border-radius: 50px 0px 50px 0px;
+    position: relative;
+}
+
+#overlay section > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    width: 30px;
+}
+
+#overlay section form{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+
+}
+
+#overlay section h1, #overlay section h2 {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+#overlay section form label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0.5rem;
+}
+
+#overlay section form label input{
+    height: 1.5rem;
+    border: none;
+    border-radius: 0 3px 0 3px;
+}
+
+#overlay section form label textarea{
+    border: none;
+}
+
+#overlay section form button {
+    border: none;
+    width: 100%;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    font-weight: bold;
+}
+
+#overlay section h1 {
+    margin: 0 ;
+    margin-top: 2vh;
+}
+
+.abovenav{
+    position: relative;
+}
+
+.abovenav > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* width: 100%; */
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abovenav div img {
+    position: relative;
+    /* padding-left: 25px; */
+    width: 3rem;
+    margin: 0;
+}
+
+.abovenav div div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 30px;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+    /* margin-right: 25px; */
+}
+
 .abovenav img {
     display: block;
     margin: 0 auto 25px;
     width: 5vh;
+}
+
+.language_toggle p {
+    padding: 0.2rem;
+    font-weight: bold;
+}
+
+.nl {
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
 }
 
 header {
@@ -744,29 +870,6 @@ footer {
     text-decoration: none;
 }
 
-.language_toggle {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-}
-
-.language_toggle p {
-    padding: 0.2rem;
-}
-
-.language_toggle p:nth-child(odd) {
-    transition: all .1s ease-in;
-}
-
-.language_toggle p:nth-child(odd):hover {
-    cursor: pointer;
-}
-
-.toggled {
-    transition: all .1s ease-in;
-    border-bottom: 2px solid black;
-}
-
 .fbottom {
     background-color: grey;
     margin-top: 2rem;
@@ -860,7 +963,68 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Nav */
+    
+    #overlay > section {
+        width: 90%;
+        height: 65%;
+        margin-top: 10vh;
+    }
+    
+    #overlay section form{
+        width: 70%;
+    }
 
+    #overlay section > img {
+        width: 45px;
+    }
+    
+    
+.abovenav{
+    position: relative;
+}
+
+.abovenav > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+
+}
+
+.abovenav div img {
+    position: relative;
+    padding-left: 25px;
+    width: 3rem;
+}
+
+.abovenav div div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 30px;
+    /* margin-right: 25px; */
+}
+
+.abovenav img {
+    display: block;
+    margin: 0 auto 25px;
+    width: 5vh;
+}
+
+.language_toggle p {
+    padding: 0.2rem;
+    font-weight: bold;
+}
+
+.nl {
+    color: var(--orange);
+    border-bottom: 3px solid var(--orange);
+}
+
+  
     /* ------------------------------------------------------------------------------------------------ */
 
 
@@ -1158,6 +1322,86 @@ footer {
 
     /* Nav */
 
+    #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+        z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+    }
+    
+    #overlay > section {
+        background-color: rgba(86, 75, 170, 0.8);
+        width: 50%;
+        height: 70%;
+        margin: 0 auto;
+        border-radius: 50px 0px 50px 0px;
+        position: relative;
+    }
+    
+    #overlay section > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+    }
+    
+    #overlay section form{
+        display: flex;
+        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 1rem;
+    
+    }
+    
+    #overlay section h1, #overlay section h2 {
+        text-align: center;
+        color: white;
+        padding: 1rem;
+    }
+    
+    #overlay section form label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 0.5rem;
+    }
+    
+    #overlay section form label input{
+        height: 1.5rem;
+        border: none;
+        border-radius: 0 3px 0 3px;
+    }
+    
+    #overlay section form label textarea{
+        border: none;
+    }
+    
+    #overlay section form button {
+        border: none;
+        width: 100%;
+        border-radius: 0px 25px 0px 25px;
+        background-color: var(--orange);
+        color: white;
+        padding: 1rem;
+        margin-top: 2rem;
+        box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+        font-weight: bold;
+    }
+    
+    #overlay section h1 {
+        margin: 0 ;
+        margin-top: 10vh;
+    }
+    
     header {
         justify-content: space-between;
         padding: 12px 10vw;
