@@ -65,14 +65,14 @@
 
 @media screen and (min-width: 1024px) {
 
-    h2{
-        margin-bottom: 1rem;
-    }
+h2{
+    margin-bottom: 1rem;
+}
 
-    .orange_button_desktop {
-        bottom: 0;
-        top: 0;
-    }
+.orange_button_desktop {
+    bottom: 0;
+    top: 0;
+}
 
 /* Nav */
 
@@ -85,7 +85,8 @@
 /* Header */
 
 .highlighttext {
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
+    max-width: 90%;
 }
 
 .highlighttext h1 {
@@ -265,9 +266,17 @@
     padding-left: 5%;
 }
 
-.reports details{
+.reports details {
     padding: 0.5rem 0rem 0.5rem 5%;
     cursor: pointer;
+}
+
+.reports details summary {
+    font-weight: bold;
+}
+
+.reports details p {
+    margin-left: -2rem;
 }
 
 .reports details:last-child{
@@ -299,10 +308,6 @@
     height: 100%;
     width: 65%;
 }
-
-/* .infographic section:nth-child(1) video {
-    
-}    */
 
 /* Infographic end */
 
