@@ -57,11 +57,6 @@ const iObserver = new IntersectionObserver(items => {
 
   } else {
     console.log('Visible? No')
-
-  
-
-    visiblity = 'invisible';
-    statusText = 'Nothing is visible, scroll!';
   }
 
 
@@ -85,19 +80,18 @@ function intersectionHandler(entry) {
     if (shouldBeActive) {
       shouldBeActive.classList.add('active');
     }
-  }
+}
 
+let observer = new IntersectionObserver(function (entries, self) {
+  entries.forEach(entry => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      intersectionHandler(entry); 
+    }
+  });
+}, config);
 
-// let observer = new IntersectionObserver(function (entries, self) {
-//   entries.forEach(entry => {
-//     console.log(entry);
-//     if (entry.isIntersecting) {
-//       intersectionHandler(entry); 
-//     }
-//   });
-// }, config);
-
-// sections.forEach(section => {
-//   observer.observe(section);
-// });
+sections.forEach(section => {
+  observer.observe(section);
+});
 

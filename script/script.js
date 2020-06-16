@@ -33,6 +33,15 @@ video.addEventListener('click', function () {
   }
 });
 
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
 // // code to toggle the line under NL and ENG ---------------
 
 // var el = {
