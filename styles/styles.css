@@ -396,13 +396,6 @@ video {
     padding: 1rem 1.5rem;
 }
 
-.podcastpicture {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 61;
-    border-radius: 0px 100px 0px 0px;
-}
 
 .slider2 {
     display: flex;
@@ -423,45 +416,7 @@ video {
 }
 
 
-/* Podcast audioplayer */
 
-.removeaudioplayer {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-.audioplayer {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 20;
-    grid-row-end: 21;
-    background-color: #f1f3f4;
-    box-shadow: 0px -4px 32px -1px rgba(0, 0, 0, 0.46);
-    height: 100px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 60;
-}
-
-
-.audioplayer audio {
-    margin-left: 5%;
-    width: 550px;
-}
-
-.audioplayer img {
-    margin-left: 2%;
-    z-index: 61;
-}
-
-
-/* Podcast end */
 
 /* Temp Slider Swiper styles */
 
@@ -513,6 +468,60 @@ video {
 }
 
 /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Podcast audioplayer */
+
+    .removeaudioplayer {
+        display: none;
+    }
+    
+    .show {
+        display: block;
+    }
+    
+    .audioplayer {
+        background-color: #f1f3f4;
+        box-shadow: 0px -4px 32px -1px rgba(0, 0, 0, 0.46);
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 60;
+
+    }
+    
+    
+    .audioplayer audio {
+        width: 50%;
+        max-width: 600px;
+    }
+    
+    .audioplayer img {
+        margin-left: 2%;
+        z-index: 61;
+        width: 10%;
+        max-width: 45px;
+    }
+    .audioplayer img:nth-child(-n+3) {
+        display: none;
+    }
+
+      
+    .podcastpicture {
+        display: none;
+            }
+
+    .audioplayer section {
+       margin-left: 5%;
+    }
+
+    
+    
+    /* Podcast end */
+
 
 /* Cases */
 
@@ -955,6 +964,69 @@ footer {
         max-height: 200px;
     }
 
+    .audioplayer img:nth-child(-n+3) {
+        display: block;
+    }
+
+      
+    .podcastpicture {
+        display: block;
+            }
+
+
+    /* Podcast end */
+
+     /* Podcast audioplayer */
+
+.removeaudioplayer {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.audioplayer {
+    background-color: #f1f3f4;
+    box-shadow: 0px -4px 32px -1px rgba(0, 0, 0, 0.46);
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 60;
+}
+
+
+.audioplayer audio {
+    margin-left: 1%;
+    width: 450px;
+}
+
+.audioplayer img {
+    margin-left: 2%;
+    z-index: 61;
+    width: 6%;
+}
+
+.audioplayer section {
+    margin-left: 22%;
+}
+
+.podcastpicture {
+    position: fixed;
+    width: 20%;
+    bottom: 0;
+    left: 0;
+    z-index: 61;
+    border-radius: 0px 100px 0px 0px;
+}
+
+
+/* Podcast end */
+
+
     /* Cases */
 
     /* ------------------------------------------------------------------------------------------------ */
@@ -1388,6 +1460,67 @@ footer {
     }
 
     /* ------------------------------------------------------------------------------------------------ */
+
+
+    /* Podcast audioplayer */
+
+.removeaudioplayer {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.audioplayer {
+    background-color: #f1f3f4;
+    box-shadow: 0px -4px 32px -1px rgba(0, 0, 0, 0.46);
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 60;
+}
+
+
+.audioplayer audio {
+    margin-left: 1%;
+    width: 1000px;
+    max-width: 1000px;
+}
+
+.audioplayer img {
+    margin-left: 2%;
+    z-index: 61;
+}
+
+.audioplayer section {
+    margin-left: 230px;
+}
+
+.podcastpicture {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 61;
+    border-radius: 0px 100px 0px 0px;
+    max-width: 200px;
+}
+
+.audioplayer img:nth-child(-n+3) {
+    display: block;
+}
+
+  
+.podcastpicture {
+    display: block;
+        }
+
+
+/* Podcast end */
+
 
     /* FAQ */
 

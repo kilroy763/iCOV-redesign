@@ -76,33 +76,33 @@ video.addEventListener( 'click', function() {
 // el.one.addEventListener("click", func.toggleActive);
 // el.two.addEventListener("click", func.toggleActive);
 
-// //-------------------------------------------------------- 
+//-------------------------------------------------------- 
 
  
-// // Code to show the audio player within an overlay at the bottom of a viewport
-// document.querySelector(".removeoverlay").addEventListener("click", stopaudio);
+// Code to show the audio player within an overlay at the bottom of a viewport
+document.querySelector(".removeoverlay").addEventListener("click", stopaudio);
 
-// document.querySelector(".showaudio").addEventListener("click", myFunction);
+document.querySelector(".showaudio").addEventListener("click", myFunction);
 
-// function myFunction() {
-//     var element = document.querySelector(".removeaudioplayer");
-//     element.classList.add("show");
-//     audio.play();
-//     isPlaying = true;
-//     playSound();
-//     console.log("het werkt")
-// }
-// //------------------------------------------------------ 
+function myFunction() {
+    var element = document.querySelector(".removeaudioplayer");
+    element.classList.add("show");
+    audio.play();
+    isPlaying = true;
+    playSound();
+    console.log("het werkt")
+}
+//------------------------------------------------------ 
 
 
-// //code to stop the podcast with custom buttom
-// function stopaudio() {
-//     var element = document.querySelector(".removeaudioplayer");
-//     element.classList.remove("show");
-//     isPlaying = false;
-//     playSound();
-//     console.log("het werkt")
-// }
+//code to stop the podcast with custom buttom
+function stopaudio() {
+    var element = document.querySelector(".removeaudioplayer");
+    element.classList.remove("show");
+    isPlaying = false;
+    playSound();
+    console.log("het werkt")
+}
 // //------------------------------------------------------ 
 
 // //code to play the podcast with custom button
