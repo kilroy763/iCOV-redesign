@@ -45,6 +45,7 @@ Voor iCOV
 
  body {
      overflow-x: hidden;
+     line-height: normal ;
  }
 
  p {
@@ -102,6 +103,10 @@ Voor iCOV
 
  button {
      text-decoration: none;
+ }
+
+ a:hover, button:hover{
+    text-decoration: none;
  }
 
  /* =============================================================================================== */
@@ -399,13 +404,22 @@ Voor iCOV
      margin: 0 auto;
  }
 
- .flogo {
-     display: block;
-     padding-bottom: 5%;
-     width: 25vw;
-     max-width: 250px;
-     margin: 0 auto;
- }
+ .flintje {
+    margin: 0 auto;
+    background-color: var(--rijksblue);
+    height: 1rem;
+    width: 3rem;
+}
+
+.flogo {
+    display: block;
+    padding-bottom: 5%;
+    width: 25vw;
+    max-width: 250px;
+    margin: 0 auto;
+    fill: var(--rijksblue);
+}
+
 
  .flanguage {
      text-align: right;
@@ -545,12 +559,6 @@ Voor iCOV
 
      .highlighttext h1 {
          margin: 0.5rem 0;
-     }
-
-     .highlighttext h2 {
-         color: var(--purple);
-         margin-top: 2rem;
-         font-size: 1.5rem;
      }
 
      /* 3 Highlighted articles */
@@ -708,70 +716,99 @@ Voor iCOV
          margin-left: 10vw;
      }
 
-     /* Nav */
+         /* Nav */
 
-     /* ------------------------------------------------------------------------------------------------ */
+    header {
+        justify-content: space-between;
+        padding: 12px 10vw;
+    }
 
-     header {
-         justify-content: space-between;
-         padding: 12px 10vw;
-     }
+    .logo {
+        transition: 0.2s;
+    }
 
-     .nav_toggle {
-         display: none;
-     }
+    .logo:hover {
+        fill: var(--purple);
+        transition: 0.2s;
+    }
 
-     .menu {
-         position: relative;
-         transition: none;
-         z-index: 18;
-         right: 0;
-         width: auto;
-     }
+    .nav_toggle {
+        display: none;
+    }
 
-     .menu ul {
-         width: auto;
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         align-items: flex-end;
-         background-color: none;
-         background-color: transparent;
-     }
+    .menu {
+        position: relative;
+        transition: none;
+        z-index: 18;
+        right: 0;
+        width: auto;
+    }
 
-     .menu ul li {
-         padding: 0;
-         background-color: var(--lightgrey);
-         border-bottom: none !important;
-     }
+    .menu ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        background-color: none;
+        background-color: transparent;
+    }
 
-     .menu ul li+li {
-         margin-left: 120px;
-     }
+    .menu ul li {
+        display: inline-block;
+        padding: 0;
+        background-color: var(--lightgrey);
+        border-bottom: none !important;
+    }
 
-     .menu ul li a {
-         font-weight: bold;
-     }
+    .menu ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 5px;
+        margin-top: 5px;
+        background-color: var(--purple);
+        transition: width .3s;
+    }
 
-     .menu ul li:nth-child(2) a {
-         color: var(--purple);
-     }
+    .menu ul li:hover::after {
+        width: 100%;
+    }
+
+    .menu ul li+li {
+        margin-left: 120px;
+    }
+
+    .menu ul li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .menu ul li:hover a {
+        color: var(--purple);
+        transition: 0.3s;
+    }
+
+    /* ------------------------------------------------------------------------------------------------ */
 
      /* Header */
 
      /* ------------------------------------------------------------------------------------------------ */
 
      .highlighttext h1 {
-         margin: 1rem 0;
-         max-width: 400px;
+        margin: 2rem 0 1rem;
+         max-width: 325px;
      }
 
      .highlighttext p {
-         max-width: 400px;
+         max-width: 325px;
      }
 
      .highlight {
-         grid-template-rows: 450px;
+        box-shadow: 0px 5px 10px var(--grey);
+         grid-template-rows: 350px;
          grid-template-columns: 10vw 25vw 65vw;
      }
 
@@ -868,15 +905,19 @@ Voor iCOV
      .flanguage a {
          text-align: right;
      }
+     .flogo {
+        max-width: 150px;
+        transition: 0.2s;
+    }
+
+    .flogo:hover {
+        fill: var(--purple);
+        transition: 0.2s;
+    }
  }
 
  /* Media querey for standard desktop screen size and larger*/
 
- @media screen and (min-width: 1440px) {
-
-     p {
-         font-size: 1.1rem;
-     }
 
      /* Nav */
 
@@ -917,4 +958,4 @@ Voor iCOV
 
      /* ------------------------------------------------------------------------------------------------ */
 
- }
+ 

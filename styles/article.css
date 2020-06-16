@@ -172,13 +172,22 @@ footer {
     margin: 0 auto;
 }
 
+.flintje {
+    margin: 0 auto;
+    background-color: var(--rijksblue);
+    height: 1rem;
+    width: 3rem;
+}
+
 .flogo {
     display: block;
     padding-bottom: 5%;
     width: 25vw;
     max-width: 250px;
     margin: 0 auto;
+    fill: var(--rijksblue);
 }
+
 
 .flanguage {
     text-align: right;
@@ -455,53 +464,89 @@ section{
 }
 
 @media screen and (min-width: 1024px) {
+/* Nav */
 
-    /* Nav */
+header {
+    justify-content: space-between;
+    padding: 12px 10vw;
+}
 
-    /* ------------------------------------------------------------------------------------------------ */
+.logo {
+    transition: 0.2s;
+}
 
-    header {
-        justify-content: space-between;
-        padding: 12px 10vw;
-    }
+.logo:hover {
+    fill: var(--purple);
+    transition: 0.2s;
+}
 
-    .nav_toggle {
-        display: none;
-    }
+.nav_toggle {
+    display: none;
+}
 
-    .menu {
-        position: relative;
-        transition: none;
-        z-index: 18;
-        right: 0;
-        width: auto;
-    }
+.menu {
+    position: relative;
+    transition: none;
+    z-index: 18;
+    right: 0;
+    width: auto;
+}
 
-    .menu ul {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-end;
-        background-color: none;
-        background-color: transparent;
-    }
+.menu ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: none;
+    background-color: transparent;
+}
 
-    .menu ul li {
-        padding: 0;
-        background-color: var(--lightgrey);
-        border-bottom: none !important;
-    }
+.menu ul li {
+    display: inline-block;
+    padding: 0;
+    background-color: var(--lightgrey);
+    border-bottom: none !important;
+}
 
-    .menu ul li+li {
-        margin-left: 120px;
-    }
+.menu ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    margin-top: 5px;
+    background-color: var(--purple);
+    transition: width .3s;
+}
 
-    .menu ul li a {
-        font-weight: bold;
-    }
+.menu ul li:hover::after {
+    width: 100%;
+}
 
-    .menu ul li:nth-child(2) a{
-        color: var(--purple);
-    }
+.menu ul li+li {
+    margin-left: 120px;
+}
+
+.menu ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.menu ul li:hover a {
+    color: var(--purple);
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+.flogo {
+    max-width: 150px;
+    transition: 0.2s;
+}
+
+.flogo:hover {
+    fill: var(--purple);
+    transition: 0.2s;
+}
 }

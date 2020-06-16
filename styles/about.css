@@ -45,6 +45,7 @@
         left: 0;
         right: 0;
         z-index: 2;
+
     }
 
     .highlighttext {
@@ -95,7 +96,7 @@ h2{
 }
 
 .highlighttext p {
-    max-width: 400px;
+    max-width: 325px;
 }
 
 .highlight {
@@ -352,9 +353,5 @@ h2{
 
 /* In depth end */
 }
-
-@media screen and (min-width: 1440px) {
-}
-
 
 

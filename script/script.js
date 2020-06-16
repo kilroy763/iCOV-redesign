@@ -22,9 +22,13 @@
 
 const video = document.querySelector('.headervideo');
 const headerText = document.querySelector('.headertext');
+const vidContainer = document.querySelector('.videocontainer');
 
 video.addEventListener( 'click', function() {
   headerText.classList.toggle('hide');
+  vidContainer.classList.toggle('bigvideocontainer');
+  //  video.classList.toggle("videoshow");
+  console.log('het werkt')
 }); 
 
 // // code to toggle the line under NL and ENG ---------------
@@ -85,12 +89,12 @@ document.querySelector(".removeoverlay").addEventListener("click", stopaudio);
 document.querySelector(".showaudio").addEventListener("click", myFunction);
 
 function myFunction() {
+   console.log("het werkt")
     var element = document.querySelector(".removeaudioplayer");
     element.classList.add("show");
     audio.play();
     isPlaying = true;
     playSound();
-    console.log("het werkt")
 }
 //------------------------------------------------------ 
 

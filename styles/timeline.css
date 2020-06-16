@@ -136,8 +136,8 @@ header a svg {
     transition: .5s ease-in;
 }
 
-
 /* Nav end */
+
 
 /* Footer */
 
@@ -159,13 +159,22 @@ footer {
     cursor: pointer;
 }
 
+.flintje {
+    margin: 0 auto;
+    background-color: var(--rijksblue);
+    height: 1rem;
+    width: 3rem;
+}
+
 .flogo {
     display: block;
     padding-bottom: 5%;
     width: 25vw;
     max-width: 250px;
     margin: 0 auto;
+    fill: var(--rijksblue);
 }
+
 
 .flanguage {
     text-align: right;
@@ -607,13 +616,20 @@ font-weight: normal;
  }
 
  @media screen and (min-width: 1024px) {
-     /* Nav */
+       /* Nav */
 
-    /* ------------------------------------------------------------------------------------------------ */
-
-    header {
+       header {
         justify-content: space-between;
         padding: 12px 10vw;
+    }
+
+    .logo {
+        transition: 0.2s;
+    }
+
+    .logo:hover {
+        fill: var(--purple);
+        transition: 0.2s;
     }
 
     .nav_toggle {
@@ -639,9 +655,24 @@ font-weight: normal;
     }
 
     .menu ul li {
+        display: inline-block;
         padding: 0;
         background-color: var(--lightgrey);
         border-bottom: none !important;
+    }
+
+    .menu ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 5px;
+        margin-top: 5px;
+        background-color: var(--purple);
+        transition: width .3s;
+    }
+
+    .menu ul li:hover::after {
+        width: 100%;
     }
 
     .menu ul li+li {
@@ -650,11 +681,18 @@ font-weight: normal;
 
     .menu ul li a {
         font-weight: bold;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
     }
 
-    .menu ul li:nth-child(3) a{
+    .menu ul li:hover a {
         color: var(--purple);
+        transition: 0.3s;
     }
+
+    /* ------------------------------------------------------------------------------------------------ */
+
 
     
     .footerflex {
@@ -682,6 +720,16 @@ font-weight: normal;
     .flanguage a {
         text-align: right;
     }
+    .flogo {
+        max-width: 150px;
+        transition: 0.2s;
+    }
+
+    .flogo:hover {
+        fill: var(--purple);
+        transition: 0.2s;
+    }
+    
 }
 
 #navbar #first.active {
