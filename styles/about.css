@@ -69,6 +69,11 @@
         margin-bottom: 1rem;
     }
 
+    .orange_button_desktop {
+        bottom: 0;
+        top: 0;
+    }
+
 /* Nav */
 
 .menu ul li:nth-child(1) a{
@@ -79,8 +84,12 @@
 
 /* Header */
 
+.highlighttext {
+    padding-right: 2rem;
+}
+
 .highlighttext h1 {
-    margin: 1rem 0;
+    margin: 2rem 0 1rem;
     max-width: 400px;
 }
 
@@ -151,7 +160,7 @@
 
 .method,
 .organisation,
-.infographic section {
+.infographic section:nth-child(3) {
     border-radius: 0 100px 0 0;
     margin-bottom: 2rem;
     display: flex;
@@ -202,6 +211,10 @@
     max-width: 15rem;
 }
 
+.organisation p{
+    height: 13rem;
+}
+
 /* Method/ Organisation end */
 
 /* Reports */
@@ -243,7 +256,8 @@
 }
 
 .reports p {
-    margin-bottom: 2rem;
+    margin: 1rem 0 0.5rem 0;
+    width: 75%;
 }
 
 .reports h2,
@@ -265,6 +279,15 @@
 
 /* Infographic */
 
+.infographic section:nth-child(-n + 2) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.infographic section:nth-child(-n + 2) video:hover {
+    cursor: auto;
+}
 
 .infographic section:first-child,
 .infographic section:nth-child(2) {
@@ -274,8 +297,12 @@
 .infographic section video {
     margin: 0 auto;
     height: 100%;
-    width: 60%;
+    width: 65%;
 }
+
+/* .infographic section:nth-child(1) video {
+    
+}    */
 
 /* Infographic end */
 
@@ -298,6 +325,10 @@
     padding: 1rem 3rem;
 }
 
+.indepth > section:nth-child(3) div {
+    flex-basis: 65%;
+    padding: 1rem 3rem;
+}
 
 .indepth > section:nth-child(3) img {
     flex-basis: 35%;
@@ -306,9 +337,12 @@
     object-fit: cover;
 }
 
-.indepth > section:nth-child(3) div {
-    flex-basis: 65%;
-    padding: 1rem 3rem;
+.indepth > section:first-child div p {
+    width: 85%;
+}
+
+.indepth > section:last-child div {
+    margin-left: 10%;
 }
 
 /* In depth end */
