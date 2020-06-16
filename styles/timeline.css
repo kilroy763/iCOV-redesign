@@ -28,7 +28,6 @@ body{
 /* Nav */
 
 /* ------------------------------------------------------------------------------------------------ */
-
 .abovenav{
     background-color: white;
    padding-bottom: 0.1rem;
@@ -40,6 +39,8 @@ body{
     margin: 0 auto 25px;
     width: 5vh;
 }
+
+
 
 header {
     position: sticky;
@@ -138,7 +139,6 @@ header a svg {
 .active {
     right: 0%;
     transition: .5s ease-in;
-    color: rgb(0, 255, 0);;
 }
 
 /* Nav end */
@@ -180,7 +180,6 @@ footer {
     margin: 0 auto;
     fill: var(--rijksblue);
 }
-
 
 .flanguage {
     text-align: right;
@@ -264,32 +263,13 @@ footer {
 
 /* year sections with text */
 
-.year-section img {
-    position: relative; 
-    filter: brightness(50%);
-    border-radius: 0 0  150px 0;
-    background-repeat:no-repeat;
-    background-size: 99vw;
-    width: 99vw;
-    height: 75vh;
-    object-fit: cover;
-}
 
-.year-section:nth-child(2) img{
-    top: -20%;
-    z-index: -1;
-}
 
 .tekst1{
     position: absolute;
     top: 0;
     width: 100vw;
 }   
-
-.year-section{
-
-    position: relative;
-}
 
 
 .tekst1 h1, .tekst1 h2, .tekst1 button{
@@ -384,59 +364,14 @@ button{
 
 /* ------------------------------------------------------------------------------------------------ */
 
-/* timeline mobile */
 
-/* nav a{
-    position: relative;
-    color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    font-size: 1.6em;
-    display: inline-block;
-
-}
- 
-body > nav {
-    margin-top: 15%;
-}
-nav{
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 10%;
-    text-align: center;
-    z-index: 50;
-} */
-
-/* timeline end */
 
 
 @media screen and (min-width: 768px) {
 
+
 /* year sections with text */
 
-.year-section {
-    position: relative;
-    top: -100px;
-    height: 100vh;
-    overflow-y: visible;
-}
-
-.year-section img {
-    position: relative; 
-    filter: brightness(50%);
-    border-radius: 0 0  250px 0;
-    background-repeat:no-repeat;
-    background-size: 99vw;
-    width: 99vw;
-    height: 110%;
-    object-fit: cover;
-}
-
-.year-section:nth-child(2) img{
-    top: -20%;
-    z-index: -1;
-}
 
 .tekst1{
     position: absolute;
@@ -444,9 +379,6 @@ nav{
     width: 100vw;
 }   
 
-.year-section{
-    position: relative;
-}
 
 .tekst1 h1, .tekst1 h2, .tekst1 button{
 
@@ -475,6 +407,49 @@ button{
 }
 
 
+  #image-container {
+    width: 100vw;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  #imagecontainer .year-section {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+  }
+  
+  #image-container .year-section img {
+    border-bottom-right-radius: 150px;
+    width: 100vw;
+    height: calc(100% + 150px);
+    top: -150px;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  #image-container .year-section:nth-of-type(1) {
+    z-index: 5;
+  }
+  
+  #image-container .year-section:nth-of-type(2) {
+    z-index: 4;
+  }
+  
+  #image-container .year-section:nth-of-type(3) {
+    z-index: 3;
+  }
+  
+  #image-container .year-section:nth-of-type(4) {
+    z-index: 2;
+  }
+  
+  #image-container .year-section:nth-of-type(5) {
+    z-index: 1;
+  }
+
+
 /* year sections with text end */
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -501,22 +476,21 @@ body > .verticalnav {
     margin-top: 15%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
-}
-.verticalnav{
-    position: fixed;
-    width: 5%;
-    text-align: center;
-    right: 0;
-    z-index: 1;
+    align-items: center;  
 }
 
+.verticalnav{
+    z-index: 9000;
+    position: fixed;
+    width: 10%;
+    text-align: center;
+    right: 0;
+}
 
 header {
     justify-content: space-between;
+    padding: 12px 10vw;
 }
-
 
 
 .nav_toggle {
@@ -585,10 +559,7 @@ font-weight: normal;
 
  /* Nav */
 
- header {
-    justify-content: space-between;
-    padding: 12px 10vw;
-}
+
 
 .nav_toggle {
     display: none;
@@ -634,7 +605,9 @@ font-weight: normal;
  @media screen and (min-width: 1024px) {
        /* Nav */
 
-       header {
+    
+    
+    header {
         justify-content: space-between;
         padding: 12px 10vw;
     }
