@@ -1,22 +1,21 @@
-
 // Code to toggle the hamburger menu ------------------------
 
- const menuBtn = document.querySelector('.nav_toggle');
- const menu = document.querySelector('.menu');
- let menuOpen = false;
- menuBtn.addEventListener('click', () => {
-   if(!menuOpen) {
+const menuBtn = document.querySelector('.nav_toggle');
+const menu = document.querySelector('.menu');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
     menuBtn.classList.add('open');
-     menu.classList.add('active');
-     menuOpen = true;
-     console.log("open")
-   } else {
-     menuBtn.classList.remove('open');
-     menu.classList.remove('active');
-     menuOpen = false;
-     console.log("open")
-   }
- });
+    menu.classList.add('active');
+    menuOpen = true;
+    console.log("open")
+  } else {
+    menuBtn.classList.remove('open');
+    menu.classList.remove('active');
+    menuOpen = false;
+    console.log("open")
+  }
+});
 
 // //---------------------------------------------------------
 
@@ -24,12 +23,15 @@ const video = document.querySelector('.headervideo');
 const headerText = document.querySelector('.headertext');
 const vidContainer = document.querySelector('.videocontainer');
 
-video.addEventListener( 'click', function() {
-  headerText.classList.toggle('hide');
-  vidContainer.classList.toggle('bigvideocontainer');
-  //  video.classList.toggle("videoshow");
-  console.log('het werkt')
-}); 
+video.addEventListener('click', function () {
+  let viewWidth = window.innerWidth;
+  if (viewWidth > 768) {
+    headerText.classList.toggle('hide');
+    vidContainer.classList.toggle('bigvideocontainer');
+    //  video.classList.toggle("videoshow");
+    console.log('het werkt')
+  }
+});
 
 // // code to toggle the line under NL and ENG ---------------
 
@@ -82,30 +84,30 @@ video.addEventListener( 'click', function() {
 
 //-------------------------------------------------------- 
 
- 
+
 // Code to show the audio player within an overlay at the bottom of a viewport
 document.querySelector(".removeoverlay").addEventListener("click", stopaudio);
 
 document.querySelector(".showaudio").addEventListener("click", myFunction);
 
 function myFunction() {
-   console.log("het werkt")
-    var element = document.querySelector(".removeaudioplayer");
-    element.classList.add("show");
-    audio.play();
-    isPlaying = true;
-    playSound();
+  console.log("het werkt")
+  var element = document.querySelector(".removeaudioplayer");
+  element.classList.add("show");
+  audio.play();
+  isPlaying = true;
+  playSound();
 }
 //------------------------------------------------------ 
 
 
 //code to stop the podcast with custom buttom
 function stopaudio() {
-    var element = document.querySelector(".removeaudioplayer");
-    element.classList.remove("show");
-    isPlaying = false;
-    playSound();
-    console.log("het werkt")
+  var element = document.querySelector(".removeaudioplayer");
+  element.classList.remove("show");
+  isPlaying = false;
+  playSound();
+  console.log("het werkt")
 }
 // //------------------------------------------------------ 
 
@@ -150,7 +152,8 @@ var swiper = new Swiper(".swiper-container", {
       spaceBetween: 50,
       slidesPerView: 3
     },
-}});
+  }
+});
 
 
 // =================================================================================================
@@ -204,7 +207,7 @@ var swiper = new Swiper(".swiper-container", {
  */
 
 
- 
+
 
 //  var observer = new IntersectionObserver(onIntersect, {
 //    threshold: 0.3
