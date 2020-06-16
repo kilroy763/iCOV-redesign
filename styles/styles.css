@@ -311,15 +311,41 @@ video {
 }
 
 #topic4 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/rotterdam.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/unger.jpg);
+}
+
+#topic5 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/gees.jpg);
+}
+
+#topic6 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/wrr.jpg);
+}
+
+#topic7 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/ungernieuws.jpg);
+}
+
+#topic8 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/politievakblad.png);
+}
+
+#topic9 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%), url(../img/vakbladom.jpg);
 }
 
 #topic1,
 #topic2,
 #topic3,
-#topic4 {
+#topic4,
+#topic5,
+#topic6,
+#topic7,
+#topic8,
+#topic9 {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .swiper-container {
