@@ -449,7 +449,12 @@ nav{
     padding: 10px 20px;
     font-size: 1.6em;
     display: inline-block;
+    transition: transform 300ms ease-in-out;
+}
 
+.verticalnav a.active {
+    transform: scale(1.5);
+    transform-origin: right;
 }
  
 body > .verticalnav {
