@@ -334,9 +334,13 @@ video {
     height: 251px !important;
 } 
 
-.button_topic_right {
+.button_topic_right, .button_topic_left {
     display: none;
 }
+
+
+
+
 
 /* Topics end*/
 
@@ -1213,6 +1217,21 @@ footer {
         width: 60px;
         height: 100%;
         right: -5vw;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 13px -3px rgba(0, 0, 0, 0.75);
+    }
+
+    .button_topic_left {
+        background-color: var(--purple);
+        border-radius: 40px 0px 0px 40px;
+        z-index: 420;
+        position: absolute;
+        width: 60px;
+        height: 100%;
+        left: -5vw;
         top: 0;
         display: flex;
         justify-content: center;

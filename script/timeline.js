@@ -77,7 +77,7 @@ for (i = 0; i < intersectItem.length; ++i) {
 function intersectionHandler(entry) {
     const id = entry.target.id;
     const currentlyActive = document.querySelector('.verticalnav a.active');
-    const shouldBeActive = document.querySelector('.verticalnav a[data-ref=' + id + ']');
+    const shouldBeActive = document.querySelector('.verticalnav a[data-year=' + id + ']');
   
     if (currentlyActive) {
       currentlyActive.classList.remove('active');

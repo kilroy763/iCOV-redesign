@@ -126,10 +126,11 @@ video.addEventListener( 'click', function() {
 
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 15,
- 
+  loop: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.button_topic_right'
+    nextEl: '.button_topic_right',
+    prevEl: '.button_topic_left'
   },
   breakpoints: {
     // when window width is >= 320px
