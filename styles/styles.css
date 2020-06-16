@@ -232,6 +232,10 @@ img {
     font-weight: bold;
 }
 
+.language_toggle{
+    display: flex;
+}
+
 .nl {
     color: var(--orange);
     border-bottom: 3px solid var(--orange);
@@ -852,10 +856,10 @@ footer {
 }
 
 .flanguage {
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center;
     margin: 0 auto;
 }
 
