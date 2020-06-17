@@ -314,7 +314,7 @@ header a svg {
 }
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 
     h1 {
         margin-left: 10vw;
