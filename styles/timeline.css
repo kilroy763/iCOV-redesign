@@ -408,21 +408,21 @@ button{
 
 
   #image-container {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     overflow-y: auto;
   }
   
-  #imagecontainer .year-section {
-    width: 100vw;
-    height: 100vh;
+  #image-container .year-section {
+    width: 100%;
+    height: 100%;
     display: block;
     position: relative;
   }
   
   #image-container .year-section img {
     border-bottom-right-radius: 150px;
-    width: 100vw;
+    width: 100%;
     height: calc(100% + 150px);
     top: -150px;
     position: relative;
