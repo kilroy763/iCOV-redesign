@@ -396,10 +396,10 @@ footer {
     background-color: white;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
     border-radius: 0 0 100px 0;
-    max-width: 40vw;
-    padding: 3rem;
-    margin: 2rem;
-    margin-right: 5%;
+    max-width: 100vw;
+    padding: 1rem;
+    margin: 1rem;
+    /* margin-right: 0; */
 }
 
 .head div{
@@ -415,10 +415,11 @@ footer {
 }
 
 .head div {
-    margin-top: 2%;
+    margin-top: 4%;
     margin-left: 4%;
     display: flex;
     align-items: center;
+    z-index: 200;
 }
 
 
@@ -431,8 +432,8 @@ footer {
 }
 
 .head div img {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     object-fit: contain;
     
 
@@ -442,7 +443,7 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
-
+    font-size: 0.8rem;
 }
 
 .artikel h1, .artikel h2, .artikel h3, .artikel p{
@@ -463,24 +464,25 @@ p{
     line-height: 1.3;
 }
 
-section{
+section.content {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 
 .also div img {
-    width: 300px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     filter: brightness(50%);
     position: absolute;
 }
 .also > div{
-    width: 300px;
+    width: 100%;
     height: 200px;
     position: relative;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .also div div h1 {
@@ -497,6 +499,7 @@ section{
 
 .also{
     margin: 2rem;
+    /* width: 100vw; */
 }
 
 .also div section {
@@ -577,6 +580,142 @@ section{
 .nl {
     color: var(--orange);
     border-bottom: 3px solid var(--orange);
+}
+
+/* Article */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.artikel{
+    background-color: white;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    border-radius: 0 0 100px 0;
+    max-width: 50vw;
+    padding: 3rem;
+    margin: 2rem 0 !important;
+    margin-right: 5%;
+}
+
+.head div{
+    position: absolute;
+}
+
+
+
+
+.head{
+
+    position: relative;
+}
+
+.head div {
+    margin-top: 2%;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+
+.coverimg {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.head div img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    
+
+}
+
+.head div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.artikel h1, .artikel h2, .artikel h3, .artikel p{
+    padding: 1rem;
+}
+
+.artikel h2{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 1rem;
+    
+}
+
+p{
+    line-height: 1.3;
+}
+
+section.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 1.5rem;
+}
+
+
+.also div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+}
+.also > div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 1rem 0 0 0;
+}
+
+.also div div h1 {
+    bottom: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.also div div {
+    position: absolute;
+    bottom: 0;
+}
+
+.also{
+    /* margin: 2rem 0 0 !important; */
+    /* margin-top: 2rem; */
+    margin-right: 0;
+    width: 30vw;
+}
+
+.also div section {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.also div section h2 {
+        color: var(--purple);
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+}
+
+.also > h1{
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
     /* Footer */
@@ -768,6 +907,136 @@ header {
 }
 
 /* ------------------------------------------------------------------------------------------------ */
+
+.artikel{
+    background-color: white;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    border-radius: 0 0 100px 0;
+    max-width: 45vw;
+    padding: 3rem;
+    margin: 2rem;
+    margin-right: 5%;
+}
+
+.head div{
+    position: absolute;
+}
+
+
+
+
+.head{
+
+    position: relative;
+}
+
+.head div {
+    margin-top: 2%;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+
+.coverimg {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.head div img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    
+
+}
+
+.head div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.artikel h1, .artikel h2, .artikel h3, .artikel p{
+    padding: 1rem;
+}
+
+.artikel h1 {
+    margin-left: 0;
+}
+
+.artikel h2{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 1rem;
+    
+}
+
+p{
+    line-height: 1.3;
+}
+
+section.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+
+
+.also div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+}
+.also > div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    /* margin: 1rem; */
+}
+
+.also div div h1 {
+    bottom: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.also div div {
+    position: absolute;
+    bottom: 0;
+}
+
+.also{
+    margin: 2rem 0;
+    width: 30vw;
+}
+
+.also div section {
+    background-color: white;
+    position: absolute;
+}
+
+.also div section h2 {
+        color: var(--purple);
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+}
+
+.also > h1{
+    margin-bottom: 1rem;
+}
+
 .flogo {
     max-width: 150px;
     transition: 0.2s;
