@@ -756,7 +756,7 @@ header a svg {
 
      /* ------------------------------------------------------------------------------------------------ */
 
-     .bigarticles article:last-child {
+     .bigarticles a:last-child {
          display: none;
      }
 
@@ -1092,7 +1092,7 @@ header a svg {
 
      /* ------------------------------------------------------------------------------------------------ */
 
-     .bigarticles article:last-child {
+     .bigarticles a:last-child {
          display: block;
      }
 

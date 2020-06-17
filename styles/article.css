@@ -23,236 +23,6 @@
 
 /* ------------------------------------------------------------------------------------------------ */
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
-    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-
-#overlay > section {
-    background-color: rgba(86, 75, 170, 0.8);
-    width: 95%;
-    height: 95%;
-    margin: 0 auto;
-    border-radius: 50px 0px 50px 0px;
-    position: relative;
-}
-
-#overlay section > img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    width: 30px;
-}
-
-#overlay section form{
-    display: flex;
-    flex-direction: column;
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    padding: 1rem;
-
-}
-
-#overlay section h1, #overlay section h2 {
-    text-align: center;
-    color: white;
-    padding: 1rem;
-}
-
-#overlay section form label{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 0.5rem;
-}
-
-#overlay section form label input{
-    height: 1.5rem;
-    border: none;
-    border-radius: 0 3px 0 3px;
-}
-
-#overlay section form label textarea{
-    border: none;
-}
-
-#overlay section form button {
-    border: none;
-    width: 100%;
-    border-radius: 0px 25px 0px 25px;
-    background-color: var(--orange);
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
-    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-    font-weight: bold;
-}
-
-#overlay section h1 {
-    margin: 0 ;
-    margin-top: 2vh;
-}
-
-.abovenav{
-    position: relative;
-}
-
-.abovenav > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    /* width: 100%; */
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.abovenav div img {
-    position: relative;
-    /* padding-left: 25px; */
-    width: 3rem;
-    margin: 0;
-}
-
-.abovenav div div {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    height: 30px;
-    /* width: 100%; */
-    /* justify-content: space-between; */
-    /* margin-right: 25px; */
-}
-
-.abovenav img {
-    display: block;
-    margin: 0 auto 25px;
-    width: 5vh;
-}
-
-.language_toggle p {
-    padding: 0.2rem;
-    font-weight: bold;
-}
-
-.nl {
-    color: var(--orange);
-    border-bottom: 3px solid var(--orange);
-}
-
-header {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--lightgrey);
-    padding: 1rem;
-}
-
-header a svg {
-    width: 25vw;
-    max-width: 114px;
-}
-
-.nav_toggle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-}
-
-.nav_toggle_line {
-    width: 40px;
-    height: 4px;
-    background: var(--purple);
-    transition: all .5s ease-in-out;
-}
-
-.nav_toggle_line::before,
-.nav_toggle_line::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 4px;
-    background: var(--purple);
-    transition: all .5s ease-in-out;
-}
-
-.nav_toggle_line::before {
-    transform: translateY(-16px);
-}
-
-.nav_toggle_line::after {
-    transform: translateY(16px);
-}
-
-.nav_toggle.open .nav_toggle_line {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-
-.nav_toggle.open .nav_toggle_line::before {
-    transform: rotate(45deg) translate(35px, -35px);
-}
-
-.nav_toggle.open .nav_toggle_line::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-}
-
-.menu {
-    position: absolute;
-    width: 100vw;
-    right: 100vw;
-    top: 100%;
-    transition: .5s ease-in;
-}
-
-.menu ul {
-    background-color: var(--grey);
-    list-style: none;
-    margin-bottom: 0;
-}
-
-.menu ul li {
-    padding: 1rem 0 1rem 2rem;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.menu ul li:not(:last-child) {
-    border-bottom: 1px solid rgb(192, 192, 192);
-}
-
-.active {
-    right: 0%;
-    transition: .5s ease-in;
-}
-
 /* Nav end */
 
 
@@ -396,9 +166,145 @@ footer {
     background-color: white;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
     border-radius: 0 0 100px 0;
-    max-width: 40vw;
-    padding: 3rem;
+    max-width: 100vw;
+    padding: 1rem;
+    margin: 1rem;
+    /* margin-right: 0; */
+}
+
+.head div{
+    position: absolute;
+}
+
+
+
+
+.head{
+
+    position: relative;
+}
+
+.head div {
+    margin-top: 4%;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+}
+
+
+.coverimg {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.head div img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    
+
+}
+
+.head div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.artikel h1, .artikel h2, .artikel h3, .artikel p{
+    padding: 1rem;
+}
+
+.artikel h2{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 1rem;
+    
+}
+
+p{
+    line-height: 1.3;
+}
+
+section.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.also div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+}
+.also > div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.also div div h1 {
+    bottom: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.also div div {
+    position: absolute;
+    bottom: 0;
+}
+
+.also{
     margin: 2rem;
+    /* width: 100vw; */
+}
+
+.also div section {
+    background-color: white;
+    position: absolute;
+}
+
+.also div section h2 {
+        color: var(--purple);
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+}
+
+.also > h1{
+    margin-bottom: 1rem;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+/* Article */
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.artikel{
+    background-color: white;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    border-radius: 0 0 100px 0;
+    max-width: 50vw;
+    padding: 3rem;
+    margin: 2rem 0 !important;
     margin-right: 5%;
 }
 
@@ -463,24 +369,26 @@ p{
     line-height: 1.3;
 }
 
-section{
+section.content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 1.5rem;
 }
 
 
 .also div img {
-    width: 300px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     filter: brightness(50%);
     position: absolute;
 }
 .also > div{
-    width: 300px;
+    width: 100%;
     height: 200px;
     position: relative;
-    margin: 1rem;
+    margin: 1rem 0 0 0;
 }
 
 .also div div h1 {
@@ -488,6 +396,7 @@ section{
     color: white;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .also div div {
@@ -496,12 +405,17 @@ section{
 }
 
 .also{
-    margin: 2rem;
+    /* margin: 2rem 0 0 !important; */
+    /* margin-top: 2rem; */
+    margin-right: 0;
+    width: 30vw;
 }
 
 .also div section {
     background-color: white;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .also div section h2 {
@@ -512,71 +426,8 @@ section{
 }
 
 .also > h1{
+    margin: 0;
     margin-bottom: 1rem;
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-    #overlay > section {
-        width: 90%;
-        height: 65%;
-        margin-top: 10vh;
-    }
-    
-    #overlay section form{
-        width: 70%;
-    }
-
-    #overlay section > img {
-        width: 45px;
-    }
-    
-    
-.abovenav{
-    position: relative;
-}
-
-.abovenav > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
-
-}
-
-.abovenav div img {
-    position: relative;
-    padding-left: 25px;
-    width: 3rem;
-}
-
-.abovenav div div {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    height: 30px;
-    /* margin-right: 25px; */
-}
-
-.abovenav img {
-    display: block;
-    margin: 0 auto 25px;
-    width: 5vh;
-}
-
-.language_toggle p {
-    padding: 0.2rem;
-    font-weight: bold;
-}
-
-.nl {
-    color: var(--orange);
-    border-bottom: 3px solid var(--orange);
 }
 
     /* Footer */
@@ -614,160 +465,137 @@ section{
 @media screen and (min-width: 1024px) {
 /* Nav */
 
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
-    z-index: 2000; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-
-#overlay > section {
-    background-color: rgba(86, 75, 170, 0.8);
-    width: 50%;
-    height: 70%;
-    margin: 0 auto;
-    border-radius: 50px 0px 50px 0px;
-    position: relative;
-}
-
-#overlay section > img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 20px;
-}
-
-#overlay section form{
-    display: flex;
-    flex-direction: column;
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    padding: 1rem;
-
-}
-
-#overlay section h1, #overlay section h2 {
-    text-align: center;
-    color: white;
-    padding: 1rem;
-}
-
-#overlay section form label{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 0.5rem;
-}
-
-#overlay section form label input{
-    height: 1.5rem;
-    border: none;
-    border-radius: 0 3px 0 3px;
-}
-
-#overlay section form label textarea{
-    border: none;
-}
-
-#overlay section form button {
-    border: none;
-    width: 100%;
-    border-radius: 0px 25px 0px 25px;
-    background-color: var(--orange);
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
-    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-    font-weight: bold;
-}
-
-#overlay section h1 {
-    margin: 0 ;
-    margin-top: 10vh;
-}
-
-header {
-    justify-content: space-between;
-    padding: 12px 10vw;
-}
-
-.logo {
-    transition: 0.2s;
-}
-
-.logo:hover {
-    fill: var(--purple);
-    transition: 0.2s;
-}
-
-.nav_toggle {
-    display: none;
-}
-
-.menu {
-    position: relative;
-    transition: none;
-    z-index: 18;
-    right: 0;
-    width: auto;
-}
-
-.menu ul {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    background-color: none;
-    background-color: transparent;
-}
-
-.menu ul li {
-    display: inline-block;
-    padding: 0;
-    background-color: var(--lightgrey);
-    border-bottom: none !important;
-}
-
-.menu ul li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    margin-top: 5px;
-    background-color: var(--purple);
-    transition: width .3s;
-}
-
-.menu ul li:hover::after {
-    width: 100%;
-}
-
-.menu ul li+li {
-    margin-left: 120px;
-}
-
-.menu ul li a {
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
-
-.menu ul li:hover a {
-    color: var(--purple);
-    transition: 0.3s;
-}
-
 /* ------------------------------------------------------------------------------------------------ */
+
+.artikel{
+    background-color: white;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    border-radius: 0 0 100px 0;
+    max-width: 45vw;
+    padding: 3rem;
+    margin: 2rem;
+    margin-right: 5%;
+}
+
+.head div{
+    position: absolute;
+}
+
+
+
+
+.head{
+
+    position: relative;
+}
+
+.head div {
+    margin-top: 2%;
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+
+.coverimg {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.head div img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    
+
+}
+
+.head div a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.artikel h1, .artikel h2, .artikel h3, .artikel p{
+    padding: 1rem;
+}
+
+.artikel h1 {
+    margin-left: 0;
+}
+
+.artikel h2{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 1rem;
+    
+}
+
+p{
+    line-height: 1.3;
+}
+
+section.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+
+
+.also div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+}
+.also > div{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    /* margin: 1rem; */
+}
+
+.also div div h1 {
+    bottom: 0;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.also div div {
+    position: absolute;
+    bottom: 0;
+}
+
+.also{
+    margin: 2rem 0;
+    width: 30vw;
+}
+
+.also div section {
+    background-color: white;
+    position: absolute;
+}
+
+.also div section h2 {
+        color: var(--purple);
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+}
+
+.also > h1{
+    margin-bottom: 1rem;
+}
+
 .flogo {
     max-width: 150px;
     transition: 0.2s;
