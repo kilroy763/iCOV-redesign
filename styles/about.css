@@ -68,13 +68,13 @@
 
 .tabs_about li:nth-child(2) {
     border-radius: 30px 0px 0px 0px;
-    box-shadow: inset 5px 30px 4px -18px rgba(227,227,227,1);
+    box-shadow: inset 11px 15px 8px -8px rgba(227,227,227,1);
     background-color: white;
 }
 
 .tabs_org li:nth-child(1) {
     border-radius: 0px 30px 0px 0px;
-    box-shadow: inset -5px 30px 4px -18px rgba(227,227,227,1);
+    box-shadow: inset -11px 15px 8px -8px rgba(227,227,227,1);
     background-color: white;
 }
 
@@ -257,24 +257,18 @@
 
     .tabs_about li,
     .tabs_org li {
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
         padding: auto;
         width: 50%;
         text-align: center;
-        
     }
-
-    /* .tabs_about li:nth-child(2) {
+    .tabs_about li:nth-child(2) {
         border-radius: 50px 0px 0px 0px;
-        box-shadow: inset 11px 30px 4px -18px rgba(227,227,227,1);
-        background-color: white;
     }
 
     .tabs_org li:nth-child(1) {
         border-radius: 0px 50px 0px 0px;
-        box-shadow: inset -11px 30px 4px -18px rgba(227,227,227,1);
-        background-color: white;
-    } */
+    }
 
     /* Tabs end */
 
@@ -420,7 +414,7 @@ margin-top: 1rem;
 }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 
 h2{
     margin-bottom: 1rem;
@@ -469,8 +463,11 @@ h2{
 /* Tabs */
 .tabs_about li,
 .tabs_org li {
-    padding: 1rem 25% 1rem ;
+    padding: 1rem 25% 1rem;
+    height: auto;
 }
+
+
 
 /* Tabs end */
 
@@ -520,12 +517,19 @@ h2{
     margin-left: 10%;
 }
 
+.infographic section:nth-child(1),
+.infographic section:nth-child(2) {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 .method img,
 .organisation img {
     margin: 0 auto;
     width: 40%;
     margin-top: 10%;
-    height: 300px;
+    height: 200px;
     max-width: 15rem;
 }
 
@@ -533,7 +537,7 @@ h2{
     margin: 0 auto;
     width: 55%;
     margin-top: 10%;
-    height: 300px;
+    height: 200px;
     max-width: 15rem;
 }
 
@@ -578,21 +582,22 @@ h2{
 }
 
 .reports h2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
+
 }
 
 .reports p {
-    margin: 1rem 0 0.5rem 0;
+
     width: 75%;
 }
 
-.reports h2,
-.reports p {
-    padding-left: 5%;
+.reports div h2, .reports div p, .reports div details p{
+    padding: 0.5rem 0 ;
+    width: 50vw;
 }
 
 .reports details {
-    padding: 0.5rem 0rem 0.5rem 5%;
+ 
     cursor: pointer;
 }
 
@@ -600,9 +605,7 @@ h2{
     font-weight: bold;
 }
 
-.reports details p {
-    margin-left: -2rem;
-}
+
 
 .reports details:last-child{
     margin-bottom: 2rem;

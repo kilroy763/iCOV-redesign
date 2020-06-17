@@ -608,7 +608,7 @@ Voor iCOV
 
  /* Media querey for small desktop screen size */
 
- @media screen and (min-width: 1024px) {
+ @media screen and (min-width: 1025px) {
 
      h1 {
          margin-left: 10vw;

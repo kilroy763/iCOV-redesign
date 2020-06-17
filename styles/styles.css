@@ -142,7 +142,6 @@ img {
     width: 75vw;
 }
 
-
 .headertext figure img {
     height: auto;
     width: 100%;
@@ -160,18 +159,24 @@ video {
 /* ------------------------------------------------------------------------------------------------ */
 
 /* Topics */
+.swiper-wrapper a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 .swiper-slide {
     position: relative;
     overflow: hidden;
 }
 
-.swiper-slide h2 {
+.swiper-slide a h2 {
     position: absolute;
     color: white;
     width: auto;
     height: auto;
-
     bottom: 0;
     left: 0;
     right: 0;
@@ -179,7 +184,7 @@ video {
     transition-duration: 0.5s;
 }
 
-.swiper-slide p {
+.swiper-slide a p {
     position: absolute;
     left: 0;
     right: 0;
@@ -286,7 +291,7 @@ video {
 }
 
 .theme h2 {
-    margin: 0.7rem 0rem 0.7 1rem !important;
+    margin: 0.7rem 0rem 0.7rem 1rem !important;
     font-size: 1.5rem;
 }
 
@@ -677,8 +682,18 @@ footer {
 
 /* ------------------- Hidden Desktop elements styles -----------*/
 
-.themefold {
+.themefold{
     display: none;
+}
+
+.themefold1,
+.themefold2,
+.themefold3 {
+    display: none;
+}
+
+.showthemefold {
+    display: block;
 }
 
 .hide {
@@ -809,7 +824,7 @@ footer {
 
     .theme h2,
     .theme p {
-        margin: 1.5rem 0rem;
+        margin: 0.7rem 0rem 0.7rem 1rem !important;
         display: inline;
     }
 
@@ -829,11 +844,11 @@ footer {
     }
 
     .themefold {
-        display: block;
+        display: inline;
     }
 
-    .theme p:nth-child(3) {
-        display: none;
+    .theme p {
+        display: block;
     }
 
     .orange_button {
@@ -1024,7 +1039,7 @@ footer {
 
 /* Media querey for small desktop screen size */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 
     h1 {
         margin-left: 10vw;

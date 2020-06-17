@@ -42,6 +42,26 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 
+
+//--------------------------------------------------------------
+var themebutton = document.querySelectorAll(".theme button"),
+  i;
+var hiddentext = document.querySelectorAll(".themefold");
+
+for (i = 0; i < themebutton.length; i++) {
+  themebutton[i].addEventListener('click', function fold(i) {
+    hiddentext[i].classList.toggle(".showthemefold");
+  })
+}
+
+// function fold (i) {
+//   console.log('Never gonna give you up')
+//     var hiddentext = document.querySelectorAll(".themefold");
+//       console.log("kom niet")
+//       hiddentext[i].classList.toggle(".showthemefold");
+//   }
+
+
 // // code to toggle the line under NL and ENG ---------------
 
 // var el = {

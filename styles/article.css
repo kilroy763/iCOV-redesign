@@ -176,7 +176,9 @@ footer {
     position: absolute;
 }
 
-
+p{
+    font-weight: normal;
+}
 
 
 .head{
@@ -189,7 +191,7 @@ footer {
     margin-left: 4%;
     display: flex;
     align-items: center;
-    z-index: 200;
+    z-index: 6;
 }
 
 
@@ -462,7 +464,7 @@ section.content {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 /* Nav */
 
 /* ------------------------------------------------------------------------------------------------ */
