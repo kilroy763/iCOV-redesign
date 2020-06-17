@@ -754,9 +754,9 @@ footer {
 
     .headertext {
         position: absolute;
-        top: 20vh;
+        top: 18vh;
         left: 0;
-        height: 16vh;
+        height: 17.5vh;
         width: 350px;
         padding-left: 0;
     }
