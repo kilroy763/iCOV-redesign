@@ -68,13 +68,13 @@
 
 .tabs_about li:nth-child(2) {
     border-radius: 30px 0px 0px 0px;
-    box-shadow: inset 5px 20px 4px -18px rgba(227,227,227,1);
+    box-shadow: inset 5px 30px 4px -18px rgba(227,227,227,1);
     background-color: white;
 }
 
 .tabs_org li:nth-child(1) {
     border-radius: 0px 30px 0px 0px;
-    box-shadow: inset -5px 20px 4px -18px rgba(227,227,227,1);
+    box-shadow: inset -5px 30px 4px -18px rgba(227,227,227,1);
     background-color: white;
 }
 
@@ -264,17 +264,17 @@
         
     }
 
-    .tabs_about li:nth-child(2) {
+    /* .tabs_about li:nth-child(2) {
         border-radius: 50px 0px 0px 0px;
-        box-shadow: inset 11px 20px 4px -18px rgba(227,227,227,1);
+        box-shadow: inset 11px 30px 4px -18px rgba(227,227,227,1);
         background-color: white;
     }
 
     .tabs_org li:nth-child(1) {
         border-radius: 0px 50px 0px 0px;
-        box-shadow: inset -11px 20px 4px -18px rgba(227,227,227,1);
+        box-shadow: inset -11px 30px 4px -18px rgba(227,227,227,1);
         background-color: white;
-    }
+    } */
 
     /* Tabs end */
 
@@ -390,28 +390,34 @@ margin-top: 1rem;
 
 .infographic section:nth-child(1) video,
 .infographic section:nth-child(2) video {
+ display: flex;
   height: 100%;
-  width: 50%;
+  width: 100%;
   margin: 0 1rem;
-  margin: 0 auto;
-  padding: 2rem;
+    margin: 0 auto;
+
 }
 
+.infographic section:nth-child(1),
+.infographic section:nth-child(2) {
+    width: 50%;
+    margin: 0 auto;
+}
 
-
-/* .infographic section:nth-child(2){
-    flex-basis: 50;
-} */
-
-/* .infographic section:nth-child(4){
-    
-} */
-
+.infographic section:nth-child(3){
+    margin-top: 3rem;
+}
 
 
 /* Infographic end*/
 
-
+.reports div h2 ,.reports div p, .reports div details p, .reports div details summary{
+    padding: 1rem 0rem;
+    width: 90vw;
+}
+.reports{
+    margin-bottom: 3rem;
+}
 }
 
 @media screen and (min-width: 1024px) {
@@ -465,6 +471,7 @@ h2{
 .tabs_org li {
     padding: 1rem 25% 1rem ;
 }
+
 /* Tabs end */
 
 .methodcontainer,
