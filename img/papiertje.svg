@@ -1,0 +1,22 @@
+<svg width="133" height="112" viewBox="0 0 133 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M25.42 0H98V84.7C98 91.715 95.2133 98.4426 90.253 103.403C85.2926 108.363 78.565 111.15 71.55 111.15H0V25.42C0 18.6782 2.67817 12.2125 7.44535 7.44535C12.2125 2.67817 18.6782 0 25.42 0V0Z" fill="#45AADB"/>
+<path d="M37.6201 23.4599L86.0301 22.8799" stroke="#564BAA" stroke-width="3.1" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.2197 40.8598L86.2297 40.0698" stroke="#564BAA" stroke-width="3.1" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.4199 58.05L68.3199 57.48" stroke="#564BAA" stroke-width="3.1" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.5 75.2402L62.46 74.7402" stroke="#564BAA" stroke-width="3.1" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.5 92.44L56.84 92" stroke="#564BAA" stroke-width="3.1" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.0098 23.6698L29.8698 23.5498" stroke="#564BAA" stroke-width="3.1" stroke-miterlimit="10" stroke-linecap="round"/>
+<g style="mix-blend-mode:multiply">
+<path d="M73.5195 85.5002C73.5378 83.1531 73.7519 80.8116 74.1595 78.5002C74.1595 78.5002 75.3695 73.9302 75.9295 71.8702C76.0795 71.3302 76.1795 70.9602 76.1995 70.8702C82.7895 52.8702 99.3895 44.4502 99.3895 44.4502C107.743 40.2978 117.13 38.688 126.39 39.8202L128.75 40.2402C128.2 40.8702 127.37 41.8102 126.34 42.9302C119.67 50.2302 111.61 59.0602 101.01 64.8302C94.072 68.5566 86.4728 70.8904 78.6395 71.7001L76.3195 71.8401" stroke="#564BAA" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<path d="M76.3203 71.8399L84.6703 66.5799C88.3603 63.5799 92.4003 60.4899 96.8003 57.4699C106.412 50.877 116.652 45.2497 127.37 40.6699" stroke="#564BAA" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="132.58" height="111.15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
