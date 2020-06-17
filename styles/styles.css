@@ -758,18 +758,24 @@ footer {
 
     /* ------------------------------------------------------------------------------------------------ */
 
+    .videocontainer{
+        cursor: pointer
+    }
     video {
         height: 24vh;
         object-fit: cover;
+        cursor: pointer;
     }
 
     .headerh1 {
         padding-top: 1rem !important;
+        cursor: pointer;
     }
 
 
     .headertext {
         position: absolute;
+        cursor: pointer;
         top: 18vh;
         left: 0;
         height: 17.5vh;
@@ -1040,7 +1046,7 @@ footer {
 
 /* Media querey for small desktop screen size */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
 
     h1 {
         margin-left: 10vw;
