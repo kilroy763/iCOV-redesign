@@ -104,7 +104,7 @@
 .abovenav div img {
     position: relative;
     /* padding-left: 25px; */
-    width: 3rem;
+    /* width: 3rem; */
     margin: 0;
 }
 
@@ -118,7 +118,7 @@
     /* margin-right: 25px; */
 }
 
-.abovenav img {
+.abovenav img:first-child {
     display: block;
     margin: 0 auto 25px;
     width: 5vh;
@@ -277,9 +277,9 @@ header a svg {
 }
 
 .abovenav div img {
-    position: relative;
+    /* position: relative; */
     padding-left: 25px;
-    width: 5rem;
+    /* width: 2rem; */
 }
 
 .abovenav div div {
@@ -292,7 +292,7 @@ header a svg {
     /* margin-right: 25px; */
 }
 
-.abovenav img {
+.abovenav > img {
     display: block;
     margin: 0 auto 25px;
     width: 5vh;
