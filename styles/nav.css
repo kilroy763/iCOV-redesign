@@ -348,6 +348,7 @@ header a svg {
         margin: 0 auto;
         border-radius: 50px 0px 50px 0px;
         position: relative;
+        margin-top: 10vh;
     }
     
     #overlay section > img {
@@ -405,7 +406,7 @@ header a svg {
     
     #overlay section h1 {
         margin: 0 ;
-        margin-top: 10vh;
+        margin-top: 1vh;
     }
     
     header {

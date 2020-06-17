@@ -385,7 +385,7 @@ button{
     color: var(--orange);
 }
  
-body > .verticalnav {
+.verticalnav {
     height: 100vh;
     margin-top: 10%;
     display: flex;
