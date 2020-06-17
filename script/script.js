@@ -25,15 +25,6 @@ const vidContainer = document.querySelector('.videocontainer');
 
 video.addEventListener('click', hideVid);
 video.addEventListener('ontouchstart', hideVid);
-//  {
-//   let viewWidth = window.innerWidth;
-//   if (viewWidth > 768) {
-//     headerText.classList.toggle('hide');
-//     vidContainer.classList.toggle('bigvideocontainer');
-//     //  video.classList.toggle("videoshow");
-//     console.log('het werkt')
-//   }
-// });
 
 function hideVid() {
   let viewWidth = window.innerWidth;
