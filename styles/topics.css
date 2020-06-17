@@ -333,6 +333,7 @@ Voor iCOV
      text-align: center;
      color: #660099;
      text-decoration: none;
+     display: block !important;
  }
 
  .language_toggle {
