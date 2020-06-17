@@ -40,6 +40,7 @@
     display: block;
     margin: 0 auto;
     width: 80%;
+
 }
 
 #overlay section h1, #overlay section h2 {
@@ -215,24 +216,29 @@ header a svg {
     background-color: var(--grey);
     list-style: none;
     margin-bottom: 0;
+    z-index: 900;
 }
 
 .menu ul li {
     padding: 1rem 0 1rem 2rem;
+    z-index: 900;
 }
 
 .menu ul li a {
     text-decoration: none;
     color: black;
+    z-index: 900;
 }
 
 .menu ul li:not(:last-child) {
     border-bottom: 1px solid rgb(192, 192, 192);
+    z-index: 900;
 }
 
 .active {
     right: 0%;
     transition: .5s ease-in;
+    z-index: 900;
 }
 
 /* Nav end */

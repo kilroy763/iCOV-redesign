@@ -467,9 +467,13 @@ section.content {
 @media screen and (min-width: 1024px) {
 /* Nav */
 
+.menu ul li:nth-child(2) a {
+    color: var(--purple);
+}
+
 /* ------------------------------------------------------------------------------------------------ */
 
-.artikel{
+.artikel {
     background-color: white;
     box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
     border-radius: 0 0 100px 0;
