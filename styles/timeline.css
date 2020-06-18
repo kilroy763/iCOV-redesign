@@ -503,7 +503,7 @@ button{
 
 #image-container .year-section {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     display: block;
     overflow: visible;
@@ -694,6 +694,14 @@ font-weight: normal;
 
     .verticalnav{
         top: 0;
+    }
+
+    #image-container .year-section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: block;
+        overflow: visible;
     }
 
     /* ------------------------------------------------------------------------------------------------ */
