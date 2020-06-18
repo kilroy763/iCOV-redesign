@@ -17,13 +17,38 @@
     --rijksblue: #154273;
 }
 
-main {
-    overflow-x: hidden; 
+main{
+    position: relative;
 }
-
 
 /* Nav */
 
+.verticalnav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 8px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: transform 300ms ease-in-out;
+
+}
+
+.verticalnav a.active {
+    transform: scale(1.2);
+    font-weight: bold;
+    transform-origin: right;
+    color: var(--orange);
+}
+
+.verticalnav{
+    z-index: 8;
+    position: sticky;
+    text-align: center;
+    top: 700px;
+    width: 100vw;
+
+}
 
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -53,10 +78,12 @@ footer {
 }
 
 .flintje {
-    margin: 0 auto;
     background-color: var(--rijksblue);
     height: 1rem;
     width: 3rem;
+    z-index: 5;
+    position: relative;
+    margin: 0 auto;
 }
 
 .flogo {
@@ -146,6 +173,7 @@ footer {
     width: 60px;
     align-content: center;
     background-color: var(--rijk);
+    z-index: 150;
 }
 
 /* Footer end */
@@ -153,6 +181,60 @@ footer {
 /* ------------------------------------------------------------------------------------------------ */
 
 /* year sections with text */
+
+#image-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: -1rem;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    scroll-snap-type: x mandatory;
+    background-color: black;
+    margin-top: -3rem;
+}
+
+#image-container .year-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: block;
+    overflow: visible;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+#image-container .year-section img {
+    border-bottom-right-radius: 150px;
+    height: 100%;
+    width: calc(100vw + 150px);
+    left: -150px;
+    position: relative;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+#image-container .year-section:nth-of-type(1) {
+    z-index: 5;
+}
+
+#image-container .year-section:nth-of-type(2) {
+    z-index: 4;
+}
+
+#image-container .year-section:nth-of-type(3) {
+    z-index: 3;
+}
+
+#image-container .year-section:nth-of-type(4) {
+    z-index: 2;
+}
+
+#image-container .year-section:nth-of-type(5) {
+    z-index: 1;
+
+}
 
 
 button:hover {
@@ -287,8 +369,66 @@ button{
 
 @media screen and (min-width: 768px) {
 
+    
+    body{
+        background-color: black;
+    }
 
+    .abovenav{
+        background-color: white;
+        padding-bottom: 0.1rem;
+    }
+
+    .flintje{
+        position: relative;
+        margin: 0 auto;
+        z-index: 5;
+    }
 /* year sections with text */
+
+
+button:hover {
+    border-color: none;
+    box-shadow: inset 0px 0px 0px 5px var(--orange);
+    background-color: white;
+    color: black !important;
+    cursor: pointer;
+
+}
+.tekst1{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}   
+
+
+.tekst1 h1, .tekst1 h2, .tekst1 button{
+
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 15%;
+
+}
+
+
+.year-section h1, .year-section h2{
+    max-width: 70%;
+}
+
+button{
+    border: none;
+    width: 30%;
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    font-weight: bold;
+}
 
 
 .tekst1{
@@ -305,7 +445,7 @@ button{
     text-align: center;
     align-items: center;
     color: white;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .year-section h1, .year-section h2{
@@ -334,7 +474,7 @@ button{
 
 #image-container .year-section img {
     border-bottom-right-radius: 150px;
-    width: 100%;
+ 
     height: calc(100% + 150px);
     top: -150px;
     position: relative;
@@ -364,7 +504,10 @@ button{
 }
 
 #image-container {
-    margin-bottom: 3rem;
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+    display: block;
+    overflow-x: hidden;
 }
 /* year sections with text end */
 
@@ -394,6 +537,8 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;  
+    width: auto;
+    top: 30%;
 }
 
 .verticalnav{
@@ -401,7 +546,9 @@ button{
     position: fixed;
     padding-left: 15%;
     text-align: center;
+    bottom: auto;
     right: 0;
+
 }
 
 /* header {
@@ -487,9 +634,23 @@ font-weight: normal;
         color: var(--purple);
     }
 
+    .verticalnav{
+        top: 13%;
+    }
+
     /* ------------------------------------------------------------------------------------------------ */
     .cnt223 h1{
         margin-left: 0 !important;
+    }
+
+    .tekst1 h1, .tekst1 h2, .tekst1 button{
+        min-width: 200px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        color: white;
+        margin-top: 10%;
     }
     /* footer */
     
