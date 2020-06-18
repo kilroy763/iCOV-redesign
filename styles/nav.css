@@ -148,7 +148,7 @@ textarea{
 
 header {
     position: sticky;
-    z-index: 11;
+    z-index: 50;
     top: 0;
     display: flex;
     flex-direction: row;
