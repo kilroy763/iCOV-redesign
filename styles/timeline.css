@@ -51,7 +51,7 @@ a{
     position: sticky;
     text-align: center;
     top: 700px;
-    width: 90vw;
+    width: 95vw;
     text-align: center;
     margin: 0 auto;
 
@@ -594,7 +594,7 @@ button{
     flex-direction: column;
     align-items: center;  
     width: auto;
-    top: 30%;
+    top: 15%;
 }
 
 .verticalnav{
