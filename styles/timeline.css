@@ -51,7 +51,9 @@ a{
     position: sticky;
     text-align: center;
     top: 700px;
-    width: 100vw;
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
 
 }
 
@@ -196,7 +198,7 @@ footer {
     width: auto;
     scroll-snap-type: x mandatory;
     background-color: black;
-    margin-top: -7rem;
+    margin-top: -10rem;
 }
 
 #image-container .year-section {
@@ -276,19 +278,22 @@ button:hover {
 
 
 .tekst1 h1, .tekst1 h2, .tekst1 button{
-
     display: block;
     margin: 0 auto;
     text-align: center;
     align-items: center;
     color: white;
-    margin-top: 15%;
+    margin-top: 20%;
 
 }
 
 
 .year-section h1, .year-section h2{
-    max-width: 70%;
+    max-width: 90%;
+}
+
+.year-section h2{
+    font-size: 1.2rem;
 }
 
 button{
@@ -409,6 +414,15 @@ button{
     }
 /* year sections with text */
 
+.year-section h2{
+    font-size: 1.5rem;
+}
+
+
+
+.year-section h1, .year-section h2{
+    max-width: 70%;
+}
 
 button:hover {
     border-color: none;
@@ -668,6 +682,8 @@ font-weight: normal;
 /* ------------------------------------------------------------------------------------------------ */
 
  }
+
+
 
  @media screen and (min-width: 1024px) {
     /* Nav */
