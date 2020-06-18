@@ -252,7 +252,6 @@ header a svg {
     #overlay > section {
         min-width: 450px;
         width: 90%;
-        height: 85%;
         margin-top: 10vh;
     }
     
@@ -344,7 +343,7 @@ header a svg {
         background-color: rgba(86, 75, 170, 0.8);
         max-width: 750px;
         width: 50%;
-        height: 75%;
+ 
         margin: 0 auto;
         border-radius: 50px 0px 50px 0px;
         position: relative;
