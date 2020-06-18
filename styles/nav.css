@@ -20,7 +20,6 @@
 #overlay > section {
     background-color: rgba(86, 75, 170, 0.8);
     width: 95%;
-    height: 94%;
     margin: 0 auto;
     border-radius: 50px 0px 50px 0px;
     position: relative;
@@ -69,6 +68,7 @@
 #overlay section form button {
     border: none;
     width: 100%;
+    margin-bottom: 2rem;
     border-radius: 0px 25px 0px 25px;
     background-color: var(--orange);
     color: white;
