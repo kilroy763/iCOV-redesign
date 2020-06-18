@@ -42,7 +42,7 @@ main{
 }
 
 .verticalnav{
-    z-index: 8;
+    z-index: 12;
     position: sticky;
     text-align: center;
     top: 700px;
@@ -81,7 +81,7 @@ footer {
     background-color: var(--rijksblue);
     height: 1rem;
     width: 3rem;
-    z-index: 5;
+    z-index: 11;
     position: relative;
     margin: 0 auto;
 }
@@ -216,26 +216,44 @@ footer {
 }
 
 #image-container .year-section:nth-of-type(1) {
-    z-index: 5;
+    z-index: 10;
 }
 
 #image-container .year-section:nth-of-type(2) {
-    z-index: 4;
+    z-index: 9;
 }
 
 #image-container .year-section:nth-of-type(3) {
-    z-index: 3;
+    z-index: 8;
 }
 
 #image-container .year-section:nth-of-type(4) {
-    z-index: 2;
+    z-index: 7;
 }
 
 #image-container .year-section:nth-of-type(5) {
-    z-index: 1;
-
+    z-index: 6;
 }
 
+#image-container .year-section:nth-of-type(6) {
+    z-index: 5;
+}
+
+#image-container .year-section:nth-of-type(7) {
+    z-index: 4;
+}
+
+#image-container .year-section:nth-of-type(8) {
+    z-index: 3;
+}
+
+#image-container .year-section:nth-of-type(9) {
+    z-index: 2;
+}
+
+#image-container .year-section:nth-of-type(10) {
+    z-index: 1;
+}
 
 button:hover {
     border-color: none;
@@ -382,7 +400,7 @@ button{
     .flintje{
         position: relative;
         margin: 0 auto;
-        z-index: 5;
+        z-index: 11;
     }
 /* year sections with text */
 
@@ -483,24 +501,43 @@ button{
 }
 
 #image-container .year-section:nth-of-type(1) {
-    z-index: 5;
+    z-index: 10;
 }
 
 #image-container .year-section:nth-of-type(2) {
-    z-index: 4;
+    z-index: 9;
 }
 
 #image-container .year-section:nth-of-type(3) {
-    z-index: 3;
+    z-index: 8;
 }
 
 #image-container .year-section:nth-of-type(4) {
-    z-index: 2;
+    z-index: 7;
 }
 
 #image-container .year-section:nth-of-type(5) {
-    z-index: 1;
+    z-index: 6;
+}
 
+#image-container .year-section:nth-of-type(6) {
+    z-index: 5;
+}
+
+#image-container .year-section:nth-of-type(7) {
+    z-index: 4;
+}
+
+#image-container .year-section:nth-of-type(8) {
+    z-index: 3;
+}
+
+#image-container .year-section:nth-of-type(9) {
+    z-index: 2;
+}
+
+#image-container .year-section:nth-of-type(10) {
+    z-index: 1;
 }
 
 #image-container {
@@ -520,13 +557,13 @@ button{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 1.6em;
+    font-size: 1.2em;
     display: inline-block;
     transition: transform 300ms ease-in-out;
 }
 
 .verticalnav a.active {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transform-origin: right;
     color: var(--orange);
 }
@@ -542,7 +579,7 @@ button{
 }
 
 .verticalnav{
-    z-index: 6;
+    z-index: 12;
     position: fixed;
     padding-left: 15%;
     text-align: center;
@@ -635,7 +672,7 @@ font-weight: normal;
     }
 
     .verticalnav{
-        top: 13%;
+        top: 0;
     }
 
     /* ------------------------------------------------------------------------------------------------ */
