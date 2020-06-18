@@ -242,29 +242,32 @@ section.content {
     flex-direction: column;
 }
 
+.also a {
+    display: contents;
+}
 
-.also div img {
+.also a div img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     filter: brightness(50%);
     position: absolute;
 }
-.also > div{
+.also a div{
     width: 100%;
     height: 200px;
     position: relative;
     margin: 1rem 0;
 }
 
-.also div div h1 {
+.also a div div h1 {
+    position: absolute;
     bottom: 0;
     color: white;
-    margin-bottom: 0.5rem;
     margin-left: 0.5rem;
 }
 
-.also div div {
+.also a div div {
     position: absolute;
     bottom: 0;
 }
@@ -274,12 +277,12 @@ section.content {
     /* width: 100vw; */
 }
 
-.also div section {
+.also a div section {
     background-color: white;
     position: absolute;
 }
 
-.also div section h2 {
+.also a div section h2 {
         color: var(--purple);
         padding: 0.5rem;
         font-size: 0.8rem;
@@ -379,21 +382,22 @@ section.content {
 }
 
 
-.also div img {
+.also a div img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     filter: brightness(50%);
     position: absolute;
 }
-.also > div{
+.also a div{
     width: 100%;
     height: 200px;
     position: relative;
     margin: 1rem 0 0 0;
 }
 
-.also div div h1 {
+.also a div div h1 {
+    position: absolute;
     bottom: 0;
     color: white;
     margin-bottom: 0.5rem;
@@ -401,7 +405,7 @@ section.content {
     font-size: 1.2rem;
 }
 
-.also div div {
+.also a div div {
     position: absolute;
     bottom: 0;
 }
@@ -413,14 +417,14 @@ section.content {
     width: 30vw;
 }
 
-.also div section {
+.also a div section {
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.also div section h2 {
+.also a div section h2 {
         color: var(--purple);
         padding: 0.5rem;
         font-size: 0.8rem;
@@ -555,28 +559,29 @@ section.content {
 }
 
 
-.also div img {
+.also a div img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     filter: brightness(50%);
     position: absolute;
 }
-.also > div{
+.also a div{
     width: 100%;
     height: 200px;
     position: relative;
     /* margin: 1rem; */
 }
 
-.also div div h1 {
+.also a div div h1 {
     bottom: 0;
     color: white;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
+    position: absolute;
 }
 
-.also div div {
+.also a div div {
     position: absolute;
     bottom: 0;
 }
@@ -586,12 +591,12 @@ section.content {
     width: 30vw;
 }
 
-.also div section {
+.also a div section {
     background-color: white;
     position: absolute;
 }
 
-.also div section h2 {
+.also a div section h2 {
         color: var(--purple);
         padding: 0.5rem;
         font-size: 0.8rem;
