@@ -21,6 +21,11 @@ main{
     position: relative;
 }
 
+a{
+    display: contents;
+    text-decoration: none;
+}
+
 /* Nav */
 
 .verticalnav a{
@@ -191,7 +196,7 @@ footer {
     width: auto;
     scroll-snap-type: x mandatory;
     background-color: black;
-    margin-top: -3rem;
+    margin-top: -7rem;
 }
 
 #image-container .year-section {
