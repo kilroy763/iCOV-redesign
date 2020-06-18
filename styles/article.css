@@ -25,7 +25,9 @@
 
 /* Nav end */
 
-
+h1{
+    margin-left: 0rem;
+}
 
 /* FAQ */
 
@@ -224,7 +226,7 @@ p{
 
 .artikel h2{
     font-size: 0.8rem;
-    font-weight: lighter;
+
 }
 
 h3{
