@@ -23,6 +23,7 @@
     margin: 0 auto;
     border-radius: 50px 0px 50px 0px;
     position: relative;
+    margin-top: 5vh;
 }
 
 #overlay section > img {
@@ -31,6 +32,10 @@
     right: 0;
     padding: 20px;
     width: 75px;
+}
+
+textarea{
+    height: 80px;
 }
 
 #overlay section form{
@@ -45,7 +50,11 @@
 #overlay section h1, #overlay section h2 {
     text-align: center;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+#overlay section h2{
+    font-size: 1rem;
 }
 
 #overlay section form label{
@@ -342,12 +351,11 @@ header a svg {
     #overlay > section {
         background-color: rgba(86, 75, 170, 0.8);
         max-width: 750px;
-        width: 50%;
  
         margin: 0 auto;
         border-radius: 50px 0px 50px 0px;
         position: relative;
-        margin-top: 10vh;
+        margin-top: 2vh;
     }
     
     #overlay section > img {
