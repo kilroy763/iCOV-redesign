@@ -66,18 +66,21 @@ textarea{
 
 #overlay section form label input{
     height: 1.5rem;
+    padding: 5px;
     border: none;
     border-radius: 0 3px 0 3px;
 }
 
 #overlay section form label textarea{
     border: none;
+    padding: 5px;
 }
 
 #overlay section form button {
     border: none;
     width: 100%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     border-radius: 0px 25px 0px 25px;
     background-color: var(--orange);
     color: white;
@@ -122,6 +125,7 @@ textarea{
     position: relative;
     height: 30px;
     width: 100%; 
+    justify-content: flex-start;
     /* justify-content: space-between; */
     /* margin-right: 25px; */
 }
@@ -139,6 +143,7 @@ textarea{
 
 .language_toggle{
     display: flex;
+    justify-content: flex-end;
 }
 
 .nl {
@@ -391,12 +396,14 @@ header a svg {
     
     #overlay section form label input{
         height: 1.5rem;
+        padding: 5px;
         border: none;
         border-radius: 0 3px 0 3px;
     }
     
     #overlay section form label textarea{
         border: none;
+        padding: 5px;
     }
     
     #overlay section form button {

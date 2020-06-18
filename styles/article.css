@@ -76,6 +76,8 @@ footer {
     width: 3rem;
 }
 
+
+
 .flogo {
     display: block;
     padding-bottom: 5%;
@@ -103,6 +105,7 @@ footer {
     text-align: center;
     color: #660099;
     text-decoration: none;
+    display: block !important;
 }
 
 .language_toggle {
@@ -171,6 +174,7 @@ footer {
     max-width: 100vw;
     padding: 1rem;
     margin: 1rem;
+    
     /* margin-right: 0; */
 }
 

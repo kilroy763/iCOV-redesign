@@ -6,7 +6,7 @@ for (i = 0; i < articles.length; i++) {
         var viewWidth = window.innerWidth;
         console.log(viewWidth);
         if (viewWidth < 768) {
-            window.location.href = "article.html";
+            window.location.href = "articlemondkapje.html";
         }
     });
 }

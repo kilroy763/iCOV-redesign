@@ -179,6 +179,7 @@ Voor iCOV
      padding: 1vh;
      color: white;
      transition-duration: 0.5s;
+     font-size: 1.5rem !important;
  }
 
  .hover {
@@ -341,6 +342,7 @@ Voor iCOV
      flex-direction: row;
      margin: 0 auto;
  }
+
 
  .language_toggle p {
      padding: 0.2rem;
@@ -742,6 +744,10 @@ Voor iCOV
     .flogo:hover {
         fill: var(--purple);
         transition: 0.2s;
+    }
+
+    .language_toggle {
+        margin: 0;
     }
  }
 

@@ -133,6 +133,12 @@
 
 /* Infographic */
 
+.reports div h2 ,.reports div p, .reports div details p, .reports div details summary, details{
+
+    background-color: white;
+}
+
+
 /* Indepth */
 
 .teamwork,
@@ -408,6 +414,7 @@ margin-top: 1rem;
 .reports div h2 ,.reports div p, .reports div details p, .reports div details summary{
     padding: 1rem 0rem;
     width: 90vw;
+    background-color: white;
 }
 .reports{
     margin-bottom: 3rem;
@@ -593,7 +600,7 @@ h2{
 
 .reports div h2, .reports div p, .reports div details p{
     padding: 0.5rem 0 ;
-    width: 50vw;
+    width: 40vw;
 }
 
 .reports details {
@@ -655,12 +662,12 @@ h2{
 
 .indepth > section:nth-child(1) div {
     flex-basis: 65%;
-    padding: 1rem 3rem;
+    padding: 3rem 3rem;
 }
 
 .indepth > section:nth-child(3) div {
     flex-basis: 65%;
-    padding: 1rem 3rem;
+    padding: 3rem 3rem;
 }
 
 .indepth > section:nth-child(3) img {
