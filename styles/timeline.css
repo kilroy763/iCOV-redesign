@@ -103,7 +103,7 @@ footer {
 }
 
 .flanguage {
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: right;
