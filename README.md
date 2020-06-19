@@ -4,7 +4,7 @@ In deze repository staat een redesign voor het bedrijf [iCOV](https://www.icov.n
 
 ## Live prorotype
 
-Deze site heeft ook en live prototype beschikbaar. Zie hier de [live vesie](https://mbergevoet.github.io/iCOV-redesign/).
+Deze site heeft ook en live prototype beschikbaar. Zie hier de [live versie](https://mbergevoet.github.io/iCOV-redesign/).
 
 ## License
 
