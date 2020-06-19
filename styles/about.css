@@ -7,6 +7,11 @@
     --rijksblue: #154273;
 }
 
+@font-face {
+    font-family: "Rijksoverheid-serif";
+    src: url("../fonts/rijksoverheidserif-regular.ttf");
+}
+
 .readmore_button {
     border: none;
     margin: 1rem 0rem;
@@ -185,6 +190,51 @@
 }
 /* Infographic end*/
 
+.collaborators {
+    display: none;
+}
+
+.collaborators > div,
+.collaborators > svg {
+    min-width: 70px;
+    max-width: 70px;
+    margin: 0.5rem;
+}
+
+.collaborators > * {
+    fill: var(--rijksblue);
+}
+
+.collaborators {
+    margin-bottom: 2rem;
+}
+
+svg path,
+svg polygon,
+svg rect,
+svg g path, 
+svg g g path, 
+svg g g g path {
+  fill: var(--rijksblue);
+}
+
+.overheidsinstellingen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.overheidsinstellingen p {
+    font-family: "Rijksoverheid-serif", serif;
+    font-weight: bold;
+    color: var(--rijksblue);
+    margin-left: 0.2rem;
+    font-size: 0.5rem;
+}
+
+.overheidsinstellingen svg {
+    width: 30px;
+}
 
 @media screen and (min-width: 321px) {
 }
@@ -474,8 +524,6 @@ h2{
     height: auto;
 }
 
-
-
 /* Tabs end */
 
 .methodcontainer,
@@ -686,6 +734,36 @@ h2{
 }
 
 /* In depth end */
+
+.collaborators {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
+    margin-bottom: 4rem;
+    padding: 0 10rem;
 }
 
+.collaborators > div,
+.collaborators > svg{
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.collaborators svg {
+    width: 200px;
+}
+
+.overheidsinstellingen p{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.overheidsinstellingen svg {
+    width: 60px;
+}
+
+}
 
