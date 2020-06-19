@@ -209,12 +209,12 @@
     margin-bottom: 2rem;
 }
 
-svg path,
-svg polygon,
-svg rect,
-svg g path, 
-svg g g path, 
-svg g g g path {
+.collaborators > svg path,
+.collaborators > svg polygon,
+.collaborators > svg rect,
+.collaborators > svg g path, 
+.collaborators > svg g g path, 
+.collaborators > svg g g g path {
   fill: var(--rijksblue);
 }
 
@@ -429,8 +429,6 @@ margin-top: 1rem;
     padding-right: 1.5rem;
 
 }
-
-
 
 .infographic {
     display: flex;
@@ -741,9 +739,8 @@ h2{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    box-shadow: 0px 0px 20px -12px rgba(143, 143, 143, 1);
-    margin-bottom: 4rem;
-    padding: 0 10rem;
+    margin: 5rem 0;
+    padding: 0 11rem;
 }
 
 .collaborators > div,
@@ -757,12 +754,12 @@ h2{
 }
 
 .overheidsinstellingen p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 0.5rem;
 }
 
 .overheidsinstellingen svg {
-    width: 60px;
+    width: 40px;
 }
 
 }
